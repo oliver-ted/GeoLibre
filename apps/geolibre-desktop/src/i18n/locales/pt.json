@@ -3496,7 +3496,8 @@
         "bufferPoint": "Buffer de um ponto (espacial)",
         "areaPerFeature": "Área de cada feição (espacial)"
       }
-    }
+    },
+    "poweredBy": "Desenvolvido por {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Selecionar por expressão",

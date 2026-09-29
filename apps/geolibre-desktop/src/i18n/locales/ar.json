@@ -3731,7 +3731,8 @@
         "bufferPoint": "نطاق عازل حول نقطة (مكاني)",
         "areaPerFeature": "مساحة كل معلم (مكاني)"
       }
-    }
+    },
+    "poweredBy": "مدعوم من {{company}}"
   },
   "selection": {
     "byExpressionTitle": "التحديد بتعبير",

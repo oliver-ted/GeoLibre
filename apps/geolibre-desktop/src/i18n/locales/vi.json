@@ -3437,7 +3437,8 @@
       "noRows": "Tuyên bố được thực hiện. Không có hàng nào được trả lại.",
       "showingRows": "Hiển thị {{shown}} đầu tiên trong số {{total}} hàng. Xuất để xem tất cả.",
       "rowsCount_other": "{{count}} hàng"
-    }
+    },
+    "poweredBy": "Được hỗ trợ bởi {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Chọn theo biểu thức",

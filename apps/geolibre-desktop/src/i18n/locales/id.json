@@ -3437,7 +3437,8 @@
         "bufferPoint": "Buffer titik (spasial)",
         "areaPerFeature": "Luas setiap fitur (spasial)"
       }
-    }
+    },
+    "poweredBy": "Didukung oleh {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Pilih berdasarkan Ekspresi",

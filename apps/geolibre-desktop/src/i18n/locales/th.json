@@ -3437,7 +3437,8 @@
         "bufferPoint": "สร้างบัฟเฟอร์ให้จุด (เชิงพื้นที่)",
         "areaPerFeature": "พื้นที่ของแต่ละฟีเจอร์ (เชิงพื้นที่)"
       }
-    }
+    },
+    "poweredBy": "ขับเคลื่อนโดย {{company}}"
   },
   "selection": {
     "byExpressionTitle": "เลือกด้วยนิพจน์",

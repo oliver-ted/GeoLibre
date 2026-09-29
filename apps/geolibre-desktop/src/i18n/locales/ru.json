@@ -3614,7 +3614,8 @@
         "bufferPoint": "Буфер точки (пространственный)",
         "areaPerFeature": "Площадь каждого объекта (пространственный)"
       }
-    }
+    },
+    "poweredBy": "На базе {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Выбор по выражению",

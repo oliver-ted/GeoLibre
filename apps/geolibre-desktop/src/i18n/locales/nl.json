@@ -3496,7 +3496,8 @@
         "bufferPoint": "Een punt bufferen (ruimtelijk)",
         "areaPerFeature": "Oppervlakte van elke feature (ruimtelijk)"
       }
-    }
+    },
+    "poweredBy": "Mogelijk gemaakt door {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Selecteren op expressie",

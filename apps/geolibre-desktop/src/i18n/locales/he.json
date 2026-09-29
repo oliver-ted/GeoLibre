@@ -3555,7 +3555,8 @@
       "addedAsQueryLayer_two": "{{count}} ישויות נוספו למפה כשכבת שאילתה \"{{name}}\". יש לרענן אותה מחלונית השכבות כדי להריץ מחדש את ה-SQL.",
       "rowsCount_two": "{{count}} שורות",
       "columnsCount_two": "{{count}} עמודות"
-    }
+    },
+    "poweredBy": "מופעל על ידי {{company}}"
   },
   "selection": {
     "byExpressionTitle": "בחירה לפי ביטוי",

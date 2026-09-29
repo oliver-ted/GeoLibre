@@ -3496,7 +3496,8 @@
         "bufferPoint": "Buffer di un punto (spaziale)",
         "areaPerFeature": "Area di ogni elemento (spaziale)"
       }
-    }
+    },
+    "poweredBy": "Con tecnologia {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Seleziona per espressione",
