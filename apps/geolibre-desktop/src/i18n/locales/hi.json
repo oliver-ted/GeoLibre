@@ -3496,7 +3496,8 @@
         "bufferPoint": "एक बिंदु को बफर करें (स्पेशियल)",
         "areaPerFeature": "प्रत्येक फ़ीचर का क्षेत्रफल (स्पेशियल)"
       }
-    }
+    },
+    "poweredBy": "{{company}} द्वारा संचालित"
   },
   "selection": {
     "byExpressionTitle": "एक्सप्रेशन द्वारा चुनें",

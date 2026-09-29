@@ -3437,7 +3437,8 @@
         "bufferPoint": "점 버퍼 (공간)",
         "areaPerFeature": "각 피처의 면적"
       }
-    }
+    },
+    "poweredBy": "{{company}} 제공"
   },
   "selection": {
     "byExpressionTitle": "표현식으로 선택",

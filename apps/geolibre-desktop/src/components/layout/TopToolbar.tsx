@@ -2262,9 +2262,16 @@ export function TopToolbar({
         compact ? "px-1.5" : "px-2",
       )}
     >
-      <span className="me-1 flex shrink-0 items-center gap-1.5 text-sm font-semibold text-primary md:me-2">
+      <span className="me-1 flex shrink-0 items-center gap-1.5 md:me-2">
         <BrandMark className="h-5 w-5" />
-        {showProjectInfo ? <span className="hidden sm:inline">{appTitle}</span> : null}
+        {showProjectInfo ? (
+          <span className="hidden flex-col leading-tight sm:flex">
+            <span className="text-sm font-semibold text-foreground">{appTitle}</span>
+            <span className="text-[10px] font-normal text-muted-foreground">
+              {t("toolbar.poweredBy", { company: "Aether AI" })}
+            </span>
+          </span>
+        ) : null}
       </span>
       {!viewer && isMenuVisible(uiProfile, "project") && (
         <ProjectMenu

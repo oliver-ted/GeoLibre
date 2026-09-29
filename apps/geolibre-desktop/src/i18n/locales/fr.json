@@ -3496,7 +3496,8 @@
         "bufferPoint": "Zone tampon sur un point (spatial)",
         "areaPerFeature": "Superficie de chaque entité (spatial)"
       }
-    }
+    },
+    "poweredBy": "Propulsé par {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Sélectionner par expression",

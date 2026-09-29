@@ -3496,7 +3496,8 @@
         "bufferPoint": "Bir noktayı tamponla (konumsal)",
         "areaPerFeature": "Her öğenin alanı (konumsal)"
       }
-    }
+    },
+    "poweredBy": "{{company}} tarafından desteklenmektedir"
   },
   "selection": {
     "byExpressionTitle": "İfadeye Göre Seç",

@@ -3437,7 +3437,8 @@
         "bufferPoint": "缓冲一个点（空间）",
         "areaPerFeature": "每个要素的面积（空间）"
       }
-    }
+    },
+    "poweredBy": "由 {{company}} 提供支持"
   },
   "selection": {
     "byExpressionTitle": "按表达式选择",

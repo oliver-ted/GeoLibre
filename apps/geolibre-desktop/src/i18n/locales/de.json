@@ -3496,7 +3496,8 @@
         "bufferPoint": "Einen Punkt puffern (räumlich)",
         "areaPerFeature": "Fläche pro Objekt (räumlich)"
       }
-    }
+    },
+    "poweredBy": "Unterstützt von {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Nach Ausdruck auswählen",

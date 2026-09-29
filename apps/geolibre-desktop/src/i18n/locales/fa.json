@@ -3496,7 +3496,8 @@
         "bufferPoint": "بافر یک نقطه (مکانی)",
         "areaPerFeature": "مساحت هر عارضه (مکانی)"
       }
-    }
+    },
+    "poweredBy": "قدرت‌گرفته از {{company}}"
   },
   "selection": {
     "byExpressionTitle": "انتخاب بر پایهٔ عبارت",

@@ -3437,7 +3437,8 @@
         "bufferPoint": "ポイントをバッファ（空間）",
         "areaPerFeature": "各フィーチャの面積（空間）"
       }
-    }
+    },
+    "poweredBy": "{{company}} による提供"
   },
   "selection": {
     "byExpressionTitle": "式で選択",

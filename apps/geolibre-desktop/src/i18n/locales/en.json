@@ -3519,7 +3519,8 @@
         "bufferPoint": "Buffer a point (spatial)",
         "areaPerFeature": "Area of each feature (spatial)"
       }
-    }
+    },
+    "poweredBy": "Powered by {{company}}"
   },
   "selection": {
     "byExpressionTitle": "Select by Expression",

@@ -3496,7 +3496,8 @@
         "bufferPoint": "წერტილის ბუფერი (სივრცითი)",
         "areaPerFeature": "თითოეული ობიექტის ფართობი (სივრცითი)"
       }
-    }
+    },
+    "poweredBy": "{{company}}-ის მხარდაჭერით"
   },
   "selection": {
     "byExpressionTitle": "არჩევა გამოსახულებით",
