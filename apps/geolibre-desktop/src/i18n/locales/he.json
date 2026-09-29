@@ -2656,6 +2656,7 @@
   "toolbar": {
     "menu": {
       "project": "פרויקט",
+      "demos": "הדגמות",
       "import": "ייבוא",
       "edit": "עריכה",
       "view": "תצוגה",
@@ -3556,7 +3557,10 @@
       "rowsCount_two": "{{count}} שורות",
       "columnsCount_two": "{{count}} עמודות"
     },
-    "poweredBy": "מופעל על ידי {{company}}"
+    "poweredBy": "מופעל על ידי {{company}}",
+    "demos": {
+      "savePromptDescription": "בפרויקט הנוכחי יש שינויים שלא נשמרו. לשמור אותם לפני פתיחת פרויקט ההדגמה?"
+    }
   },
   "selection": {
     "byExpressionTitle": "בחירה לפי ביטוי",

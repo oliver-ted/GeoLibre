@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Projekt",
+      "demos": "Demos",
       "import": "Importieren",
       "edit": "Bearbeiten",
       "view": "Ansicht",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Fläche pro Objekt (räumlich)"
       }
     },
-    "poweredBy": "Unterstützt von {{company}}"
+    "poweredBy": "Unterstützt von {{company}}",
+    "demos": {
+      "savePromptDescription": "Das aktuelle Projekt enthält ungespeicherte Änderungen. Möchten Sie sie speichern, bevor das Demoprojekt geöffnet wird?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Nach Ausdruck auswählen",

@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Proje",
+      "demos": "Demolar",
       "import": "İçe Aktar",
       "edit": "Düzenle",
       "view": "Görünüm",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Her öğenin alanı (konumsal)"
       }
     },
-    "poweredBy": "{{company}} tarafından desteklenmektedir"
+    "poweredBy": "{{company}} tarafından desteklenmektedir",
+    "demos": {
+      "savePromptDescription": "Geçerli projede kaydedilmemiş değişiklikler var. Demo projeyi açmadan önce kaydetmek ister misiniz?"
+    }
   },
   "selection": {
     "byExpressionTitle": "İfadeye Göre Seç",

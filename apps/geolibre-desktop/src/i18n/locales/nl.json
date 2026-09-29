@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Project",
+      "demos": "Demo's",
       "import": "Importeren",
       "edit": "Bewerken",
       "view": "Beeld",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Oppervlakte van elke feature (ruimtelijk)"
       }
     },
-    "poweredBy": "Mogelijk gemaakt door {{company}}"
+    "poweredBy": "Mogelijk gemaakt door {{company}}",
+    "demos": {
+      "savePromptDescription": "Het huidige project bevat niet-opgeslagen wijzigingen. Wilt u die opslaan voordat het demoproject wordt geopend?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Selecteren op expressie",

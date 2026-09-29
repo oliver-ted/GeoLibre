@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Projet",
+      "demos": "Démos",
       "import": "Importer",
       "edit": "Édition",
       "view": "Affichage",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Superficie de chaque entité (spatial)"
       }
     },
-    "poweredBy": "Propulsé par {{company}}"
+    "poweredBy": "Propulsé par {{company}}",
+    "demos": {
+      "savePromptDescription": "Le projet actuel contient des modifications non enregistrées. Voulez-vous les enregistrer avant d’ouvrir le projet de démonstration ?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Sélectionner par expression",

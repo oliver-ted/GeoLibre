@@ -2560,6 +2560,7 @@
   "toolbar": {
     "menu": {
       "project": "Proyek",
+      "demos": "Demo",
       "import": "Impor",
       "edit": "Edit",
       "view": "Tampilan",
@@ -3438,7 +3439,10 @@
         "areaPerFeature": "Luas setiap fitur (spasial)"
       }
     },
-    "poweredBy": "Didukung oleh {{company}}"
+    "poweredBy": "Didukung oleh {{company}}",
+    "demos": {
+      "savePromptDescription": "Proyek saat ini memiliki perubahan yang belum disimpan. Simpan sebelum membuka proyek demo?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Pilih berdasarkan Ekspresi",

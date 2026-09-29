@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Progetto",
+      "demos": "Demo",
       "import": "Importa",
       "edit": "Modifica",
       "view": "Visualizza",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Area di ogni elemento (spaziale)"
       }
     },
-    "poweredBy": "Con tecnologia {{company}}"
+    "poweredBy": "Con tecnologia {{company}}",
+    "demos": {
+      "savePromptDescription": "Il progetto corrente contiene modifiche non salvate. Salvarle prima di aprire il progetto dimostrativo?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Seleziona per espressione",

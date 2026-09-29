@@ -2560,6 +2560,7 @@
   "toolbar": {
     "menu": {
       "project": "프로젝트",
+      "demos": "데모",
       "import": "가져오기",
       "edit": "편집",
       "view": "보기",
@@ -3438,7 +3439,10 @@
         "areaPerFeature": "각 피처의 면적"
       }
     },
-    "poweredBy": "{{company}} 제공"
+    "poweredBy": "{{company}} 제공",
+    "demos": {
+      "savePromptDescription": "현재 프로젝트에 저장하지 않은 변경 사항이 있습니다. 데모 프로젝트를 열기 전에 저장할까요?"
+    }
   },
   "selection": {
     "byExpressionTitle": "표현식으로 선택",

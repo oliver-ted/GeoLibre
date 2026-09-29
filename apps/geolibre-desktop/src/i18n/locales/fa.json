@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "پروژه",
+      "demos": "نمونه‌ها",
       "import": "وارد کردن",
       "edit": "ویرایش",
       "view": "نما",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "مساحت هر عارضه (مکانی)"
       }
     },
-    "poweredBy": "قدرت‌گرفته از {{company}}"
+    "poweredBy": "قدرت‌گرفته از {{company}}",
+    "demos": {
+      "savePromptDescription": "پروژهٔ فعلی تغییرات ذخیره‌نشده دارد. آیا پیش از باز کردن پروژهٔ نمونه آن‌ها را ذخیره می‌کنید؟"
+    }
   },
   "selection": {
     "byExpressionTitle": "انتخاب بر پایهٔ عبارت",
