@@ -84,7 +84,7 @@ function openDatabase(): Promise<IDBDatabase> {
     request.onblocked = () =>
       rejectOnce(
         new Error(
-          "Project history is blocked by another GeoLibre tab. Close or reload other tabs and try again.",
+          "Project history is blocked by another Geoverse tab. Close or reload other tabs and try again.",
         ),
       );
   });

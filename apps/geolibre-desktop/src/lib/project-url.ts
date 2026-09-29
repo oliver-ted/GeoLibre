@@ -156,7 +156,7 @@ export async function fetchProjectFromUrl(
     const raw = error instanceof Error ? error.message : String(error);
     const detail = raw.replace(/^Invalid GeoLibre project:\s*/i, "") || raw;
     throw new Error(
-      `The file at ${projectUrl} is not a valid GeoLibre project ` + `(.geolibre.json): ${detail}`,
+      `The file at ${projectUrl} is not a valid Geoverse project ` + `(.geolibre.json): ${detail}`,
       { cause: error },
     );
   }

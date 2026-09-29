@@ -29,7 +29,7 @@ import { isAbortError } from "./shared";
 
 const GEOLIBRE_PROJECT_FILE_TYPES: BrowserFilePickerType[] = [
   {
-    description: "GeoLibre Project",
+    description: "Geoverse Project",
     accept: {
       "application/json": [".geolibre", ".json"],
     },
@@ -64,7 +64,7 @@ async function openProjectFileBrowser(): Promise<{
   }
 
   const result = await openLocalDataFileWithFallback({
-    filters: [{ name: "GeoLibre Project", extensions: ["geolibre", "json"] }],
+    filters: [{ name: "Geoverse Project", extensions: ["geolibre", "json"] }],
     accept: ".geolibre,.json,.geolibre.json",
     readText: true,
   });
@@ -94,7 +94,7 @@ export async function openProjectFile(): Promise<{
 
   const selected = await open({
     multiple: false,
-    filters: [{ name: "GeoLibre Project", extensions: ["geolibre", "json"] }],
+    filters: [{ name: "Geoverse Project", extensions: ["geolibre", "json"] }],
   });
   if (!selected || typeof selected !== "string") return null;
   const text = await readTextFile(selected);
@@ -285,7 +285,7 @@ export async function openRecentProjectFile(
   }
 
   if (!isTauri()) {
-    throw new Error("Recent local projects can only be reopened in GeoLibre Desktop.");
+    throw new Error("Recent local projects can only be reopened in Geoverse Desktop.");
   }
 
   let text: string;
@@ -343,7 +343,7 @@ export async function saveProjectFile(
   }
 
   const path = await save({
-    filters: [{ name: "GeoLibre Project", extensions: ["geolibre", "json"] }],
+    filters: [{ name: "Geoverse Project", extensions: ["geolibre", "json"] }],
     defaultPath: defaultName ?? "project.geolibre",
   });
   if (!path) return null;

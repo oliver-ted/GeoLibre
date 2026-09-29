@@ -350,9 +350,9 @@ export interface LayoutOptions {
   showDate?: boolean;
   /** The formatted date string drawn when {@link showDate} is true. */
   dateText?: string;
-  /** Draw the "Created with GeoLibre" attribution (left side of the footer row). */
+  /** Draw the "Created with Geoverse" attribution (left side of the footer row). */
   showAttribution?: boolean;
-  /** Attribution text; defaults to "Created with GeoLibre" when omitted. */
+  /** Attribution text; defaults to "Created with Geoverse" when omitted. */
   attributionText?: string;
   /** Outer page padding preset: full margins, narrow, or borderless. */
   pageMargin?: "normal" | "narrow" | "none";
@@ -516,10 +516,10 @@ function resolveContentFlags(opts: LayoutOptions): ContentFlags {
   const hasTitleText = opts.showTitle && opts.title.trim().length > 0;
   const hasSubtitleText = showSubtitle && opts.subtitle.trim().length > 0;
   // Attribution is opt-out (on unless explicitly disabled), deliberately unlike
-  // the other new booleans: GH #526 wants a pre-checked "Created with GeoLibre"
+  // the other new booleans: GH #526 wants a pre-checked "Created with Geoverse"
   // credit so it survives a user replacing the footer text.
   const attributionText =
-    opts.showAttribution !== false && (opts.attributionText ?? "Created with GeoLibre").trim();
+    opts.showAttribution !== false && (opts.attributionText ?? "Created with Geoverse").trim();
   const footerText = opts.showFooter && opts.footerText.trim();
   const dateText = (opts.showDate && (opts.dateText ?? "").trim()) || false;
   return {

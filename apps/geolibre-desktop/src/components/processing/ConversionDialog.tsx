@@ -1305,7 +1305,7 @@ export function ConversionDialog() {
       await startGeoLibreSidecar();
       await checkRuntime();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not start GeoLibre sidecar.");
+      setError(err instanceof Error ? err.message : "Could not start Geoverse sidecar.");
     } finally {
       setStartingServer(false);
     }

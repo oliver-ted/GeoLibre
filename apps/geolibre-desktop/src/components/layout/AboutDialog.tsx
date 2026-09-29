@@ -8,7 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@geolibre/ui";
-import { CheckCircle2, ExternalLink, Info, Map, RefreshCw } from "lucide-react";
+import { CheckCircle2, ExternalLink, Info, RefreshCw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { openExternalLink } from "../../lib/open-external";
@@ -20,6 +20,7 @@ import {
   UPDATE_URL,
   UpdateCheckError,
 } from "../../lib/updates";
+import { BrandMark, BrandWordmark } from "./BrandLogo";
 import { ReleaseNotes } from "./ReleaseNotes";
 import { UpdateInstructions } from "./UpdateInstructions";
 
@@ -177,11 +178,14 @@ export function AboutDialog({
       <DialogContent className="max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Map className="h-5 w-5 text-primary" />
+            <BrandMark className="h-5 w-5" />
             {t("about.title")}
           </DialogTitle>
           <DialogDescription>{t("about.description")}</DialogDescription>
         </DialogHeader>
+        <div className="flex justify-center py-1">
+          <BrandWordmark className="h-10" />
+        </div>
         <div className="space-y-3 text-sm">
           <div className="flex items-center justify-between rounded-md border bg-muted/30 px-3 py-2">
             <span className="text-muted-foreground">{t("about.version")}</span>
