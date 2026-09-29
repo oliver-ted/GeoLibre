@@ -725,7 +725,7 @@ describe("drawLayout cartographic furniture", () => {
         footerText: "My Org",
       }),
     );
-    const attribution = fills.find((f) => f.text === "Created with GeoLibre");
+    const attribution = fills.find((f) => f.text === "Created with Geoverse");
     assert.ok(attribution, "expected the attribution to be drawn");
     assert.equal(attribution.textAlign, "left");
     const date = fills.find((f) => f.text === "2026-06-19");
@@ -739,7 +739,7 @@ describe("drawLayout cartographic furniture", () => {
   it("omits the attribution when showAttribution is false", () => {
     const { canvas, fills } = recordingCanvas();
     drawLayout(canvas, baseOptions({ showAttribution: false }));
-    assert.ok(!fills.some((f) => f.text === "Created with GeoLibre"));
+    assert.ok(!fills.some((f) => f.text === "Created with Geoverse"));
   });
 
   it("draws a 1:N scale ratio for a millimetre paper size", () => {

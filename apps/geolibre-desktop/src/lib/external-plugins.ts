@@ -142,7 +142,7 @@ export async function loadExternalPlugins(
           issues.push({
             archiveName: bundle.archiveName,
             sourceUrl: bundle.sourceUrl,
-            message: `Plugin id '${bundle.manifest.id}' is already loaded from '${loadedFrom}'. Restart GeoLibre to load this copy.`,
+            message: `Plugin id '${bundle.manifest.id}' is already loaded from '${loadedFrom}'. Restart Geoverse to load this copy.`,
           });
         }
         continue;

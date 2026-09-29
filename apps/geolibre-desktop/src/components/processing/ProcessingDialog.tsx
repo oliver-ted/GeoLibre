@@ -1936,7 +1936,7 @@ export function ProcessingDialog({ mapControllerRef, onAddRaster }: ProcessingDi
     try {
       await stopGeoLibreSidecar();
       setRuntimeAvailable(false);
-      setRuntimeMessage("GeoLibre sidecar is stopped. Showing GitHub catalog only.");
+      setRuntimeMessage("Geoverse sidecar is stopped. Showing GitHub catalog only.");
       setJob(null);
     } catch (err) {
       setError(err instanceof Error ? err.message : t("processing.whitebox.errorStopSidecar"));
