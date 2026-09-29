@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Proyecto",
+      "demos": "Demos",
       "import": "Importar",
       "edit": "Editar",
       "view": "Ver",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Área de cada entidad (espacial)"
       }
     },
-    "poweredBy": "Con la tecnología de {{company}}"
+    "poweredBy": "Con la tecnología de {{company}}",
+    "demos": {
+      "savePromptDescription": "El proyecto actual tiene cambios sin guardar. ¿Desea guardarlos antes de abrir el proyecto de demostración?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Seleccionar por expresión",

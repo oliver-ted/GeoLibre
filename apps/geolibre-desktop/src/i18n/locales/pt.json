@@ -2608,6 +2608,7 @@
   "toolbar": {
     "menu": {
       "project": "Projeto",
+      "demos": "Demonstrações",
       "import": "Importar",
       "edit": "Editar",
       "view": "Exibir",
@@ -3497,7 +3498,10 @@
         "areaPerFeature": "Área de cada feição (espacial)"
       }
     },
-    "poweredBy": "Desenvolvido por {{company}}"
+    "poweredBy": "Desenvolvido por {{company}}",
+    "demos": {
+      "savePromptDescription": "O projeto atual tem alterações não salvas. Deseja salvá-las antes de abrir o projeto de demonstração?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Selecionar por expressão",

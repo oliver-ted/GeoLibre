@@ -2560,6 +2560,7 @@
   "toolbar": {
     "menu": {
       "project": "Dự án",
+      "demos": "Bản demo",
       "import": "Nhập khẩu",
       "edit": "Biên tập",
       "view": "Xem",
@@ -3438,7 +3439,10 @@
       "showingRows": "Hiển thị {{shown}} đầu tiên trong số {{total}} hàng. Xuất để xem tất cả.",
       "rowsCount_other": "{{count}} hàng"
     },
-    "poweredBy": "Được hỗ trợ bởi {{company}}"
+    "poweredBy": "Được hỗ trợ bởi {{company}}",
+    "demos": {
+      "savePromptDescription": "Dự án hiện tại có thay đổi chưa lưu. Lưu trước khi mở dự án demo?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Chọn theo biểu thức",

@@ -8,6 +8,19 @@ import { WHITEBOX_TOOL_PARAM } from "./whitebox-tool-url";
 export const PROJECT_URL_PARAMS = ["url", "project", "projectUrl", "project_url"];
 
 /**
+ * Returns `href` with its project deep link pointing at `projectUrl`: every
+ * {@link PROJECT_URL_PARAMS} alias is dropped and `url` is set, so reloading or
+ * bookmarking the page reopens that project through `projectUrlFromLocation`.
+ * Other query parameters and the hash are kept.
+ */
+export function withProjectUrlParam(href: string, projectUrl: string): string {
+  const next = new URL(href);
+  for (const key of PROJECT_URL_PARAMS) next.searchParams.delete(key);
+  next.searchParams.set("url", projectUrl);
+  return next.toString();
+}
+
+/**
  * Parses a share role string ("view", "comment", "edit") into a valid ShareRole or null.
  */
 export function parseShareRole(value: unknown): ShareRole | null {

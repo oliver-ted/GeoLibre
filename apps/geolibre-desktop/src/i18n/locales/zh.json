@@ -2560,6 +2560,7 @@
   "toolbar": {
     "menu": {
       "project": "项目",
+      "demos": "演示",
       "import": "导入",
       "edit": "编辑",
       "view": "视图",
@@ -3438,7 +3439,10 @@
         "areaPerFeature": "每个要素的面积（空间）"
       }
     },
-    "poweredBy": "由 {{company}} 提供支持"
+    "poweredBy": "由 {{company}} 提供支持",
+    "demos": {
+      "savePromptDescription": "当前项目有未保存的更改。是否在打开演示项目之前保存？"
+    }
   },
   "selection": {
     "byExpressionTitle": "按表达式选择",

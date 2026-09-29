@@ -2799,6 +2799,7 @@
   "toolbar": {
     "menu": {
       "project": "مشروع",
+      "demos": "عروض توضيحية",
       "import": "استيراد",
       "edit": "تحرير",
       "view": "عرض",
@@ -3732,7 +3733,10 @@
         "areaPerFeature": "مساحة كل معلم (مكاني)"
       }
     },
-    "poweredBy": "مدعوم من {{company}}"
+    "poweredBy": "مدعوم من {{company}}",
+    "demos": {
+      "savePromptDescription": "يحتوي المشروع الحالي على تغييرات غير محفوظة. هل تريد حفظها قبل فتح المشروع التوضيحي؟"
+    }
   },
   "selection": {
     "byExpressionTitle": "التحديد بتعبير",

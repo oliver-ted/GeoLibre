@@ -2560,6 +2560,7 @@
   "toolbar": {
     "menu": {
       "project": "プロジェクト",
+      "demos": "デモ",
       "import": "インポート",
       "edit": "編集",
       "view": "表示",
@@ -3438,7 +3439,10 @@
         "areaPerFeature": "各フィーチャの面積（空間）"
       }
     },
-    "poweredBy": "{{company}} による提供"
+    "poweredBy": "{{company}} による提供",
+    "demos": {
+      "savePromptDescription": "現在のプロジェクトには未保存の変更があります。デモプロジェクトを開く前に保存しますか？"
+    }
   },
   "selection": {
     "byExpressionTitle": "式で選択",

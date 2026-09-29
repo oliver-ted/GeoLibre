@@ -2630,6 +2630,7 @@
   "toolbar": {
     "menu": {
       "project": "Project",
+      "demos": "Demos",
       "import": "Import",
       "edit": "Edit",
       "view": "View",
@@ -3520,7 +3521,10 @@
         "areaPerFeature": "Area of each feature (spatial)"
       }
     },
-    "poweredBy": "Powered by {{company}}"
+    "poweredBy": "Powered by {{company}}",
+    "demos": {
+      "savePromptDescription": "The current project has unsaved changes. Save them before opening the demo project?"
+    }
   },
   "selection": {
     "byExpressionTitle": "Select by Expression",

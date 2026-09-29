@@ -177,6 +177,7 @@ import { PluginsMenu } from "./toolbar/PluginsMenu";
 import { PluginToolbarMenus } from "./toolbar/PluginToolbarMenus";
 import { EARTH_ENGINE_AVAILABLE, ProcessingMenu } from "./toolbar/ProcessingMenu";
 import { ProjectFileDialogs } from "./toolbar/ProjectFileDialogs";
+import { DemosMenu } from "./toolbar/DemosMenu";
 import { ProjectMenu } from "./toolbar/ProjectMenu";
 import { googleEarthUrl, googleMapsUrl } from "../../lib/external-map-links";
 import {
@@ -2299,6 +2300,12 @@ export function TopToolbar({
           onCollaborate={() => setCollaborateDialogOpen(true)}
           onPrintLayout={() => setPrintLayoutOpen(true)}
           onOpenOfflineBasemap={onOpenBasemapExtract}
+        />
+      )}
+      {!viewer && (
+        <DemosMenu
+          chrome={chrome}
+          onOpenProjectUrl={(url) => void projectFiles.openDemoProject(url)}
         />
       )}
       {!viewer && isMenuVisible(uiProfile, "edit") && (

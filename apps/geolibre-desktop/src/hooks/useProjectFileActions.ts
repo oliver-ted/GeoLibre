@@ -42,7 +42,7 @@ import { useDesktopSettingsStore } from "./useDesktopSettings";
 import { buildProjectHtml } from "../lib/html-export";
 import { ensureHtmlFileName, ensureProjectFileName } from "../lib/file-names";
 import { mergeStringLists } from "../lib/string-lists";
-import { fetchProjectFromUrl } from "../lib/project-url";
+import { fetchProjectFromUrl, withProjectUrlParam } from "../lib/project-url";
 import { getShareFetch } from "../lib/share-fetch";
 import {
   resolveShareBaseUrl,
@@ -786,10 +786,22 @@ export function useProjectFileActions(mapControllerRef: MapControllerRef) {
 
   const handleOpenFromUrl = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const normalizedUrl = normalizeProjectUrl(projectUrl);
+    await openProjectUrl(projectUrl);
+  };
+
+  /**
+   * The Open From → URL loader: fetch, resolve and load the project at `url`,
+   * reporting progress and failures through the Open From URL dialog's state
+   * (`projectUrlLoading` / `projectUrlError`). Closes the dialog on success.
+   * Shared by the dialog's submit and the Demos menu.
+   *
+   * @returns Whether the project was loaded.
+   */
+  const openProjectUrl = async (url: string): Promise<boolean> => {
+    const normalizedUrl = normalizeProjectUrl(url);
     if (!normalizedUrl) {
       setProjectUrlError(t("toolbar.error.invalidProjectUrl"));
-      return;
+      return false;
     }
 
     projectUrlAbortRef.current?.abort();
@@ -802,22 +814,75 @@ export function useProjectFileActions(mapControllerRef: MapControllerRef) {
     try {
       const result = await openRecentProjectFile(normalizedUrl, controller.signal);
       const project = await resolveProjectXyzLayers(result.project, controller.signal);
-      if (controller.signal.aborted) return;
+      if (controller.signal.aborted) return false;
       loadProject(project, result.path);
       setProjectUrl("");
       setProjectUrlDialogOpen(false);
+      return true;
     } catch (error) {
-      if (controller.signal.aborted) return;
+      if (controller.signal.aborted) return false;
       console.error("Failed to open project URL", error);
       setProjectUrlError(
         error instanceof Error ? error.message : t("toolbar.error.couldNotOpenProjectUrl"),
       );
+      return false;
     } finally {
       if (projectUrlAbortRef.current === controller) {
         projectUrlAbortRef.current = null;
       }
       setProjectUrlLoading(false);
     }
+  };
+
+  // Demos menu. A demo opens through the Open From URL dialog, pre-filled with
+  // the demo's URL, so it shows that dialog's loading state and inline errors.
+  // Unlike the dialog itself it first asks to save unsaved changes (the same
+  // Save / Do not save / Cancel choice a dropped project gets), and on success it
+  // writes `?url=` into the address bar so a refresh or bookmark reopens it.
+  const [demoProjectPrompt, setDemoProjectPrompt] = useState<string | null>(null);
+  const [demoProjectSaving, setDemoProjectSaving] = useState(false);
+
+  const startDemoProjectOpen = async (url: string) => {
+    setProjectUrl(url);
+    setProjectUrlError(null);
+    setProjectUrlDialogOpen(true);
+    if (!(await openProjectUrl(url))) return;
+    const normalizedUrl = normalizeProjectUrl(url);
+    if (normalizedUrl && typeof window !== "undefined") {
+      window.history.replaceState(
+        window.history.state,
+        "",
+        withProjectUrlParam(window.location.href, normalizedUrl),
+      );
+    }
+  };
+
+  const openDemoProject = async (url: string) => {
+    if (useAppStore.getState().isDirty) {
+      setDemoProjectPrompt(url);
+      return;
+    }
+    await startDemoProjectOpen(url);
+  };
+
+  const resolveDemoProjectPrompt = async (choice: "save" | "discard" | "cancel") => {
+    if (demoProjectSaving) return;
+    const url = demoProjectPrompt;
+    if (!url) return;
+    setDemoProjectPrompt(null);
+    if (choice === "cancel") return;
+    if (choice === "save") {
+      setDemoProjectSaving(true);
+      try {
+        if (!(await saveProject())) {
+          setDemoProjectPrompt(url);
+          return;
+        }
+      } finally {
+        setDemoProjectSaving(false);
+      }
+    }
+    await startDemoProjectOpen(url);
   };
 
   // Load a project directly from a known URL (e.g. a Project Gallery card's raw
@@ -1621,6 +1686,10 @@ export function useProjectFileActions(mapControllerRef: MapControllerRef) {
     projectUrlDialogOpen,
     setProjectUrlDialogOpen,
     handleProjectUrlDialogOpenChange,
+    openDemoProject,
+    demoProjectPrompt,
+    demoProjectSaving,
+    resolveDemoProjectPrompt,
     projectUrl,
     setProjectUrl,
     projectUrlError,

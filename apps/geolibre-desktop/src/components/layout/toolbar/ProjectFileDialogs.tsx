@@ -106,6 +106,42 @@ export function ProjectFileDialogs({ projectFiles }: ProjectFileDialogsProps) {
           </div>
         </DialogContent>
       </Dialog>
+      {/* The dropped-project prompt above, for a Demos menu pick. */}
+      <Dialog
+        open={projectFiles.demoProjectPrompt !== null}
+        onOpenChange={(open: boolean) => {
+          if (!open) void projectFiles.resolveDemoProjectPrompt("cancel");
+        }}
+      >
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle>{t("toolbar.fileDrop.savePromptTitle")}</DialogTitle>
+            <DialogDescription>{t("toolbar.demos.savePromptDescription")}</DialogDescription>
+          </DialogHeader>
+          <div className="flex justify-end gap-2">
+            <Button
+              variant="outline"
+              disabled={projectFiles.demoProjectSaving}
+              onClick={() => void projectFiles.resolveDemoProjectPrompt("cancel")}
+            >
+              {t("common.cancel")}
+            </Button>
+            <Button
+              variant="secondary"
+              disabled={projectFiles.demoProjectSaving}
+              onClick={() => void projectFiles.resolveDemoProjectPrompt("discard")}
+            >
+              {t("newProject.doNotSave")}
+            </Button>
+            <Button
+              disabled={projectFiles.demoProjectSaving}
+              onClick={() => void projectFiles.resolveDemoProjectPrompt("save")}
+            >
+              {t("common.save")}
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
       <Dialog
         open={projectFiles.projectUrlDialogOpen}
         onOpenChange={projectFiles.handleProjectUrlDialogOpenChange}
