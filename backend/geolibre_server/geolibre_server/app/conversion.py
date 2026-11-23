@@ -286,6 +286,13 @@ def quote_ident(value):
 
 con = duckdb.connect()
 con.execute("INSTALL spatial; LOAD spatial;")
+# DuckDB 2.0 refuses an SRS-tagged GDAL COPY until the axis order is set.
+# DuckDB stores geometry as x/y (lon/lat), so say so. Older DuckDB has no
+# such setting and already writes x/y, so a missing setting is not an error.
+try:
+    con.execute("SET geometry_always_xy = true")
+except duckdb.Error:
+    pass
 
 if source_kind == "csv":
     lon = params["lon_column"]
@@ -454,6 +461,13 @@ def quote_ident(value):
 
 con = duckdb.connect()
 con.execute("INSTALL spatial; LOAD spatial;")
+# DuckDB 2.0 refuses an SRS-tagged GDAL COPY until the axis order is set.
+# DuckDB stores geometry as x/y (lon/lat), so say so. Older DuckDB has no
+# such setting and already writes x/y, so a missing setting is not an error.
+try:
+    con.execute("SET geometry_always_xy = true")
+except duckdb.Error:
+    pass
 
 # Confirm the requested driver can actually be created by this spatial build so
 # an unsupported format fails with a clear, listed error instead of a raw GDAL
@@ -699,6 +713,13 @@ def quote(value):
 
 con = duckdb.connect()
 con.execute("INSTALL spatial; LOAD spatial;")
+# DuckDB 2.0 refuses an SRS-tagged GDAL COPY until the axis order is set.
+# DuckDB stores geometry as x/y (lon/lat), so say so. Older DuckDB has no
+# such setting and already writes x/y, so a missing setting is not an error.
+try:
+    con.execute("SET geometry_always_xy = true")
+except duckdb.Error:
+    pass
 
 low = input_path.lower()
 if low.endswith(".zip"):
@@ -771,6 +792,13 @@ def quote(value):
 
 con = duckdb.connect()
 con.execute("INSTALL spatial; LOAD spatial;")
+# DuckDB 2.0 refuses an SRS-tagged GDAL COPY until the axis order is set.
+# DuckDB stores geometry as x/y (lon/lat), so say so. Older DuckDB has no
+# such setting and already writes x/y, so a missing setting is not an error.
+try:
+    con.execute("SET geometry_always_xy = true")
+except duckdb.Error:
+    pass
 
 if input_path.lower().endswith((".parquet", ".geoparquet")):
     relation = f"read_parquet({quote(input_path)})"
