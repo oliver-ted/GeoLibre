@@ -1,0 +1,912 @@
+{
+  "version": "0.2.0",
+  "name": "Nova Biomedical · Global Network (sample data)",
+  "mapView": {
+    "center": [
+      15,
+      28
+    ],
+    "zoom": 1.6,
+    "pitch": 25,
+    "bearing": 0
+  },
+  "basemapStyleUrl": "https://tiles.openfreemap.org/styles/dark",
+  "basemapVisible": true,
+  "basemapOpacity": 1,
+  "blankBackgroundColor": null,
+  "layers": [
+    {
+      "id": "d1-site-columns",
+      "name": "Nova sites – 3D (height = ERP + CRM users)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#0ea5e9",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 0,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.9,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": true,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.92,
+        "extrusionHeightProperty": "height_m",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": true,
+        "extrusionColorExpression": "[\"get\",\"color\"]",
+        "extrusionHeightExpression": "[\"get\",\"height_m\"]",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.22247,42.3795],[-71.22377,42.38431],[-71.22746,42.38839],[-71.23298,42.39112],[-71.2395,42.39208],[-71.24602,42.39112],[-71.25154,42.38839],[-71.25523,42.38431],[-71.25653,42.3795],[-71.25523,42.37469],[-71.25154,42.37061],[-71.24602,42.36788],[-71.2395,42.36692],[-71.23298,42.36788],[-71.22746,42.37061],[-71.22377,42.37469],[-71.22247,42.3795]]]},"properties":{"code":"WAL","name":"Waltham – Prospect St (HQ & Mfg)","type":"Manufacturing","role":"HQ; makes Critical Care & Bioprocess","status":"Operating","erp_users":118,"crm_users":89,"total_users":207,"ships":"—","height_m":186300,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.25243,42.5585],[-71.25373,42.56331],[-71.25743,42.56739],[-71.26297,42.57012],[-71.2695,42.57108],[-71.27603,42.57012],[-71.28157,42.56739],[-71.28527,42.56331],[-71.28657,42.5585],[-71.28527,42.55369],[-71.28157,42.54961],[-71.27603,42.54688],[-71.2695,42.54592],[-71.26297,42.54688],[-71.25743,42.54961],[-71.25373,42.55369],[-71.25243,42.5585]]]},"properties":{"code":"BIL-E","name":"Billerica – Enterprise Rd (Distribution)","type":"Distribution center","role":"Main DC; ships Critical Care & Bioprocess","status":"Operating","erp_users":42,"crm_users":1,"total_users":43,"ships":"Critical Care & POC, Bioprocess & cell-line","height_m":38700,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.22343,42.5365],[-71.22473,42.54131],[-71.22843,42.54539],[-71.23397,42.54812],[-71.2405,42.54908],[-71.24703,42.54812],[-71.25257,42.54539],[-71.25627,42.54131],[-71.25757,42.5365],[-71.25627,42.53169],[-71.25257,42.52761],[-71.24703,42.52488],[-71.2405,42.52392],[-71.23397,42.52488],[-71.22843,42.52761],[-71.22473,42.53169],[-71.22343,42.5365]]]},"properties":{"code":"BIL-M","name":"Billerica – Manning Rd (Mfg & Warehouse)","type":"Manufacturing","role":"Makes Critical Care test strips","status":"Operating","erp_users":17,"crm_users":6,"total_users":23,"ships":"—","height_m":20700,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.25844,42.5195],[-71.25974,42.52431],[-71.26343,42.52839],[-71.26897,42.53112],[-71.2755,42.53208],[-71.28203,42.53112],[-71.28757,42.52839],[-71.29126,42.52431],[-71.29256,42.5195],[-71.29126,42.51469],[-71.28757,42.51061],[-71.28203,42.50788],[-71.2755,42.50692],[-71.26897,42.50788],[-71.26343,42.51061],[-71.25974,42.51469],[-71.25844,42.5195]]]},"properties":{"code":"BIL-L","name":"Billerica – Lexington Rd (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":36,"crm_users":4,"total_users":40,"ships":"—","height_m":36000,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.08941,42.1735],[-71.09771,42.20444],[-71.12136,42.23067],[-71.15675,42.24819],[-71.1985,42.25435],[-71.24025,42.24819],[-71.27564,42.23067],[-71.29929,42.20444],[-71.30759,42.1735],[-71.29929,42.14256],[-71.27564,42.11633],[-71.24025,42.09881],[-71.1985,42.09265],[-71.15675,42.09881],[-71.12136,42.11633],[-71.09771,42.14256],[-71.08941,42.1735]]]},"properties":{"code":"NOR","name":"Norwood – Technology Way (Mfg & DC)","type":"Distribution center","role":"Ships Osmolality & lab instruments","status":"Operating","erp_users":71,"crm_users":39,"total_users":110,"ships":"Osmolality & lab instruments","height_m":99000,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-70.25921,43.677],[-70.26772,43.70794],[-70.29196,43.73417],[-70.32822,43.75169],[-70.371,43.75785],[-70.41378,43.75169],[-70.45004,43.73417],[-70.47428,43.70794],[-70.48279,43.677],[-70.47428,43.64606],[-70.45004,43.61983],[-70.41378,43.60231],[-70.371,43.59615],[-70.32822,43.60231],[-70.29196,43.61983],[-70.26772,43.64606],[-70.25921,43.677]]]},"properties":{"code":"WES","name":"Westbrook, ME (Mfg & DC)","type":"Distribution center","role":"Ships Liquid-handling QC","status":"Operating","erp_users":27,"crm_users":26,"total_users":53,"ships":"Liquid-handling QC","height_m":47700,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-1.78707,50.805],[-1.79681,50.83594],[-1.82454,50.86217],[-1.86604,50.87969],[-1.915,50.88585],[-1.96396,50.87969],[-2.00546,50.86217],[-2.03319,50.83594],[-2.04293,50.805],[-2.03319,50.77406],[-2.00546,50.74783],[-1.96396,50.73031],[-1.915,50.72415],[-1.86604,50.73031],[-1.82454,50.74783],[-1.79681,50.77406],[-1.78707,50.805]]]},"properties":{"code":"WIM","name":"Wimborne / Ferndown, UK (Mfg & EU Hub)","type":"Distribution center","role":"EU hub; ships all four families","status":"Operating","erp_users":31,"crm_users":79,"total_users":110,"ships":"Critical Care & POC, Osmolality & lab instruments, Liquid-handling QC, Bioprocess & cell-line","height_m":99000,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[121.65423,25.033],[121.64744,25.06394],[121.6281,25.09017],[121.59915,25.10769],[121.565,25.11385],[121.53085,25.10769],[121.5019,25.09017],[121.48256,25.06394],[121.47577,25.033],[121.48256,25.00206],[121.5019,24.97583],[121.53085,24.95831],[121.565,24.95215],[121.59915,24.95831],[121.6281,24.97583],[121.64744,25.00206],[121.65423,25.033]]]},"properties":{"code":"TPE","name":"Taipei, Taiwan (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":0,"crm_users":0,"total_users":0,"ships":"—","height_m":10800,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-43.76097,-19.985],[-43.76752,-19.95406],[-43.78617,-19.92783],[-43.81408,-19.91031],[-43.847,-19.90415],[-43.87992,-19.91031],[-43.90783,-19.92783],[-43.92648,-19.95406],[-43.93303,-19.985],[-43.92648,-20.01594],[-43.90783,-20.04217],[-43.87992,-20.05969],[-43.847,-20.06585],[-43.81408,-20.05969],[-43.78617,-20.04217],[-43.76752,-20.01594],[-43.76097,-19.985]]]},"properties":{"code":"BRA","name":"Nova Lima, Brazil (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Brazil","status":"Operating","erp_users":0,"crm_users":20,"total_users":20,"ships":"Critical Care & POC","height_m":18000,"color":"#14b8a6"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-79.53238,43.589],[-79.54088,43.61994],[-79.56507,43.64617],[-79.60128,43.66369],[-79.644,43.66985],[-79.68672,43.66369],[-79.72293,43.64617],[-79.74712,43.61994],[-79.75562,43.589],[-79.74712,43.55806],[-79.72293,43.53183],[-79.68672,43.51431],[-79.644,43.50815],[-79.60128,43.51431],[-79.56507,43.53183],[-79.54088,43.55806],[-79.53238,43.589]]]},"properties":{"code":"CAN","name":"Ontario, Canada (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Canada","status":"Operating","erp_users":6,"crm_users":36,"total_users":42,"ships":"Critical Care & POC","height_m":37800,"color":"#14b8a6"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[8.69275,49.99],[8.68318,50.02094],[8.65592,50.04717],[8.61512,50.06469],[8.567,50.07085],[8.51888,50.06469],[8.47808,50.04717],[8.45082,50.02094],[8.44125,49.99],[8.45082,49.95906],[8.47808,49.93283],[8.51888,49.91531],[8.567,49.90915],[8.61512,49.91531],[8.65592,49.93283],[8.68318,49.95906],[8.69275,49.99]]]},"properties":{"code":"GER","name":"Germany (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to DE, FR, IT, CH, NL, ES","status":"Operating","erp_users":7,"crm_users":52,"total_users":59,"ships":"Critical Care & POC","height_m":53100,"color":"#14b8a6"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[2.29145,48.682],[2.28213,48.71294],[2.25559,48.73917],[2.21586,48.75669],[2.169,48.76285],[2.12214,48.75669],[2.08241,48.73917],[2.05587,48.71294],[2.04655,48.682],[2.05587,48.65106],[2.08241,48.62483],[2.12214,48.60731],[2.169,48.60115],[2.21586,48.60731],[2.25559,48.62483],[2.28213,48.65106],[2.29145,48.682]]]},"properties":{"code":"FRA","name":"France (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":50,"total_users":56,"ships":"—","height_m":50400,"color":"#64748b"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[9.14549,45.57],[9.1367,45.60094],[9.11166,45.62717],[9.0742,45.64469],[9.03,45.65085],[8.9858,45.64469],[8.94834,45.62717],[8.9233,45.60094],[8.91451,45.57],[8.9233,45.53906],[8.94834,45.51283],[8.9858,45.49531],[9.03,45.48915],[9.0742,45.49531],[9.11166,45.51283],[9.1367,45.53906],[9.14549,45.57]]]},"properties":{"code":"ITA","name":"Italy (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":27,"total_users":33,"ships":"—","height_m":29700,"color":"#64748b"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[139.8505,35.658],[139.84293,35.68894],[139.82136,35.71517],[139.78908,35.73269],[139.751,35.73885],[139.71292,35.73269],[139.68064,35.71517],[139.65907,35.68894],[139.6515,35.658],[139.65907,35.62706],[139.68064,35.60083],[139.71292,35.58331],[139.751,35.57715],[139.78908,35.58331],[139.82136,35.60083],[139.84293,35.62706],[139.8505,35.658]]]},"properties":{"code":"JPN","name":"Japan (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Japan","status":"Operating","erp_users":7,"crm_users":31,"total_users":38,"ships":"Critical Care & POC","height_m":34200,"color":"#14b8a6"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[151.28029,-33.797],[151.27288,-33.76606],[151.25179,-33.73983],[151.22023,-33.72231],[151.183,-33.71615],[151.14577,-33.72231],[151.11421,-33.73983],[151.09312,-33.76606],[151.08571,-33.797],[151.09312,-33.82794],[151.11421,-33.85417],[151.14577,-33.87169],[151.183,-33.87785],[151.22023,-33.87169],[151.25179,-33.85417],[151.27288,-33.82794],[151.28029,-33.797]]]},"properties":{"code":"AUS","name":"Australia – Chatswood (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Australia","status":"Operating","erp_users":4,"crm_users":17,"total_users":21,"ships":"Critical Care & POC","height_m":18900,"color":"#14b8a6"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "type",
+            "label": "Type"
+          },
+          {
+            "field": "role",
+            "label": "Role in network"
+          },
+          {
+            "field": "status",
+            "label": "Status"
+          },
+          {
+            "field": "erp_users",
+            "label": "ERP users"
+          },
+          {
+            "field": "crm_users",
+            "label": "CRM users"
+          },
+          {
+            "field": "ships",
+            "label": "Ships"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d1-customers",
+      "name": "Customers (sample) – by product family",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.95,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "family",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Critical Care & POC",
+            "color": "#38bdf8",
+            "label": "Critical Care & POC"
+          },
+          {
+            "value": "Osmolality & lab instruments",
+            "color": "#a78bfa",
+            "label": "Osmolality & lab instruments"
+          },
+          {
+            "value": "Liquid-handling QC",
+            "color": "#34d399",
+            "label": "Liquid-handling QC"
+          },
+          {
+            "value": "Bioprocess & cell-line",
+            "color": "#fb923c",
+            "label": "Bioprocess & cell-line"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": true,
+        "proportionalSizeProperty": "weekly_shipments",
+        "proportionalSizeMinValue": 2,
+        "proportionalSizeMaxValue": 17,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 11,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.0589,42.3601]},"properties":{"id":"C01","name":"Boston, MA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":15,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":348,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1097,42.3736]},"properties":{"id":"C02","name":"Cambridge, MA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock BIO","weekly_freight_usd":208,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2245,42.4473]},"properties":{"id":"C03","name":"Lexington, MA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BIL-E","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":113,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.8023,42.2626]},"properties":{"id":"C04","name":"Worcester, MA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":171,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4128,41.824]},"properties":{"id":"C05","name":"Providence, RI","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":154,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.6734,41.7658]},"properties":{"id":"C06","name":"Hartford, CT","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":142,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4548,42.9956]},"properties":{"id":"C07","name":"Manchester, NH","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BIL-E","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":97,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2568,43.6591]},"properties":{"id":"C08","name":"Portland, ME","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WES","optimal_not_nearest":1,"why":"Nearest node (WES) does not stock CC","weekly_freight_usd":142,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.006,40.7128]},"properties":{"id":"C09","name":"New York, NY","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":17,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":602,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.1652,39.9526]},"properties":{"id":"C10","name":"Philadelphia, PA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":12,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":493,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.6122,39.2904]},"properties":{"id":"C11","name":"Baltimore, MD","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":425,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.0369,38.9072]},"properties":{"id":"C12","name":"Washington, DC","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":4,"served_from":"NOR","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock OSM","weekly_freight_usd":199,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.9959,40.4406]},"properties":{"id":"C13","name":"Pittsburgh, PA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":277,"weekly_co2e_kg":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.6944,41.4993]},"properties":{"id":"C14","name":"Cleveland, OH","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":8,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":480,"weekly_co2e_kg":10}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.6298,41.8781]},"properties":{"id":"C15","name":"Chicago, IL","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":14,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1133,"weekly_co2e_kg":26}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-83.0458,42.3314]},"properties":{"id":"C16","name":"Detroit, MI","segment":"Reference lab","family":"Liquid-handling QC","weekly_shipments":3,"served_from":"WES","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock LHQ","weekly_freight_usd":206,"weekly_co2e_kg":4}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-93.265,44.9778]},"properties":{"id":"C17","name":"Minneapolis, MN","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":935,"weekly_co2e_kg":145}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.388,33.749]},"properties":{"id":"C18","name":"Atlanta, GA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":791,"weekly_co2e_kg":19}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.1918,25.7617]},"properties":{"id":"C19","name":"Miami, FL","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1199,"weekly_co2e_kg":194}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.7816,36.1627]},"properties":{"id":"C20","name":"Nashville, TN","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":440,"weekly_co2e_kg":10}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.3698,29.7604]},"properties":{"id":"C21","name":"Houston, TX","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":12,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":2442,"weekly_co2e_kg":420}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.797,32.7767]},"properties":{"id":"C22","name":"Dallas, TX","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":5,"served_from":"NOR","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock OSM","weekly_freight_usd":993,"weekly_co2e_kg":168}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.9903,39.7392]},"properties":{"id":"C23","name":"Denver, CO","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1092,"weekly_co2e_kg":192}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.074,33.4484]},"properties":{"id":"C24","name":"Phoenix, AZ","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1618,"weekly_co2e_kg":300}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.2437,34.0522]},"properties":{"id":"C25","name":"Los Angeles, CA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":13,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":3875,"weekly_co2e_kg":734}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.1611,32.7157]},"properties":{"id":"C26","name":"San Diego, CA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":7,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":2079,"weekly_co2e_kg":393}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.4194,37.7749]},"properties":{"id":"C27","name":"San Francisco, CA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":9,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":2770,"weekly_co2e_kg":528}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.3321,47.6062]},"properties":{"id":"C28","name":"Seattle, WA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1725,"weekly_co2e_kg":324}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.8986,35.994]},"properties":{"id":"C29","name":"Research Triangle, NC","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":6,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":390,"weekly_co2e_kg":8}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.1994,38.627]},"properties":{"id":"C30","name":"St. Louis, MO","segment":"Reference lab","family":"Liquid-handling QC","weekly_shipments":3,"served_from":"WES","mode":"Ground","transit_days":3,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock LHQ","weekly_freight_usd":298,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.3832,43.6532]},"properties":{"id":"C31","name":"Toronto, ON","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"CAN","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":189,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.5673,45.5017]},"properties":{"id":"C32","name":"Montreal, QC","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WES","optimal_not_nearest":1,"why":"Nearest node (WES) does not stock CC","weekly_freight_usd":192,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-123.1207,49.2827]},"properties":{"id":"C33","name":"Vancouver, BC","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"CAN","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":1014,"weekly_co2e_kg":182}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.1278,51.5074]},"properties":{"id":"C34","name":"London, UK","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":8,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":235,"weekly_co2e_kg":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.2426,53.4808]},"properties":{"id":"C35","name":"Manchester, UK","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":3,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":108,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.6821,50.1109]},"properties":{"id":"C36","name":"Frankfurt, Germany","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"GER","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":160,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.582,48.1351]},"properties":{"id":"C37","name":"Munich, Germany","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":4,"served_from":"WIM","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":270,"weekly_co2e_kg":6}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.3522,48.8566]},"properties":{"id":"C38","name":"Paris, France","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":276,"weekly_co2e_kg":4}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.19,45.4642]},"properties":{"id":"C39","name":"Milan, Italy","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"GER","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":241,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[4.497,52.1601]},"properties":{"id":"C40","name":"Leiden, Netherlands","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":4,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":174,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.5886,47.5596]},"properties":{"id":"C41","name":"Basel, Switzerland","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":5,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":285,"weekly_co2e_kg":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.7038,40.4168]},"properties":{"id":"C42","name":"Madrid, Spain","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"WIM","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":369,"weekly_co2e_kg":8}},{"type":"Feature","geometry":{"type":"Point","coordinates":[139.6503,35.6762]},"properties":{"id":"C43","name":"Tokyo, Japan","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"JPN","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"JPN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":158,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[135.5023,34.6937]},"properties":{"id":"C44","name":"Osaka, Japan","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":2,"served_from":"WIM","mode":"International air","transit_days":4,"sla_days":5,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"JPN","optimal_not_nearest":1,"why":"Nearest node (JPN) does not stock OSM","weekly_freight_usd":1599,"weekly_co2e_kg":220}},{"type":"Feature","geometry":{"type":"Point","coordinates":[126.978,37.5665]},"properties":{"id":"C45","name":"Seoul, South Korea","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":3,"served_from":"WIM","mode":"International air","transit_days":4,"sla_days":3,"sla_status":"SLA at risk","within_sla_pct":0,"nearest_node":"JPN","optimal_not_nearest":1,"why":"Nearest node (JPN) only serves JP","weekly_freight_usd":2264,"weekly_co2e_kg":308}},{"type":"Feature","geometry":{"type":"Point","coordinates":[151.2093,-33.8688]},"properties":{"id":"C46","name":"Sydney, Australia","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"AUS","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"AUS","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":105,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-46.6333,-23.5505]},"properties":{"id":"C47","name":"São Paulo, Brazil","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"BRA","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BRA","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":190,"weekly_co2e_kg":3}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "segment",
+            "label": "Segment"
+          },
+          {
+            "field": "family",
+            "label": "Product family"
+          },
+          {
+            "field": "weekly_shipments",
+            "label": "Weekly shipments"
+          },
+          {
+            "field": "served_from",
+            "label": "Optimal source"
+          },
+          {
+            "field": "mode",
+            "label": "Mode"
+          },
+          {
+            "field": "transit_days",
+            "label": "Transit (days)"
+          },
+          {
+            "field": "sla_days",
+            "label": "SLA (days)"
+          },
+          {
+            "field": "sla_status",
+            "label": "Status"
+          },
+          {
+            "field": "nearest_node",
+            "label": "Nearest node"
+          },
+          {
+            "field": "why",
+            "label": "Why this source"
+          },
+          {
+            "field": "weekly_freight_usd",
+            "label": "Weekly freight (USD)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d1-suppliers",
+      "name": "Suppliers (sample)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#fef3c7",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 7,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "risk",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Single source + long lead",
+            "color": "#ef4444",
+            "label": "Single source + long lead"
+          },
+          {
+            "value": "Long lead time",
+            "color": "#f97316",
+            "label": "Long lead time"
+          },
+          {
+            "value": "Single source",
+            "color": "#facc15",
+            "label": "Single source"
+          },
+          {
+            "value": "Low risk",
+            "color": "#a3a3a3",
+            "label": "Low risk"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[100.3288,5.4141]},"properties":{"name":"Electronic PCB assemblies · Penang, Malaysia","material":"Electronic PCB assemblies","location":"Penang, Malaysia","receiving_site":"BIL-M","mode":"Ocean","lead_time_days":39,"weekly_volume":6,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[120.9675,24.8138]},"properties":{"name":"Sensor chips · Hsinchu, Taiwan","material":"Sensor chips","location":"Hsinchu, Taiwan","receiving_site":"WAL","mode":"Ocean","lead_time_days":36,"weekly_volume":4,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.7598,42.5251]},"properties":{"name":"Injection-molded plastics · Leominster, MA","material":"Injection-molded plastics","location":"Leominster, MA","receiving_site":"BIL-L","mode":"Ground","lead_time_days":1,"weekly_volume":20,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.1994,38.627]},"properties":{"name":"Reagent chemicals · St. Louis, MO","material":"Reagent chemicals","location":"St. Louis, MO","receiving_site":"WAL","mode":"Ground","lead_time_days":3,"weekly_volume":12,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.0257,39.4864]},"properties":{"name":"Glass vials & calibration fluids · Vineland, NJ","material":"Glass vials & calibration fluids","location":"Vineland, NJ","receiving_site":"BIL-L","mode":"Ground","lead_time_days":1,"weekly_volume":14,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4676,42.7654]},"properties":{"name":"Packaging & corrugate · Nashua, NH","material":"Packaging & corrugate","location":"Nashua, NH","receiving_site":"BIL-E","mode":"Ground","lead_time_days":1,"weekly_volume":25,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.6088,43.1566]},"properties":{"name":"Precision optics · Rochester, NY","material":"Precision optics","location":"Rochester, NY","receiving_site":"NOR","mode":"Ground","lead_time_days":1,"weekly_volume":5,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.1916,39.7589]},"properties":{"name":"Thermoelectric modules · Dayton, OH","material":"Thermoelectric modules","location":"Dayton, OH","receiving_site":"NOR","mode":"Ground","lead_time_days":2,"weekly_volume":6,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2148,44.1004]},"properties":{"name":"Photometric dyes · Lewiston, ME","material":"Photometric dyes","location":"Lewiston, ME","receiving_site":"WES","mode":"Ground","lead_time_days":1,"weekly_volume":4,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.0382,32.5149]},"properties":{"name":"Labware & pipette tips · Tijuana, Mexico","material":"Labware & pipette tips","location":"Tijuana, Mexico","receiving_site":"WES","mode":"Ground","lead_time_days":7,"weekly_volume":10,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.5892,50.9271]},"properties":{"name":"Imaging sensors · Jena, Germany","material":"Imaging sensors","location":"Jena, Germany","receiving_site":"WIM","mode":"Ground","lead_time_days":2,"weekly_volume":3,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-9.0568,53.2707]},"properties":{"name":"Microfluidic consumables · Galway, Ireland","material":"Microfluidic consumables","location":"Galway, Ireland","receiving_site":"WIM","mode":"Ground","lead_time_days":1,"weekly_volume":8,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[114.0579,22.5431]},"properties":{"name":"Motors & actuators · Shenzhen, China","material":"Motors & actuators","location":"Shenzhen, China","receiving_site":"BIL-M","mode":"Ocean","lead_time_days":36,"weekly_volume":5,"single_source":"No","risk":"Long lead time","flags":"Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[120.5853,31.2989]},"properties":{"name":"Lithium cells (handheld meters) · Suzhou, China","material":"Lithium cells (handheld meters)","location":"Suzhou, China","receiving_site":"BIL-L","mode":"Ocean","lead_time_days":35,"weekly_volume":3,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "material",
+            "label": "Material"
+          },
+          {
+            "field": "location",
+            "label": "Ships from"
+          },
+          {
+            "field": "receiving_site",
+            "label": "Receiving site"
+          },
+          {
+            "field": "mode",
+            "label": "Mode"
+          },
+          {
+            "field": "lead_time_days",
+            "label": "Lead time (days)"
+          },
+          {
+            "field": "single_source",
+            "label": "Single source"
+          },
+          {
+            "field": "flags",
+            "label": "Risk flags"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d1-site-markers",
+      "name": "Nova sites",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": true,
+          "field": "code",
+          "expression": "",
+          "placement": "point",
+          "size": 12,
+          "color": "#e2e8f0",
+          "haloColor": "#0f172a",
+          "haloWidth": 1.5,
+          "minZoom": 3.5,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "top",
+          "offsetX": 0,
+          "offsetY": 1,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "type",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Manufacturing",
+            "color": "#e5e7eb",
+            "label": "Manufacturing"
+          },
+          {
+            "value": "Distribution center",
+            "color": "#0ea5e9",
+            "label": "Distribution center"
+          },
+          {
+            "value": "Forward stocking",
+            "color": "#14b8a6",
+            "label": "Forward stocking"
+          },
+          {
+            "value": "Office",
+            "color": "#64748b",
+            "label": "Office"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2395,42.3795]},"properties":{"code":"WAL","name":"Waltham – Prospect St (HQ & Mfg)","type":"Manufacturing","role":"HQ; makes Critical Care & Bioprocess","status":"Operating","erp_users":118,"crm_users":89,"total_users":207,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2695,42.5585]},"properties":{"code":"BIL-E","name":"Billerica – Enterprise Rd (Distribution)","type":"Distribution center","role":"Main DC; ships Critical Care & Bioprocess","status":"Operating","erp_users":42,"crm_users":1,"total_users":43,"ships":"Critical Care & POC, Bioprocess & cell-line"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2405,42.5365]},"properties":{"code":"BIL-M","name":"Billerica – Manning Rd (Mfg & Warehouse)","type":"Manufacturing","role":"Makes Critical Care test strips","status":"Operating","erp_users":17,"crm_users":6,"total_users":23,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2755,42.5195]},"properties":{"code":"BIL-L","name":"Billerica – Lexington Rd (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":36,"crm_users":4,"total_users":40,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1985,42.1735]},"properties":{"code":"NOR","name":"Norwood – Technology Way (Mfg & DC)","type":"Distribution center","role":"Ships Osmolality & lab instruments","status":"Operating","erp_users":71,"crm_users":39,"total_users":110,"ships":"Osmolality & lab instruments"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.371,43.677]},"properties":{"code":"WES","name":"Westbrook, ME (Mfg & DC)","type":"Distribution center","role":"Ships Liquid-handling QC","status":"Operating","erp_users":27,"crm_users":26,"total_users":53,"ships":"Liquid-handling QC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.915,50.805]},"properties":{"code":"WIM","name":"Wimborne / Ferndown, UK (Mfg & EU Hub)","type":"Distribution center","role":"EU hub; ships all four families","status":"Operating","erp_users":31,"crm_users":79,"total_users":110,"ships":"Critical Care & POC, Osmolality & lab instruments, Liquid-handling QC, Bioprocess & cell-line"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[121.565,25.033]},"properties":{"code":"TPE","name":"Taipei, Taiwan (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":0,"crm_users":0,"total_users":0,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-43.847,-19.985]},"properties":{"code":"BRA","name":"Nova Lima, Brazil (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Brazil","status":"Operating","erp_users":0,"crm_users":20,"total_users":20,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.644,43.589]},"properties":{"code":"CAN","name":"Ontario, Canada (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Canada","status":"Operating","erp_users":6,"crm_users":36,"total_users":42,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.567,49.99]},"properties":{"code":"GER","name":"Germany (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to DE, FR, IT, CH, NL, ES","status":"Operating","erp_users":7,"crm_users":52,"total_users":59,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.169,48.682]},"properties":{"code":"FRA","name":"France (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":50,"total_users":56,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.03,45.57]},"properties":{"code":"ITA","name":"Italy (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":27,"total_users":33,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[139.751,35.658]},"properties":{"code":"JPN","name":"Japan (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Japan","status":"Operating","erp_users":7,"crm_users":31,"total_users":38,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[151.183,-33.797]},"properties":{"code":"AUS","name":"Australia – Chatswood (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Australia","status":"Operating","erp_users":4,"crm_users":17,"total_users":21,"ships":"Critical Care & POC"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "type",
+            "label": "Type"
+          },
+          {
+            "field": "role",
+            "label": "Role in network"
+          },
+          {
+            "field": "status",
+            "label": "Status"
+          },
+          {
+            "field": "erp_users",
+            "label": "ERP users"
+          },
+          {
+            "field": "crm_users",
+            "label": "CRM users"
+          },
+          {
+            "field": "ships",
+            "label": "Ships"
+          }
+        ]
+      }
+    }
+  ],
+  "layerGroups": [],
+  "styles": {},
+  "preferences": {
+    "map": {
+      "restrictBounds": false,
+      "bounds": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "minZoom": 0,
+      "maxZoom": 24,
+      "maxPitch": 85,
+      "renderWorldCopies": true,
+      "projection": "mercator",
+      "ellipsoidId": "earth",
+      "scaleUnit": "metric",
+      "showPointerElevation": false,
+      "terrainEnabled": false,
+      "coordinateFormat": "dd",
+      "mapboxStyleUrl": "mapbox://styles/mapbox/standard",
+      "arcgisBasemap": "arcgis/streets",
+      "cesiumBasemap": "bing-aerial"
+    },
+    "environmentVariables": [],
+    "geocoding": {
+      "providerId": "nominatim",
+      "apiKeys": {}
+    }
+  },
+  "legend": {
+    "title": "Nova network · sample data",
+    "groupByLayer": true,
+    "order": [],
+    "overrides": {},
+    "panelVisible": true,
+    "panelPosition": "bottom-right"
+  },
+  "comments": [],
+  "metadata": {
+    "description": "Nova sites as 3D columns, sample customers by product family and sample suppliers by risk.",
+    "sampleData": true,
+    "generatedBy": "scripts/gen-nova-demos.ts"
+  },
+  "storymap": {
+    "title": "Nova Biomedical Global Network",
+    "subtitle": "Supply Chain Control Tower · Network visibility",
+    "byline": "Geoverse · Powered by Aether AI",
+    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
+    "theme": "dark",
+    "showMarkers": false,
+    "markerColor": "#38bdf8",
+    "inset": false,
+    "insetPosition": "bottom-left",
+    "hideChapterNav": false,
+    "startSlide": "none",
+    "endSlide": "none",
+    "chapters": [
+      {
+        "id": "world",
+        "title": "One map of the whole Nova network",
+        "description": "<p>15 Nova sites, 47 customers and 14 suppliers on one 3D map. Column height shows ERP + CRM users at each site, a proxy for site activity.</p><p>Customers are coloured by product family and sized by weekly shipments. Suppliers are coloured by risk.</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            15,
+            28
+          ],
+          "zoom": 1.6,
+          "pitch": 25,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "na",
+        "title": "North America: where most of the business runs",
+        "description": "<p>81% of ERP users sit in North America. Customers span every major US metro and three Canadian hubs, served from the Massachusetts core and the Ontario forward stocking location.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -90,
+            38
+          ],
+          "zoom": 3.3,
+          "pitch": 45,
+          "bearing": -10
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "ne",
+        "title": "The Massachusetts ERP core",
+        "description": "<p>Waltham HQ, three Billerica sites, Norwood and Westbrook, ME carry manufacturing, warehousing and finance. Billerica – Enterprise Rd is the main distribution centre for Critical Care and Bioprocess.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -71.35,
+            42.45
+          ],
+          "zoom": 7.6,
+          "pitch": 58,
+          "bearing": -18
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "eu",
+        "title": "Europe: the UK hub and the German FSL",
+        "description": "<p>Wimborne / Ferndown is the EU hub for all four product families. The German subsidiary forward-stocks Critical Care for six countries; France and Italy are sales and service offices.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            4,
+            49
+          ],
+          "zoom": 4.2,
+          "pitch": 45,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "apac",
+        "title": "Asia-Pacific",
+        "description": "<p>Taipei manufactures Critical Care. Japan and Australia forward-stock it for their own markets. Korea has no local node, which is the structural gap shown in the next demos.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            128,
+            10
+          ],
+          "zoom": 2.6,
+          "pitch": 35,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      }
+    ]
+  }
+}
