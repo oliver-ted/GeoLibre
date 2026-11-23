@@ -1,0 +1,1548 @@
+{
+  "version": "0.2.0",
+  "name": "Nova Biomedical · Supplier Lane Risk (sample data)",
+  "mapView": {
+    "center": [
+      40,
+      30
+    ],
+    "zoom": 1.5,
+    "pitch": 20,
+    "bearing": 0
+  },
+  "basemapStyleUrl": "https://tiles.openfreemap.org/styles/dark",
+  "basemapVisible": true,
+  "basemapOpacity": 1,
+  "blankBackgroundColor": null,
+  "layers": [
+    {
+      "id": "d4-lanes-ok",
+      "name": "Other inbound lanes (7)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "o_lng": -71.7598,
+            "o_lat": 42.5251,
+            "d_lng": -71.2755,
+            "d_lat": 42.5195
+          },
+          {
+            "o_lng": -90.1994,
+            "o_lat": 38.627,
+            "d_lng": -71.2395,
+            "d_lat": 42.3795
+          },
+          {
+            "o_lng": -75.0257,
+            "o_lat": 39.4864,
+            "d_lng": -71.2755,
+            "d_lat": 42.5195
+          },
+          {
+            "o_lng": -71.4676,
+            "o_lat": 42.7654,
+            "d_lng": -71.2695,
+            "d_lat": 42.5585
+          },
+          {
+            "o_lng": -84.1916,
+            "o_lat": 39.7589,
+            "d_lng": -71.1985,
+            "d_lat": 42.1735
+          },
+          {
+            "o_lng": -117.0382,
+            "o_lat": 32.5149,
+            "d_lng": -70.371,
+            "d_lat": 43.677
+          },
+          {
+            "o_lng": -9.0568,
+            "o_lat": 53.2707,
+            "d_lng": -1.915,
+            "d_lat": 50.805
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#f59e0b",
+        "strokeColor": "#f59e0b",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "arc",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "arc",
+          "format": "csv-rows",
+          "fieldMapping": {
+            "sourceLng": "o_lng",
+            "sourceLat": "o_lat",
+            "targetLng": "d_lng",
+            "targetLat": "d_lat"
+          },
+          "style": {
+            "color": "#f59e0b",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 1.5,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d4-lanes-flagged",
+      "name": "Flagged inbound lanes (7) – single source / long lead",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "o_lng": 100.3288,
+            "o_lat": 5.4141,
+            "d_lng": -71.2405,
+            "d_lat": 42.5365
+          },
+          {
+            "o_lng": 120.9675,
+            "o_lat": 24.8138,
+            "d_lng": -71.2395,
+            "d_lat": 42.3795
+          },
+          {
+            "o_lng": -77.6088,
+            "o_lat": 43.1566,
+            "d_lng": -71.1985,
+            "d_lat": 42.1735
+          },
+          {
+            "o_lng": -70.2148,
+            "o_lat": 44.1004,
+            "d_lng": -70.371,
+            "d_lat": 43.677
+          },
+          {
+            "o_lng": 11.5892,
+            "o_lat": 50.9271,
+            "d_lng": -1.915,
+            "d_lat": 50.805
+          },
+          {
+            "o_lng": 114.0579,
+            "o_lat": 22.5431,
+            "d_lng": -71.2405,
+            "d_lat": 42.5365
+          },
+          {
+            "o_lng": 120.5853,
+            "o_lat": 31.2989,
+            "d_lng": -71.2755,
+            "d_lat": 42.5195
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#ef4444",
+        "strokeColor": "#ef4444",
+        "strokeWidth": 3,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "arc",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "arc",
+          "format": "csv-rows",
+          "fieldMapping": {
+            "sourceLng": "o_lng",
+            "sourceLat": "o_lat",
+            "targetLng": "d_lng",
+            "targetLat": "d_lat"
+          },
+          "style": {
+            "color": "#ef4444",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 3,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d4-voyages",
+      "name": "Ocean shipments in transit (animated)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "path": [
+              [
+                100.33,
+                5.41
+              ],
+              [
+                97.5,
+                6
+              ],
+              [
+                80.5,
+                5.7
+              ],
+              [
+                60,
+                13
+              ],
+              [
+                51,
+                12.5
+              ],
+              [
+                43.4,
+                12.6
+              ],
+              [
+                38.5,
+                20
+              ],
+              [
+                32.6,
+                29.9
+              ],
+              [
+                32.3,
+                31.3
+              ],
+              [
+                20,
+                34.5
+              ],
+              [
+                10.5,
+                37.5
+              ],
+              [
+                -5.6,
+                35.95
+              ],
+              [
+                -20,
+                37
+              ],
+              [
+                -45,
+                40.5
+              ],
+              [
+                -65,
+                41.5
+              ],
+              [
+                -70.5,
+                42.35
+              ],
+              [
+                -71.2405,
+                42.5365
+              ]
+            ],
+            "timestamps": [
+              0,
+              21,
+              143,
+              298,
+              361,
+              415,
+              478,
+              559,
+              569,
+              647,
+              707,
+              801,
+              884,
+              1027,
+              1136,
+              1166,
+              1170
+            ]
+          },
+          {
+            "path": [
+              [
+                120.97,
+                24.81
+              ],
+              [
+                119.5,
+                22
+              ],
+              [
+                113.5,
+                14
+              ],
+              [
+                105.5,
+                3.5
+              ],
+              [
+                103.8,
+                1.2
+              ],
+              [
+                97.5,
+                6
+              ],
+              [
+                80.5,
+                5.7
+              ],
+              [
+                60,
+                13
+              ],
+              [
+                51,
+                12.5
+              ],
+              [
+                43.4,
+                12.6
+              ],
+              [
+                38.5,
+                20
+              ],
+              [
+                32.6,
+                29.9
+              ],
+              [
+                32.3,
+                31.3
+              ],
+              [
+                20,
+                34.5
+              ],
+              [
+                10.5,
+                37.5
+              ],
+              [
+                -5.6,
+                35.95
+              ],
+              [
+                -20,
+                37
+              ],
+              [
+                -45,
+                40.5
+              ],
+              [
+                -65,
+                41.5
+              ],
+              [
+                -70.5,
+                42.35
+              ],
+              [
+                -71.2395,
+                42.3795
+              ]
+            ],
+            "timestamps": [
+              120,
+              137,
+              191,
+              264,
+              279,
+              323,
+              416,
+              534,
+              583,
+              624,
+              672,
+              734,
+              742,
+              801,
+              847,
+              918,
+              982,
+              1091,
+              1174,
+              1197,
+              1200
+            ]
+          },
+          {
+            "path": [
+              [
+                114.06,
+                22.54
+              ],
+              [
+                113.5,
+                14
+              ],
+              [
+                105.5,
+                3.5
+              ],
+              [
+                103.8,
+                1.2
+              ],
+              [
+                97.5,
+                6
+              ],
+              [
+                80.5,
+                5.7
+              ],
+              [
+                60,
+                13
+              ],
+              [
+                51,
+                12.5
+              ],
+              [
+                43.4,
+                12.6
+              ],
+              [
+                38.5,
+                20
+              ],
+              [
+                32.6,
+                29.9
+              ],
+              [
+                32.3,
+                31.3
+              ],
+              [
+                20,
+                34.5
+              ],
+              [
+                10.5,
+                37.5
+              ],
+              [
+                -5.6,
+                35.95
+              ],
+              [
+                -20,
+                37
+              ],
+              [
+                -45,
+                40.5
+              ],
+              [
+                -65,
+                41.5
+              ],
+              [
+                -70.5,
+                42.35
+              ],
+              [
+                -71.2405,
+                42.5365
+              ]
+            ],
+            "timestamps": [
+              240,
+              288,
+              362,
+              378,
+              423,
+              518,
+              639,
+              689,
+              730,
+              780,
+              843,
+              851,
+              912,
+              958,
+              1032,
+              1097,
+              1208,
+              1293,
+              1317,
+              1320
+            ]
+          },
+          {
+            "path": [
+              [
+                120.59,
+                31.3
+              ],
+              [
+                122.5,
+                30
+              ],
+              [
+                121,
+                24
+              ],
+              [
+                113.5,
+                14
+              ],
+              [
+                105.5,
+                3.5
+              ],
+              [
+                103.8,
+                1.2
+              ],
+              [
+                97.5,
+                6
+              ],
+              [
+                80.5,
+                5.7
+              ],
+              [
+                60,
+                13
+              ],
+              [
+                51,
+                12.5
+              ],
+              [
+                43.4,
+                12.6
+              ],
+              [
+                38.5,
+                20
+              ],
+              [
+                32.6,
+                29.9
+              ],
+              [
+                32.3,
+                31.3
+              ],
+              [
+                20,
+                34.5
+              ],
+              [
+                10.5,
+                37.5
+              ],
+              [
+                -5.6,
+                35.95
+              ],
+              [
+                -20,
+                37
+              ],
+              [
+                -45,
+                40.5
+              ],
+              [
+                -65,
+                41.5
+              ],
+              [
+                -70.5,
+                42.35
+              ],
+              [
+                -71.2755,
+                42.5195
+              ]
+            ],
+            "timestamps": [
+              360,
+              371,
+              402,
+              466,
+              533,
+              548,
+              589,
+              676,
+              787,
+              832,
+              870,
+              916,
+              974,
+              981,
+              1037,
+              1079,
+              1146,
+              1206,
+              1308,
+              1385,
+              1407,
+              1410
+            ]
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#fbbf24",
+        "strokeColor": "#fbbf24",
+        "strokeWidth": 5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "trips",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "trips",
+          "format": "json-objects",
+          "fieldMapping": {
+            "path": "path",
+            "timestamps": "timestamps"
+          },
+          "style": {
+            "color": "#fbbf24",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 5,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d4-site-markers",
+      "name": "Nova sites",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": true,
+          "field": "code",
+          "expression": "",
+          "placement": "point",
+          "size": 12,
+          "color": "#e2e8f0",
+          "haloColor": "#0f172a",
+          "haloWidth": 1.5,
+          "minZoom": 5,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "top",
+          "offsetX": 0,
+          "offsetY": 1,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "type",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Manufacturing",
+            "color": "#e5e7eb",
+            "label": "Manufacturing"
+          },
+          {
+            "value": "Distribution center",
+            "color": "#0ea5e9",
+            "label": "Distribution center"
+          },
+          {
+            "value": "Forward stocking",
+            "color": "#14b8a6",
+            "label": "Forward stocking"
+          },
+          {
+            "value": "Office",
+            "color": "#64748b",
+            "label": "Office"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2395,42.3795]},"properties":{"code":"WAL","name":"Waltham – Prospect St (HQ & Mfg)","type":"Manufacturing","role":"HQ; makes Critical Care & Bioprocess","status":"Operating","erp_users":118,"crm_users":89,"total_users":207,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2695,42.5585]},"properties":{"code":"BIL-E","name":"Billerica – Enterprise Rd (Distribution)","type":"Distribution center","role":"Main DC; ships Critical Care & Bioprocess","status":"Operating","erp_users":42,"crm_users":1,"total_users":43,"ships":"Critical Care & POC, Bioprocess & cell-line"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2405,42.5365]},"properties":{"code":"BIL-M","name":"Billerica – Manning Rd (Mfg & Warehouse)","type":"Manufacturing","role":"Makes Critical Care test strips","status":"Operating","erp_users":17,"crm_users":6,"total_users":23,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2755,42.5195]},"properties":{"code":"BIL-L","name":"Billerica – Lexington Rd (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":36,"crm_users":4,"total_users":40,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1985,42.1735]},"properties":{"code":"NOR","name":"Norwood – Technology Way (Mfg & DC)","type":"Distribution center","role":"Ships Osmolality & lab instruments","status":"Operating","erp_users":71,"crm_users":39,"total_users":110,"ships":"Osmolality & lab instruments"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.371,43.677]},"properties":{"code":"WES","name":"Westbrook, ME (Mfg & DC)","type":"Distribution center","role":"Ships Liquid-handling QC","status":"Operating","erp_users":27,"crm_users":26,"total_users":53,"ships":"Liquid-handling QC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.915,50.805]},"properties":{"code":"WIM","name":"Wimborne / Ferndown, UK (Mfg & EU Hub)","type":"Distribution center","role":"EU hub; ships all four families","status":"Operating","erp_users":31,"crm_users":79,"total_users":110,"ships":"Critical Care & POC, Osmolality & lab instruments, Liquid-handling QC, Bioprocess & cell-line"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "type",
+            "label": "Type"
+          },
+          {
+            "field": "role",
+            "label": "Role in network"
+          },
+          {
+            "field": "status",
+            "label": "Status"
+          },
+          {
+            "field": "erp_users",
+            "label": "ERP users"
+          },
+          {
+            "field": "crm_users",
+            "label": "CRM users"
+          },
+          {
+            "field": "ships",
+            "label": "Ships"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d4-suppliers",
+      "name": "Suppliers (sample)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#fef3c7",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 7,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "risk",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Single source + long lead",
+            "color": "#ef4444",
+            "label": "Single source + long lead"
+          },
+          {
+            "value": "Long lead time",
+            "color": "#f97316",
+            "label": "Long lead time"
+          },
+          {
+            "value": "Single source",
+            "color": "#facc15",
+            "label": "Single source"
+          },
+          {
+            "value": "Low risk",
+            "color": "#a3a3a3",
+            "label": "Low risk"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[100.3288,5.4141]},"properties":{"name":"Electronic PCB assemblies · Penang, Malaysia","material":"Electronic PCB assemblies","location":"Penang, Malaysia","receiving_site":"BIL-M","mode":"Ocean","lead_time_days":39,"weekly_volume":6,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[120.9675,24.8138]},"properties":{"name":"Sensor chips · Hsinchu, Taiwan","material":"Sensor chips","location":"Hsinchu, Taiwan","receiving_site":"WAL","mode":"Ocean","lead_time_days":36,"weekly_volume":4,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.7598,42.5251]},"properties":{"name":"Injection-molded plastics · Leominster, MA","material":"Injection-molded plastics","location":"Leominster, MA","receiving_site":"BIL-L","mode":"Ground","lead_time_days":1,"weekly_volume":20,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.1994,38.627]},"properties":{"name":"Reagent chemicals · St. Louis, MO","material":"Reagent chemicals","location":"St. Louis, MO","receiving_site":"WAL","mode":"Ground","lead_time_days":3,"weekly_volume":12,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.0257,39.4864]},"properties":{"name":"Glass vials & calibration fluids · Vineland, NJ","material":"Glass vials & calibration fluids","location":"Vineland, NJ","receiving_site":"BIL-L","mode":"Ground","lead_time_days":1,"weekly_volume":14,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4676,42.7654]},"properties":{"name":"Packaging & corrugate · Nashua, NH","material":"Packaging & corrugate","location":"Nashua, NH","receiving_site":"BIL-E","mode":"Ground","lead_time_days":1,"weekly_volume":25,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.6088,43.1566]},"properties":{"name":"Precision optics · Rochester, NY","material":"Precision optics","location":"Rochester, NY","receiving_site":"NOR","mode":"Ground","lead_time_days":1,"weekly_volume":5,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.1916,39.7589]},"properties":{"name":"Thermoelectric modules · Dayton, OH","material":"Thermoelectric modules","location":"Dayton, OH","receiving_site":"NOR","mode":"Ground","lead_time_days":2,"weekly_volume":6,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2148,44.1004]},"properties":{"name":"Photometric dyes · Lewiston, ME","material":"Photometric dyes","location":"Lewiston, ME","receiving_site":"WES","mode":"Ground","lead_time_days":1,"weekly_volume":4,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.0382,32.5149]},"properties":{"name":"Labware & pipette tips · Tijuana, Mexico","material":"Labware & pipette tips","location":"Tijuana, Mexico","receiving_site":"WES","mode":"Ground","lead_time_days":7,"weekly_volume":10,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.5892,50.9271]},"properties":{"name":"Imaging sensors · Jena, Germany","material":"Imaging sensors","location":"Jena, Germany","receiving_site":"WIM","mode":"Ground","lead_time_days":2,"weekly_volume":3,"single_source":"Yes","risk":"Single source","flags":"Single source"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-9.0568,53.2707]},"properties":{"name":"Microfluidic consumables · Galway, Ireland","material":"Microfluidic consumables","location":"Galway, Ireland","receiving_site":"WIM","mode":"Ground","lead_time_days":1,"weekly_volume":8,"single_source":"No","risk":"Low risk","flags":"None"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[114.0579,22.5431]},"properties":{"name":"Motors & actuators · Shenzhen, China","material":"Motors & actuators","location":"Shenzhen, China","receiving_site":"BIL-M","mode":"Ocean","lead_time_days":36,"weekly_volume":5,"single_source":"No","risk":"Long lead time","flags":"Long lead time"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[120.5853,31.2989]},"properties":{"name":"Lithium cells (handheld meters) · Suzhou, China","material":"Lithium cells (handheld meters)","location":"Suzhou, China","receiving_site":"BIL-L","mode":"Ocean","lead_time_days":35,"weekly_volume":3,"single_source":"Yes","risk":"Single source + long lead","flags":"Single source, Long lead time"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "material",
+            "label": "Material"
+          },
+          {
+            "field": "location",
+            "label": "Ships from"
+          },
+          {
+            "field": "receiving_site",
+            "label": "Receiving site"
+          },
+          {
+            "field": "mode",
+            "label": "Mode"
+          },
+          {
+            "field": "lead_time_days",
+            "label": "Lead time (days)"
+          },
+          {
+            "field": "single_source",
+            "label": "Single source"
+          },
+          {
+            "field": "flags",
+            "label": "Risk flags"
+          }
+        ]
+      }
+    }
+  ],
+  "layerGroups": [],
+  "styles": {},
+  "preferences": {
+    "map": {
+      "restrictBounds": false,
+      "bounds": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "minZoom": 0,
+      "maxZoom": 24,
+      "maxPitch": 85,
+      "renderWorldCopies": true,
+      "projection": "mercator",
+      "ellipsoidId": "earth",
+      "scaleUnit": "metric",
+      "showPointerElevation": false,
+      "terrainEnabled": false,
+      "coordinateFormat": "dd",
+      "mapboxStyleUrl": "mapbox://styles/mapbox/standard",
+      "arcgisBasemap": "arcgis/streets",
+      "cesiumBasemap": "bing-aerial"
+    },
+    "environmentVariables": [],
+    "geocoding": {
+      "providerId": "nominatim",
+      "apiKeys": {}
+    }
+  },
+  "legend": {
+    "title": "Inbound supplier risk · sample data",
+    "groupByLayer": true,
+    "order": [],
+    "overrides": {},
+    "panelVisible": true,
+    "panelPosition": "bottom-right"
+  },
+  "comments": [],
+  "metadata": {
+    "description": "Inbound supplier lanes flagged for single-source and long-lead risk, with animated ocean shipments.",
+    "sampleData": true,
+    "generatedBy": "scripts/gen-nova-demos.ts"
+  },
+  "storymap": {
+    "title": "Inbound supplier lane risk",
+    "subtitle": "Procurement early warning",
+    "byline": "Geoverse · Powered by Aether AI",
+    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
+    "theme": "dark",
+    "showMarkers": false,
+    "markerColor": "#38bdf8",
+    "inset": false,
+    "insetPosition": "bottom-left",
+    "hideChapterNav": false,
+    "startSlide": "none",
+    "endSlide": "none",
+    "chapters": [
+      {
+        "id": "world",
+        "title": "Every inbound lane, flagged by risk",
+        "description": "<p>14 supplier lanes into Nova plants. <b style='color:#ef4444'>7 are flagged</b> as single-source, long lead time (&gt; 30 days), or both.</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            40,
+            30
+          ],
+          "zoom": 1.5,
+          "pitch": 20,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "asia",
+        "title": "Asian electronics and cells move by ocean",
+        "description": "<p>PCB assemblies, sensor chips, motors and lithium cells come from Malaysia, Taiwan and China, 35–39 days door to door. Four of them are single-source.</p><p>The animation shows shipments on the water right now.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            105,
+            15
+          ],
+          "zoom": 3,
+          "pitch": 35,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "suez",
+        "title": "A single chokepoint",
+        "description": "<p>Every Asian lane shares the same sea route via Suez. One disruption here delays four critical inputs at once: an early-warning case for safety stock or a second source.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            35,
+            25
+          ],
+          "zoom": 3.6,
+          "pitch": 40,
+          "bearing": -10
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      },
+      {
+        "id": "us",
+        "title": "Domestic lanes: short, but some still single-source",
+        "description": "<p>Precision optics (Rochester) and photometric dyes (Lewiston) arrive in a day, yet each depends on one supplier.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -76,
+            41.5
+          ],
+          "zoom": 4.8,
+          "pitch": 40,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [],
+        "onChapterExit": []
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "w-list",
+      "layerId": "d4-suppliers",
+      "type": "list",
+      "title": "Inbound lanes by lead time",
+      "listFields": [
+        "material",
+        "location",
+        "receiving_site",
+        "mode",
+        "lead_time_days",
+        "flags"
+      ],
+      "sortBy": "lead_time_days",
+      "sortDir": "desc",
+      "limit": 14
+    },
+    {
+      "id": "w-risk",
+      "layerId": "d4-suppliers",
+      "type": "pie",
+      "title": "Lanes by risk",
+      "category": "risk",
+      "aggregation": "count"
+    },
+    {
+      "id": "w-lead",
+      "layerId": "d4-suppliers",
+      "type": "indicator",
+      "title": "Longest lead time",
+      "field": "lead_time_days",
+      "indicatorAggregation": "max",
+      "suffix": " days",
+      "color": "#ef4444"
+    }
+  ],
+  "dashboardColumns": 2
+}

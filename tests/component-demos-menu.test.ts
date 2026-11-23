@@ -1,13 +1,18 @@
 import { act, fireEvent, render, screen } from "./helpers/dom";
 import assert from "node:assert/strict";
+import { existsSync, readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { createElement } from "react";
+import { parseProject } from "@geolibre/core";
 import { DEMO_PROJECTS } from "../apps/geolibre-desktop/src/lib/demo-projects";
 import { withProjectUrlParam } from "../apps/geolibre-desktop/src/lib/project-url";
 
 // Loaded after the harness so its CSS imports and Vite globals are handled.
-const { DemosMenu } =
+const { DemosMenu, resolveDemoUrl } =
   await import("../apps/geolibre-desktop/src/components/layout/toolbar/DemosMenu");
+
+const BASE_URL = "https://app.example/geoverse/";
+const PUBLIC_DIR = new URL("../apps/geolibre-desktop/public/", import.meta.url);
 
 const chrome = {
   buttonClass: "",
@@ -18,7 +23,7 @@ const chrome = {
 
 /** Render the menu and open its dropdown the way a keyboard user would. */
 function openMenu(onOpenProjectUrl: (url: string) => void): void {
-  render(createElement(DemosMenu, { chrome, onOpenProjectUrl }));
+  render(createElement(DemosMenu, { chrome, onOpenProjectUrl, baseUrl: BASE_URL }));
   const trigger = screen.getByRole("button", { name: "Demos" });
   act(() => {
     fireEvent.keyDown(trigger, { key: "Enter" });
@@ -35,15 +40,55 @@ describe("DemosMenu", () => {
     );
   });
 
-  it("hands the chosen project's URL to the URL loader", () => {
+  it("heads each group of demos with its section name, in order", () => {
+    openMenu(() => {});
+    const groups = [...new Set(DEMO_PROJECTS.map((demo) => demo.group))];
+    for (const group of groups) assert.ok(screen.getByText(group), `missing heading ${group}`);
+  });
+
+  it("hands a bundled demo's URL, resolved against the app, to the URL loader", () => {
     const opened: string[] = [];
     openMenu((url) => opened.push(url));
-    const demo = DEMO_PROJECTS[1];
+    const demo = DEMO_PROJECTS.find((entry) => !/^https?:/.test(entry.url))!;
+    act(() => {
+      fireEvent.click(screen.getByRole("menuitem", { name: demo.name }));
+    });
+    assert.deepEqual(opened, [`${BASE_URL}${demo.url}`]);
+  });
+
+  it("passes an absolute demo URL through unchanged", () => {
+    const opened: string[] = [];
+    openMenu((url) => opened.push(url));
+    const demo = DEMO_PROJECTS.find((entry) => /^https?:/.test(entry.url))!;
     act(() => {
       fireEvent.click(screen.getByRole("menuitem", { name: demo.name }));
     });
     assert.deepEqual(opened, [demo.url]);
   });
+});
+
+describe("resolveDemoUrl", () => {
+  it("resolves app-relative paths under a sub-path base and leaves absolute URLs alone", () => {
+    assert.equal(
+      resolveDemoUrl("demos/nova/a.geolibre.json", "https://host.example/app/"),
+      "https://host.example/app/demos/nova/a.geolibre.json",
+    );
+    assert.equal(
+      resolveDemoUrl("https://share.example/b.geolibre.json", "https://host.example/app/"),
+      "https://share.example/b.geolibre.json",
+    );
+  });
+});
+
+describe("bundled demo projects", () => {
+  for (const demo of DEMO_PROJECTS.filter((entry) => !/^https?:/.test(entry.url))) {
+    it(`${demo.url} exists and parses as a project`, () => {
+      const file = new URL(demo.url, PUBLIC_DIR);
+      assert.ok(existsSync(file), `missing ${demo.url} under public/`);
+      const project = parseProject(readFileSync(file, "utf8"));
+      assert.ok(project.layers.length > 0);
+    });
+  }
 });
 
 describe("withProjectUrlParam", () => {

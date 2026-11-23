@@ -1,0 +1,1731 @@
+{
+  "version": "0.2.0",
+  "name": "Nova Biomedical · Optimal Source vs Nearest (sample data)",
+  "mapView": {
+    "center": [
+      -90,
+      38
+    ],
+    "zoom": 3.3,
+    "pitch": 45,
+    "bearing": -10
+  },
+  "basemapStyleUrl": "https://tiles.openfreemap.org/styles/dark",
+  "basemapVisible": true,
+  "basemapOpacity": 1,
+  "blankBackgroundColor": null,
+  "layers": [
+    {
+      "id": "d2-nearest",
+      "name": "Nearest node, where it is NOT optimal (34)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 0,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#94a3b8",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.6,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-71.0589,42.3601]]},"properties":{"name":"Boston, MA","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-71.1097,42.3736]]},"properties":{"name":"Cambridge, MA","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-71.8023,42.2626]]},"properties":{"name":"Worcester, MA","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-71.4128,41.824]]},"properties":{"name":"Providence, RI","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-72.6734,41.7658]]},"properties":{"name":"Hartford, CT","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-70.371,43.677],[-70.2568,43.6591]]},"properties":{"name":"Portland, ME","nearest_node":"WES","optimal_source":"BIL-E","why":"Nearest node (WES) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-74.006,40.7128]]},"properties":{"name":"New York, NY","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.1985,42.1735],[-75.1652,39.9526]]},"properties":{"name":"Philadelphia, PA","nearest_node":"NOR","optimal_source":"BIL-E","why":"Nearest node (NOR) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-76.6122,39.2904]]},"properties":{"name":"Baltimore, MD","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-77.0369,38.9072]]},"properties":{"name":"Washington, DC","nearest_node":"CAN","optimal_source":"NOR","why":"Nearest node (CAN) does not stock OSM"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-79.9959,40.4406]]},"properties":{"name":"Pittsburgh, PA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-81.6944,41.4993]]},"properties":{"name":"Cleveland, OH","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-87.6298,41.8781]]},"properties":{"name":"Chicago, IL","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-83.0458,42.3314]]},"properties":{"name":"Detroit, MI","nearest_node":"CAN","optimal_source":"WES","why":"Nearest node (CAN) does not stock LHQ"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-93.265,44.9778]]},"properties":{"name":"Minneapolis, MN","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-84.388,33.749]]},"properties":{"name":"Atlanta, GA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-80.1918,25.7617]]},"properties":{"name":"Miami, FL","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-86.7816,36.1627]]},"properties":{"name":"Nashville, TN","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-95.3698,29.7604]]},"properties":{"name":"Houston, TX","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-96.797,32.7767]]},"properties":{"name":"Dallas, TX","nearest_node":"CAN","optimal_source":"NOR","why":"Nearest node (CAN) does not stock OSM"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-104.9903,39.7392]]},"properties":{"name":"Denver, CO","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-112.074,33.4484]]},"properties":{"name":"Phoenix, AZ","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-118.2437,34.0522]]},"properties":{"name":"Los Angeles, CA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-117.1611,32.7157]]},"properties":{"name":"San Diego, CA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-122.4194,37.7749]]},"properties":{"name":"San Francisco, CA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-122.3321,47.6062]]},"properties":{"name":"Seattle, WA","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) only serves CA"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-78.8986,35.994]]},"properties":{"name":"Research Triangle, NC","nearest_node":"CAN","optimal_source":"BIL-E","why":"Nearest node (CAN) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-79.644,43.589],[-90.1994,38.627]]},"properties":{"name":"St. Louis, MO","nearest_node":"CAN","optimal_source":"WES","why":"Nearest node (CAN) does not stock LHQ"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-70.371,43.677],[-73.5673,45.5017]]},"properties":{"name":"Montreal, QC","nearest_node":"WES","optimal_source":"BIL-E","why":"Nearest node (WES) does not stock CC"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[8.567,49.99],[11.582,48.1351]]},"properties":{"name":"Munich, Germany","nearest_node":"GER","optimal_source":"WIM","why":"Nearest node (GER) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[8.567,49.99],[4.497,52.1601]]},"properties":{"name":"Leiden, Netherlands","nearest_node":"GER","optimal_source":"WIM","why":"Nearest node (GER) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[8.567,49.99],[7.5886,47.5596]]},"properties":{"name":"Basel, Switzerland","nearest_node":"GER","optimal_source":"WIM","why":"Nearest node (GER) does not stock BIO"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[139.751,35.658],[135.5023,34.6937]]},"properties":{"name":"Osaka, Japan","nearest_node":"JPN","optimal_source":"WIM","why":"Nearest node (JPN) does not stock OSM"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[139.751,35.658],[126.978,37.5665]]},"properties":{"name":"Seoul, South Korea","nearest_node":"JPN","optimal_source":"WIM","why":"Nearest node (JPN) only serves JP"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "nearest_node",
+            "label": "Nearest node"
+          },
+          {
+            "field": "optimal_source",
+            "label": "Optimal source"
+          },
+          {
+            "field": "why",
+            "label": "Why"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d2-arc-international-air",
+      "name": "Optimal lanes: International air (2)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 135.5023,
+            "d_lat": 34.6937
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 126.978,
+            "d_lat": 37.5665
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#f472b6",
+        "strokeColor": "#f472b6",
+        "strokeWidth": 2.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "arc",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "arc",
+          "format": "csv-rows",
+          "fieldMapping": {
+            "sourceLng": "o_lng",
+            "sourceLat": "o_lat",
+            "targetLng": "d_lng",
+            "targetLat": "d_lat"
+          },
+          "style": {
+            "color": "#f472b6",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 2.5,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d2-arc-express-air",
+      "name": "Optimal lanes: Express air (11)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -93.265,
+            "d_lat": 44.9778
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -80.1918,
+            "d_lat": 25.7617
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -95.3698,
+            "d_lat": 29.7604
+          },
+          {
+            "o_lng": -71.1985,
+            "o_lat": 42.1735,
+            "d_lng": -96.797,
+            "d_lat": 32.7767
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -104.9903,
+            "d_lat": 39.7392
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -112.074,
+            "d_lat": 33.4484
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -118.2437,
+            "d_lat": 34.0522
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -117.1611,
+            "d_lat": 32.7157
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -122.4194,
+            "d_lat": 37.7749
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -122.3321,
+            "d_lat": 47.6062
+          },
+          {
+            "o_lng": -79.644,
+            "o_lat": 43.589,
+            "d_lng": -123.1207,
+            "d_lat": 49.2827
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#a78bfa",
+        "strokeColor": "#a78bfa",
+        "strokeWidth": 2.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "arc",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "arc",
+          "format": "csv-rows",
+          "fieldMapping": {
+            "sourceLng": "o_lng",
+            "sourceLat": "o_lat",
+            "targetLng": "d_lng",
+            "targetLat": "d_lat"
+          },
+          "style": {
+            "color": "#a78bfa",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 2.5,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d2-arc-ground",
+      "name": "Optimal lanes: Ground (34)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.0589,
+            "d_lat": 42.3601
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.1097,
+            "d_lat": 42.3736
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.2245,
+            "d_lat": 42.4473
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.8023,
+            "d_lat": 42.2626
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.4128,
+            "d_lat": 41.824
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -72.6734,
+            "d_lat": 41.7658
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -71.4548,
+            "d_lat": 42.9956
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -70.2568,
+            "d_lat": 43.6591
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -74.006,
+            "d_lat": 40.7128
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -75.1652,
+            "d_lat": 39.9526
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -76.6122,
+            "d_lat": 39.2904
+          },
+          {
+            "o_lng": -71.1985,
+            "o_lat": 42.1735,
+            "d_lng": -77.0369,
+            "d_lat": 38.9072
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -79.9959,
+            "d_lat": 40.4406
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -81.6944,
+            "d_lat": 41.4993
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -87.6298,
+            "d_lat": 41.8781
+          },
+          {
+            "o_lng": -70.371,
+            "o_lat": 43.677,
+            "d_lng": -83.0458,
+            "d_lat": 42.3314
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -84.388,
+            "d_lat": 33.749
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -86.7816,
+            "d_lat": 36.1627
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -78.8986,
+            "d_lat": 35.994
+          },
+          {
+            "o_lng": -70.371,
+            "o_lat": 43.677,
+            "d_lng": -90.1994,
+            "d_lat": 38.627
+          },
+          {
+            "o_lng": -79.644,
+            "o_lat": 43.589,
+            "d_lng": -79.3832,
+            "d_lat": 43.6532
+          },
+          {
+            "o_lng": -71.2695,
+            "o_lat": 42.5585,
+            "d_lng": -73.5673,
+            "d_lat": 45.5017
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": -0.1278,
+            "d_lat": 51.5074
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": -2.2426,
+            "d_lat": 53.4808
+          },
+          {
+            "o_lng": 8.567,
+            "o_lat": 49.99,
+            "d_lng": 8.6821,
+            "d_lat": 50.1109
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 11.582,
+            "d_lat": 48.1351
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 2.3522,
+            "d_lat": 48.8566
+          },
+          {
+            "o_lng": 8.567,
+            "o_lat": 49.99,
+            "d_lng": 9.19,
+            "d_lat": 45.4642
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 4.497,
+            "d_lat": 52.1601
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": 7.5886,
+            "d_lat": 47.5596
+          },
+          {
+            "o_lng": -1.915,
+            "o_lat": 50.805,
+            "d_lng": -3.7038,
+            "d_lat": 40.4168
+          },
+          {
+            "o_lng": 139.751,
+            "o_lat": 35.658,
+            "d_lng": 139.6503,
+            "d_lat": 35.6762
+          },
+          {
+            "o_lng": 151.183,
+            "o_lat": -33.797,
+            "d_lng": 151.2093,
+            "d_lat": -33.8688
+          },
+          {
+            "o_lng": -43.847,
+            "o_lat": -19.985,
+            "d_lng": -46.6333,
+            "d_lat": -23.5505
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#38bdf8",
+        "strokeColor": "#38bdf8",
+        "strokeWidth": 2,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "arc",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "arc",
+          "format": "csv-rows",
+          "fieldMapping": {
+            "sourceLng": "o_lng",
+            "sourceLat": "o_lat",
+            "targetLng": "d_lng",
+            "targetLat": "d_lat"
+          },
+          "style": {
+            "color": "#38bdf8",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 2,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d2-site-markers",
+      "name": "Nova sites",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": true,
+          "field": "code",
+          "expression": "",
+          "placement": "point",
+          "size": 12,
+          "color": "#e2e8f0",
+          "haloColor": "#0f172a",
+          "haloWidth": 1.5,
+          "minZoom": 3.5,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "top",
+          "offsetX": 0,
+          "offsetY": 1,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "type",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Manufacturing",
+            "color": "#e5e7eb",
+            "label": "Manufacturing"
+          },
+          {
+            "value": "Distribution center",
+            "color": "#0ea5e9",
+            "label": "Distribution center"
+          },
+          {
+            "value": "Forward stocking",
+            "color": "#14b8a6",
+            "label": "Forward stocking"
+          },
+          {
+            "value": "Office",
+            "color": "#64748b",
+            "label": "Office"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2395,42.3795]},"properties":{"code":"WAL","name":"Waltham – Prospect St (HQ & Mfg)","type":"Manufacturing","role":"HQ; makes Critical Care & Bioprocess","status":"Operating","erp_users":118,"crm_users":89,"total_users":207,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2695,42.5585]},"properties":{"code":"BIL-E","name":"Billerica – Enterprise Rd (Distribution)","type":"Distribution center","role":"Main DC; ships Critical Care & Bioprocess","status":"Operating","erp_users":42,"crm_users":1,"total_users":43,"ships":"Critical Care & POC, Bioprocess & cell-line"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2405,42.5365]},"properties":{"code":"BIL-M","name":"Billerica – Manning Rd (Mfg & Warehouse)","type":"Manufacturing","role":"Makes Critical Care test strips","status":"Operating","erp_users":17,"crm_users":6,"total_users":23,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2755,42.5195]},"properties":{"code":"BIL-L","name":"Billerica – Lexington Rd (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":36,"crm_users":4,"total_users":40,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1985,42.1735]},"properties":{"code":"NOR","name":"Norwood – Technology Way (Mfg & DC)","type":"Distribution center","role":"Ships Osmolality & lab instruments","status":"Operating","erp_users":71,"crm_users":39,"total_users":110,"ships":"Osmolality & lab instruments"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.371,43.677]},"properties":{"code":"WES","name":"Westbrook, ME (Mfg & DC)","type":"Distribution center","role":"Ships Liquid-handling QC","status":"Operating","erp_users":27,"crm_users":26,"total_users":53,"ships":"Liquid-handling QC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.915,50.805]},"properties":{"code":"WIM","name":"Wimborne / Ferndown, UK (Mfg & EU Hub)","type":"Distribution center","role":"EU hub; ships all four families","status":"Operating","erp_users":31,"crm_users":79,"total_users":110,"ships":"Critical Care & POC, Osmolality & lab instruments, Liquid-handling QC, Bioprocess & cell-line"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[121.565,25.033]},"properties":{"code":"TPE","name":"Taipei, Taiwan (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":0,"crm_users":0,"total_users":0,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-43.847,-19.985]},"properties":{"code":"BRA","name":"Nova Lima, Brazil (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Brazil","status":"Operating","erp_users":0,"crm_users":20,"total_users":20,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.644,43.589]},"properties":{"code":"CAN","name":"Ontario, Canada (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Canada","status":"Operating","erp_users":6,"crm_users":36,"total_users":42,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.567,49.99]},"properties":{"code":"GER","name":"Germany (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to DE, FR, IT, CH, NL, ES","status":"Operating","erp_users":7,"crm_users":52,"total_users":59,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.169,48.682]},"properties":{"code":"FRA","name":"France (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":50,"total_users":56,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.03,45.57]},"properties":{"code":"ITA","name":"Italy (Subsidiary)","type":"Office","role":"Sales & service office","status":"Operating","erp_users":6,"crm_users":27,"total_users":33,"ships":"—"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[139.751,35.658]},"properties":{"code":"JPN","name":"Japan (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Japan","status":"Operating","erp_users":7,"crm_users":31,"total_users":38,"ships":"Critical Care & POC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[151.183,-33.797]},"properties":{"code":"AUS","name":"Australia – Chatswood (Subsidiary & FSL)","type":"Forward stocking","role":"Ships Critical Care to Australia","status":"Operating","erp_users":4,"crm_users":17,"total_users":21,"ships":"Critical Care & POC"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "type",
+            "label": "Type"
+          },
+          {
+            "field": "role",
+            "label": "Role in network"
+          },
+          {
+            "field": "status",
+            "label": "Status"
+          },
+          {
+            "field": "erp_users",
+            "label": "ERP users"
+          },
+          {
+            "field": "crm_users",
+            "label": "CRM users"
+          },
+          {
+            "field": "ships",
+            "label": "Ships"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d2-customers",
+      "name": "Customers (sample) – by product family",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 1,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.95,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "categorized",
+        "vectorStyleProperty": "family",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": "Critical Care & POC",
+            "color": "#38bdf8",
+            "label": "Critical Care & POC"
+          },
+          {
+            "value": "Osmolality & lab instruments",
+            "color": "#a78bfa",
+            "label": "Osmolality & lab instruments"
+          },
+          {
+            "value": "Liquid-handling QC",
+            "color": "#34d399",
+            "label": "Liquid-handling QC"
+          },
+          {
+            "value": "Bioprocess & cell-line",
+            "color": "#fb923c",
+            "label": "Bioprocess & cell-line"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": true,
+        "proportionalSizeProperty": "weekly_shipments",
+        "proportionalSizeMinValue": 2,
+        "proportionalSizeMaxValue": 17,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 11,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.0589,42.3601]},"properties":{"id":"C01","name":"Boston, MA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":15,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":348,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1097,42.3736]},"properties":{"id":"C02","name":"Cambridge, MA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock BIO","weekly_freight_usd":208,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2245,42.4473]},"properties":{"id":"C03","name":"Lexington, MA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BIL-E","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":113,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.8023,42.2626]},"properties":{"id":"C04","name":"Worcester, MA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":171,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4128,41.824]},"properties":{"id":"C05","name":"Providence, RI","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":154,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.6734,41.7658]},"properties":{"id":"C06","name":"Hartford, CT","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":142,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4548,42.9956]},"properties":{"id":"C07","name":"Manchester, NH","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BIL-E","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":97,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2568,43.6591]},"properties":{"id":"C08","name":"Portland, ME","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WES","optimal_not_nearest":1,"why":"Nearest node (WES) does not stock CC","weekly_freight_usd":142,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.006,40.7128]},"properties":{"id":"C09","name":"New York, NY","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":17,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":602,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.1652,39.9526]},"properties":{"id":"C10","name":"Philadelphia, PA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":12,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"NOR","optimal_not_nearest":1,"why":"Nearest node (NOR) does not stock CC","weekly_freight_usd":493,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.6122,39.2904]},"properties":{"id":"C11","name":"Baltimore, MD","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":425,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.0369,38.9072]},"properties":{"id":"C12","name":"Washington, DC","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":4,"served_from":"NOR","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock OSM","weekly_freight_usd":199,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.9959,40.4406]},"properties":{"id":"C13","name":"Pittsburgh, PA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":277,"weekly_co2e_kg":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.6944,41.4993]},"properties":{"id":"C14","name":"Cleveland, OH","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":8,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":480,"weekly_co2e_kg":10}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.6298,41.8781]},"properties":{"id":"C15","name":"Chicago, IL","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":14,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1133,"weekly_co2e_kg":26}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-83.0458,42.3314]},"properties":{"id":"C16","name":"Detroit, MI","segment":"Reference lab","family":"Liquid-handling QC","weekly_shipments":3,"served_from":"WES","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock LHQ","weekly_freight_usd":206,"weekly_co2e_kg":4}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-93.265,44.9778]},"properties":{"id":"C17","name":"Minneapolis, MN","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":935,"weekly_co2e_kg":145}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.388,33.749]},"properties":{"id":"C18","name":"Atlanta, GA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":9,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":791,"weekly_co2e_kg":19}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.1918,25.7617]},"properties":{"id":"C19","name":"Miami, FL","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1199,"weekly_co2e_kg":194}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.7816,36.1627]},"properties":{"id":"C20","name":"Nashville, TN","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":440,"weekly_co2e_kg":10}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.3698,29.7604]},"properties":{"id":"C21","name":"Houston, TX","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":12,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":2442,"weekly_co2e_kg":420}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.797,32.7767]},"properties":{"id":"C22","name":"Dallas, TX","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":5,"served_from":"NOR","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock OSM","weekly_freight_usd":993,"weekly_co2e_kg":168}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.9903,39.7392]},"properties":{"id":"C23","name":"Denver, CO","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1092,"weekly_co2e_kg":192}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.074,33.4484]},"properties":{"id":"C24","name":"Phoenix, AZ","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1618,"weekly_co2e_kg":300}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.2437,34.0522]},"properties":{"id":"C25","name":"Los Angeles, CA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":13,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":3875,"weekly_co2e_kg":734}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.1611,32.7157]},"properties":{"id":"C26","name":"San Diego, CA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":7,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":2079,"weekly_co2e_kg":393}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.4194,37.7749]},"properties":{"id":"C27","name":"San Francisco, CA","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":9,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":2770,"weekly_co2e_kg":528}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.3321,47.6062]},"properties":{"id":"C28","name":"Seattle, WA","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"BIL-E","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) only serves CA","weekly_freight_usd":1725,"weekly_co2e_kg":324}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.8986,35.994]},"properties":{"id":"C29","name":"Research Triangle, NC","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":6,"served_from":"BIL-E","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock BIO","weekly_freight_usd":390,"weekly_co2e_kg":8}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.1994,38.627]},"properties":{"id":"C30","name":"St. Louis, MO","segment":"Reference lab","family":"Liquid-handling QC","weekly_shipments":3,"served_from":"WES","mode":"Ground","transit_days":3,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":1,"why":"Nearest node (CAN) does not stock LHQ","weekly_freight_usd":298,"weekly_co2e_kg":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.3832,43.6532]},"properties":{"id":"C31","name":"Toronto, ON","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"CAN","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":189,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.5673,45.5017]},"properties":{"id":"C32","name":"Montreal, QC","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"BIL-E","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WES","optimal_not_nearest":1,"why":"Nearest node (WES) does not stock CC","weekly_freight_usd":192,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-123.1207,49.2827]},"properties":{"id":"C33","name":"Vancouver, BC","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"CAN","mode":"Express air","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"CAN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":1014,"weekly_co2e_kg":182}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-0.1278,51.5074]},"properties":{"id":"C34","name":"London, UK","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":8,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":235,"weekly_co2e_kg":2}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-2.2426,53.4808]},"properties":{"id":"C35","name":"Manchester, UK","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":3,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":108,"weekly_co2e_kg":1}},{"type":"Feature","geometry":{"type":"Point","coordinates":[8.6821,50.1109]},"properties":{"id":"C36","name":"Frankfurt, Germany","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"GER","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":160,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[11.582,48.1351]},"properties":{"id":"C37","name":"Munich, Germany","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":4,"served_from":"WIM","mode":"Ground","transit_days":2,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":270,"weekly_co2e_kg":6}},{"type":"Feature","geometry":{"type":"Point","coordinates":[2.3522,48.8566]},"properties":{"id":"C38","name":"Paris, France","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":7,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":276,"weekly_co2e_kg":4}},{"type":"Feature","geometry":{"type":"Point","coordinates":[9.19,45.4642]},"properties":{"id":"C39","name":"Milan, Italy","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"GER","mode":"Ground","transit_days":1,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":241,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[4.497,52.1601]},"properties":{"id":"C40","name":"Leiden, Netherlands","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":4,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":174,"weekly_co2e_kg":3}},{"type":"Feature","geometry":{"type":"Point","coordinates":[7.5886,47.5596]},"properties":{"id":"C41","name":"Basel, Switzerland","segment":"Biopharma","family":"Bioprocess & cell-line","weekly_shipments":5,"served_from":"WIM","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"GER","optimal_not_nearest":1,"why":"Nearest node (GER) does not stock BIO","weekly_freight_usd":285,"weekly_co2e_kg":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-3.7038,40.4168]},"properties":{"id":"C42","name":"Madrid, Spain","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":5,"served_from":"WIM","mode":"Ground","transit_days":2,"sla_days":2,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"WIM","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":369,"weekly_co2e_kg":8}},{"type":"Feature","geometry":{"type":"Point","coordinates":[139.6503,35.6762]},"properties":{"id":"C43","name":"Tokyo, Japan","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":6,"served_from":"JPN","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"JPN","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":158,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[135.5023,34.6937]},"properties":{"id":"C44","name":"Osaka, Japan","segment":"Reference lab","family":"Osmolality & lab instruments","weekly_shipments":2,"served_from":"WIM","mode":"International air","transit_days":4,"sla_days":5,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"JPN","optimal_not_nearest":1,"why":"Nearest node (JPN) does not stock OSM","weekly_freight_usd":1599,"weekly_co2e_kg":220}},{"type":"Feature","geometry":{"type":"Point","coordinates":[126.978,37.5665]},"properties":{"id":"C45","name":"Seoul, South Korea","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":3,"served_from":"WIM","mode":"International air","transit_days":4,"sla_days":3,"sla_status":"SLA at risk","within_sla_pct":0,"nearest_node":"JPN","optimal_not_nearest":1,"why":"Nearest node (JPN) only serves JP","weekly_freight_usd":2264,"weekly_co2e_kg":308}},{"type":"Feature","geometry":{"type":"Point","coordinates":[151.2093,-33.8688]},"properties":{"id":"C46","name":"Sydney, Australia","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"AUS","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"AUS","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":105,"weekly_co2e_kg":0}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-46.6333,-23.5505]},"properties":{"id":"C47","name":"São Paulo, Brazil","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":4,"served_from":"BRA","mode":"Ground","transit_days":1,"sla_days":3,"sla_status":"Within SLA","within_sla_pct":100,"nearest_node":"BRA","optimal_not_nearest":0,"why":"Nearest node is also the optimal source","weekly_freight_usd":190,"weekly_co2e_kg":3}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "segment",
+            "label": "Segment"
+          },
+          {
+            "field": "family",
+            "label": "Product family"
+          },
+          {
+            "field": "weekly_shipments",
+            "label": "Weekly shipments"
+          },
+          {
+            "field": "served_from",
+            "label": "Optimal source"
+          },
+          {
+            "field": "mode",
+            "label": "Mode"
+          },
+          {
+            "field": "transit_days",
+            "label": "Transit (days)"
+          },
+          {
+            "field": "sla_days",
+            "label": "SLA (days)"
+          },
+          {
+            "field": "sla_status",
+            "label": "Status"
+          },
+          {
+            "field": "nearest_node",
+            "label": "Nearest node"
+          },
+          {
+            "field": "why",
+            "label": "Why this source"
+          },
+          {
+            "field": "weekly_freight_usd",
+            "label": "Weekly freight (USD)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d2-sla-risk",
+      "name": "SLA at risk",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#ef4444",
+        "strokeColor": "#ef4444",
+        "strokeWidth": 3,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.25,
+        "circleRadius": 14,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": true,
+          "field": "name",
+          "expression": "",
+          "placement": "point",
+          "size": 12,
+          "color": "#fecaca",
+          "haloColor": "#0f172a",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "left",
+          "offsetX": 1.4,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[126.978,37.5665]},"properties":{"id":"C45","name":"Seoul, South Korea","segment":"Hospital","family":"Critical Care & POC","weekly_shipments":3,"served_from":"WIM","mode":"International air","transit_days":4,"sla_days":3,"sla_status":"SLA at risk","within_sla_pct":0,"nearest_node":"JPN","optimal_not_nearest":1,"why":"Nearest node (JPN) only serves JP","weekly_freight_usd":2264,"weekly_co2e_kg":308}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "segment",
+            "label": "Segment"
+          },
+          {
+            "field": "family",
+            "label": "Product family"
+          },
+          {
+            "field": "weekly_shipments",
+            "label": "Weekly shipments"
+          },
+          {
+            "field": "served_from",
+            "label": "Optimal source"
+          },
+          {
+            "field": "mode",
+            "label": "Mode"
+          },
+          {
+            "field": "transit_days",
+            "label": "Transit (days)"
+          },
+          {
+            "field": "sla_days",
+            "label": "SLA (days)"
+          },
+          {
+            "field": "sla_status",
+            "label": "Status"
+          },
+          {
+            "field": "nearest_node",
+            "label": "Nearest node"
+          },
+          {
+            "field": "why",
+            "label": "Why this source"
+          },
+          {
+            "field": "weekly_freight_usd",
+            "label": "Weekly freight (USD)"
+          }
+        ]
+      }
+    }
+  ],
+  "layerGroups": [],
+  "styles": {},
+  "preferences": {
+    "map": {
+      "restrictBounds": false,
+      "bounds": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "minZoom": 0,
+      "maxZoom": 24,
+      "maxPitch": 85,
+      "renderWorldCopies": true,
+      "projection": "mercator",
+      "ellipsoidId": "earth",
+      "scaleUnit": "metric",
+      "showPointerElevation": false,
+      "terrainEnabled": false,
+      "coordinateFormat": "dd",
+      "mapboxStyleUrl": "mapbox://styles/mapbox/standard",
+      "arcgisBasemap": "arcgis/streets",
+      "cesiumBasemap": "bing-aerial"
+    },
+    "environmentVariables": [],
+    "geocoding": {
+      "providerId": "nominatim",
+      "apiKeys": {}
+    }
+  },
+  "legend": {
+    "title": "Outbound sourcing · sample data",
+    "groupByLayer": true,
+    "order": [],
+    "overrides": {},
+    "panelVisible": true,
+    "panelPosition": "bottom-right"
+  },
+  "comments": [],
+  "metadata": {
+    "description": "Optimal node-to-customer lanes by mode, nearest-node comparison and SLA exceptions.",
+    "sampleData": true,
+    "generatedBy": "scripts/gen-nova-demos.ts"
+  },
+  "storymap": {
+    "title": "Which site should serve each customer?",
+    "subtitle": "Optimal source by landed cost within SLA",
+    "byline": "Geoverse · Powered by Aether AI",
+    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
+    "theme": "dark",
+    "showMarkers": false,
+    "markerColor": "#38bdf8",
+    "inset": false,
+    "insetPosition": "bottom-left",
+    "hideChapterNav": false,
+    "startSlide": "none",
+    "endSlide": "none",
+    "chapters": [
+      {
+        "id": "kpi",
+        "title": "Every customer, served from the right node",
+        "description": "<p>Each arc is the lowest-cost option that still meets the customer's SLA, coloured by mode: <b style='color:#38bdf8'>ground</b>, <b style='color:#a78bfa'>express air</b>, <b style='color:#f472b6'>international air</b>.</p><p><b>97.9%</b> of customers within SLA · <b>1.2 d</b> average transit · <b>$33,665</b> weekly freight · <b>4,265 kg</b> CO₂e.</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            15,
+            28
+          ],
+          "zoom": 1.6,
+          "pitch": 25,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "kpi-in-0",
+            "layerId": "d2-nearest",
+            "opacity": 0,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "boston",
+        "title": "Nearest is often not optimal",
+        "description": "<p>For <b>34 of 47</b> customers the best source is not the closest node, mainly because product families are stocked at different sites.</p><p><b>Boston</b>: nearest is NOR, but it ships from BIL-E (Ground, 1 day). Nearest node (NOR) does not stock CC.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -71.35,
+            42.45
+          ],
+          "zoom": 7.6,
+          "pitch": 58,
+          "bearing": -18
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "boston-in-0",
+            "layerId": "d2-nearest",
+            "opacity": 1,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "dallas",
+        "title": "Mode selection on long lanes",
+        "description": "<p><b>Dallas</b> lab: Nearest node (CAN) does not stock OSM. It ships Express air from NOR in 1 day(s), because ground would miss the 3-day SLA.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -90,
+            38
+          ],
+          "zoom": 3.3,
+          "pitch": 45,
+          "bearing": -10
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "dallas-in-0",
+            "layerId": "d2-nearest",
+            "opacity": 0,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "seoul",
+        "title": "The structural gap: South Korea",
+        "description": "<p><b>Seoul</b> is the one customer outside SLA. The Japan node serves Japan only, so the best option is WIM by International air: 4 days against a 3-day SLA.</p><p>A Korea or Taipei stocking point would close the gap.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            128,
+            10
+          ],
+          "zoom": 2.6,
+          "pitch": 35,
+          "bearing": 0
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "seoul-in-0",
+            "layerId": "d2-nearest",
+            "opacity": 0,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "w-sla",
+      "layerId": "d2-customers",
+      "type": "indicator",
+      "title": "Customers within SLA",
+      "field": "within_sla_pct",
+      "indicatorAggregation": "mean",
+      "suffix": "%",
+      "color": "#22c55e"
+    },
+    {
+      "id": "w-transit",
+      "layerId": "d2-customers",
+      "type": "indicator",
+      "title": "Avg transit per customer (days)",
+      "field": "transit_days",
+      "indicatorAggregation": "mean",
+      "suffix": " d"
+    },
+    {
+      "id": "w-freight",
+      "layerId": "d2-customers",
+      "type": "indicator",
+      "title": "Weekly outbound freight",
+      "field": "weekly_freight_usd",
+      "indicatorAggregation": "sum",
+      "prefix": "$"
+    },
+    {
+      "id": "w-co2",
+      "layerId": "d2-customers",
+      "type": "indicator",
+      "title": "Weekly outbound CO₂e",
+      "field": "weekly_co2e_kg",
+      "indicatorAggregation": "sum",
+      "suffix": " kg"
+    },
+    {
+      "id": "w-nn",
+      "layerId": "d2-customers",
+      "type": "indicator",
+      "title": "Optimal ≠ nearest node",
+      "field": "optimal_not_nearest",
+      "indicatorAggregation": "sum"
+    },
+    {
+      "id": "w-mode",
+      "layerId": "d2-customers",
+      "type": "bar",
+      "title": "Weekly shipments by mode",
+      "category": "mode",
+      "aggregation": "sum",
+      "valueField": "weekly_shipments"
+    }
+  ],
+  "dashboardColumns": 3
+}

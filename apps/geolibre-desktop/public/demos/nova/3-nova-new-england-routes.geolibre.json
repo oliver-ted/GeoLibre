@@ -1,0 +1,1170 @@
+{
+  "version": "0.2.0",
+  "name": "Nova Biomedical · New England Van Routes (sample data)",
+  "mapView": {
+    "center": [
+      -71.35,
+      42.45
+    ],
+    "zoom": 7.6,
+    "pitch": 58,
+    "bearing": -18
+  },
+  "basemapStyleUrl": "https://tiles.openfreemap.org/styles/dark",
+  "basemapVisible": true,
+  "basemapOpacity": 1,
+  "blankBackgroundColor": null,
+  "layers": [
+    {
+      "id": "d3-site-columns",
+      "name": "Nova sites – 3D (height = ERP + CRM users)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#0ea5e9",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 0,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.9,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": true,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.92,
+        "extrusionHeightProperty": "height_m",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": true,
+        "extrusionColorExpression": "[\"get\",\"color\"]",
+        "extrusionHeightExpression": "[\"get\",\"height_m\"]",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.21275,42.3795],[-71.21478,42.38706],[-71.22058,42.39347],[-71.22926,42.39776],[-71.2395,42.39926],[-71.24974,42.39776],[-71.25842,42.39347],[-71.26422,42.38706],[-71.26625,42.3795],[-71.26422,42.37194],[-71.25842,42.36553],[-71.24974,42.36124],[-71.2395,42.35974],[-71.22926,42.36124],[-71.22058,42.36553],[-71.21478,42.37194],[-71.21275,42.3795]]]},"properties":{"code":"WAL","name":"Waltham – Prospect St (HQ & Mfg)","type":"Manufacturing","role":"HQ; makes Critical Care & Bioprocess","status":"Operating","erp_users":118,"crm_users":89,"total_users":207,"ships":"—","height_m":33120,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.24267,42.5585],[-71.24471,42.56606],[-71.25053,42.57247],[-71.25923,42.57676],[-71.2695,42.57826],[-71.27977,42.57676],[-71.28847,42.57247],[-71.29429,42.56606],[-71.29633,42.5585],[-71.29429,42.55094],[-71.28847,42.54453],[-71.27977,42.54024],[-71.2695,42.53874],[-71.25923,42.54024],[-71.25053,42.54453],[-71.24471,42.55094],[-71.24267,42.5585]]]},"properties":{"code":"BIL-E","name":"Billerica – Enterprise Rd (Distribution)","type":"Distribution center","role":"Main DC; ships Critical Care & Bioprocess","status":"Operating","erp_users":42,"crm_users":1,"total_users":43,"ships":"Critical Care & POC, Bioprocess & cell-line","height_m":6880,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.21368,42.5365],[-71.21572,42.54406],[-71.22153,42.55047],[-71.23024,42.55476],[-71.2405,42.55626],[-71.25076,42.55476],[-71.25947,42.55047],[-71.26528,42.54406],[-71.26732,42.5365],[-71.26528,42.52894],[-71.25947,42.52253],[-71.25076,42.51824],[-71.2405,42.51674],[-71.23024,42.51824],[-71.22153,42.52253],[-71.21572,42.52894],[-71.21368,42.5365]]]},"properties":{"code":"BIL-M","name":"Billerica – Manning Rd (Mfg & Warehouse)","type":"Manufacturing","role":"Makes Critical Care test strips","status":"Operating","erp_users":17,"crm_users":6,"total_users":23,"ships":"—","height_m":3680,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.24869,42.5195],[-71.25073,42.52706],[-71.25654,42.53347],[-71.26524,42.53776],[-71.2755,42.53926],[-71.28576,42.53776],[-71.29446,42.53347],[-71.30027,42.52706],[-71.30231,42.5195],[-71.30027,42.51194],[-71.29446,42.50553],[-71.28576,42.50124],[-71.2755,42.49974],[-71.26524,42.50124],[-71.25654,42.50553],[-71.25073,42.51194],[-71.24869,42.5195]]]},"properties":{"code":"BIL-L","name":"Billerica – Lexington Rd (Mfg)","type":"Manufacturing","role":"Makes Critical Care","status":"Operating","erp_users":36,"crm_users":4,"total_users":40,"ships":"—","height_m":6400,"color":"#e5e7eb"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-71.17183,42.1735],[-71.17386,42.18106],[-71.17964,42.18747],[-71.1883,42.19176],[-71.1985,42.19326],[-71.2087,42.19176],[-71.21736,42.18747],[-71.22314,42.18106],[-71.22517,42.1735],[-71.22314,42.16594],[-71.21736,42.15953],[-71.2087,42.15524],[-71.1985,42.15374],[-71.1883,42.15524],[-71.17964,42.15953],[-71.17386,42.16594],[-71.17183,42.1735]]]},"properties":{"code":"NOR","name":"Norwood – Technology Way (Mfg & DC)","type":"Distribution center","role":"Ships Osmolality & lab instruments","status":"Operating","erp_users":71,"crm_users":39,"total_users":110,"ships":"Osmolality & lab instruments","height_m":17600,"color":"#0ea5e9"}},{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[-70.34367,43.677],[-70.34575,43.68456],[-70.35168,43.69097],[-70.36054,43.69526],[-70.371,43.69676],[-70.38146,43.69526],[-70.39032,43.69097],[-70.39625,43.68456],[-70.39833,43.677],[-70.39625,43.66944],[-70.39032,43.66303],[-70.38146,43.65874],[-70.371,43.65724],[-70.36054,43.65874],[-70.35168,43.66303],[-70.34575,43.66944],[-70.34367,43.677]]]},"properties":{"code":"WES","name":"Westbrook, ME (Mfg & DC)","type":"Distribution center","role":"Ships Liquid-handling QC","status":"Operating","erp_users":27,"crm_users":26,"total_users":53,"ships":"Liquid-handling QC","height_m":8480,"color":"#0ea5e9"}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "type",
+            "label": "Type"
+          },
+          {
+            "field": "role",
+            "label": "Role in network"
+          },
+          {
+            "field": "status",
+            "label": "Status"
+          },
+          {
+            "field": "erp_users",
+            "label": "ERP users"
+          },
+          {
+            "field": "crm_users",
+            "label": "CRM users"
+          },
+          {
+            "field": "ships",
+            "label": "Ships"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d3-direct",
+      "name": "Direct out-and-back trips (before)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 0.6,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#64748b",
+        "strokeWidth": 1.5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.6,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.2245,42.4473]]},"properties":{"route":"BIL-E-R1","stop":"Lexington, MA","out_and_back_km":32}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.1097,42.3736]]},"properties":{"route":"BIL-E-R1","stop":"Cambridge, MA","out_and_back_km":61}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.0589,42.3601]]},"properties":{"route":"BIL-E-R1","stop":"Boston, MA","out_and_back_km":70}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.4128,41.824]]},"properties":{"route":"BIL-E-R1","stop":"Providence, RI","out_and_back_km":206}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-72.6734,41.7658]]},"properties":{"route":"BIL-E-R1","stop":"Hartford, CT","out_and_back_km":364}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.8023,42.2626]]},"properties":{"route":"BIL-E-R1","stop":"Worcester, MA","out_and_back_km":137}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.4548,42.9956]]},"properties":{"route":"BIL-E-R2","stop":"Manchester, NH","out_and_back_km":127}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-70.2568,43.6591]]},"properties":{"route":"BIL-E-R2","stop":"Portland, ME","out_and_back_km":369}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "stop",
+        "fields": [
+          {
+            "field": "out_and_back_km",
+            "label": "Out-and-back km"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d3-routes",
+      "name": "Optimized van routes",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#3b82f6",
+        "strokeColor": "#22d3ee",
+        "strokeWidth": 5,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.6,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": true,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.2245,42.4473],[-71.1097,42.3736],[-71.0589,42.3601],[-71.4128,41.824],[-72.6734,41.7658],[-71.8023,42.2626],[-71.2695,42.5585]]},"properties":{"route":"BIL-E-R1","sequence":"BIL-E → Lexington, MA → Cambridge, MA → Boston, MA → Providence, RI → Hartford, CT → Worcester, MA → BIL-E","stops":6,"route_km":433,"direct_km":870,"saved_pct":50,"stroke":"#22d3ee","stroke-width":5}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-71.2695,42.5585],[-71.4548,42.9956],[-70.2568,43.6591],[-71.2695,42.5585]]},"properties":{"route":"BIL-E-R2","sequence":"BIL-E → Manchester, NH → Portland, ME → BIL-E","stops":2,"route_km":400,"direct_km":496,"saved_pct":19,"stroke":"#facc15","stroke-width":5}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "route",
+        "fields": [
+          {
+            "field": "sequence",
+            "label": "Sequence"
+          },
+          {
+            "field": "route_km",
+            "label": "Route km"
+          },
+          {
+            "field": "direct_km",
+            "label": "Direct out-and-back km"
+          },
+          {
+            "field": "saved_pct",
+            "label": "Saved (%)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "d3-vans",
+      "name": "Vans on route (animated)",
+      "type": "deckgl-viz",
+      "source": {
+        "type": "deckgl-viz",
+        "data": [
+          {
+            "path": [
+              [
+                -71.2695,
+                42.5585
+              ],
+              [
+                -71.2245,
+                42.4473
+              ],
+              [
+                -71.1097,
+                42.3736
+              ],
+              [
+                -71.0589,
+                42.3601
+              ],
+              [
+                -71.4128,
+                41.824
+              ],
+              [
+                -72.6734,
+                41.7658
+              ],
+              [
+                -71.8023,
+                42.2626
+              ],
+              [
+                -71.2695,
+                42.5585
+              ]
+            ],
+            "timestamps": [
+              0,
+              34,
+              66,
+              78,
+              250,
+              522,
+              758,
+              900
+            ]
+          },
+          {
+            "path": [
+              [
+                -71.2695,
+                42.5585
+              ],
+              [
+                -71.2245,
+                42.4473
+              ],
+              [
+                -71.1097,
+                42.3736
+              ],
+              [
+                -71.0589,
+                42.3601
+              ],
+              [
+                -71.4128,
+                41.824
+              ],
+              [
+                -72.6734,
+                41.7658
+              ],
+              [
+                -71.8023,
+                42.2626
+              ],
+              [
+                -71.2695,
+                42.5585
+              ]
+            ],
+            "timestamps": [
+              450,
+              484,
+              516,
+              528,
+              700,
+              972,
+              1208,
+              1350
+            ]
+          },
+          {
+            "path": [
+              [
+                -71.2695,
+                42.5585
+              ],
+              [
+                -71.4548,
+                42.9956
+              ],
+              [
+                -70.2568,
+                43.6591
+              ],
+              [
+                -71.2695,
+                42.5585
+              ]
+            ],
+            "timestamps": [
+              0,
+              143,
+              486,
+              900
+            ]
+          },
+          {
+            "path": [
+              [
+                -71.2695,
+                42.5585
+              ],
+              [
+                -71.4548,
+                42.9956
+              ],
+              [
+                -70.2568,
+                43.6591
+              ],
+              [
+                -71.2695,
+                42.5585
+              ]
+            ],
+            "timestamps": [
+              450,
+              593,
+              936,
+              1350
+            ]
+          }
+        ]
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#f8fafc",
+        "strokeColor": "#f8fafc",
+        "strokeWidth": 6,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 1,
+        "circleRadius": 40,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": false,
+          "field": "",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#111827",
+          "haloColor": "#ffffff",
+          "haloWidth": 1.5,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "center",
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {
+        "sourceKind": "deckgl-viz",
+        "customLayerType": "trips",
+        "externalDeckLayer": true,
+        "identifiable": false,
+        "vizConfig": {
+          "layerKind": "trips",
+          "format": "json-objects",
+          "fieldMapping": {
+            "path": "path",
+            "timestamps": "timestamps"
+          },
+          "style": {
+            "color": "#f8fafc",
+            "radius": 40,
+            "cellSize": 1000,
+            "lineWidth": 6,
+            "extruded": false,
+            "elevationScale": 30
+          }
+        }
+      }
+    },
+    {
+      "id": "d3-stops",
+      "name": "Route stops (sequence)",
+      "type": "geojson",
+      "source": {
+        "type": "geojson"
+      },
+      "visible": true,
+      "opacity": 1,
+      "style": {
+        "minZoom": 0,
+        "maxZoom": 24,
+        "fillColor": "#f8fafc",
+        "strokeColor": "#0f172a",
+        "strokeWidth": 2,
+        "strokeWidthUnit": "pixels",
+        "fillOpacity": 0.6,
+        "circleRadius": 6,
+        "textColor": "#111827",
+        "textHaloColor": "#ffffff",
+        "textHaloWidth": 2,
+        "textSize": 16,
+        "labels": {
+          "enabled": true,
+          "field": "label",
+          "expression": "",
+          "placement": "point",
+          "size": 13,
+          "color": "#f8fafc",
+          "haloColor": "#0f172a",
+          "haloWidth": 2,
+          "minZoom": 0,
+          "maxZoom": 24,
+          "allowOverlap": false,
+          "anchor": "left",
+          "offsetX": 1.2,
+          "offsetY": 0,
+          "rotation": 0,
+          "maxWidth": 10,
+          "transform": "none",
+          "numberFormatEnabled": false,
+          "numberDecimals": 0,
+          "numberLocale": "",
+          "dedupe": "off",
+          "sizeExpression": "",
+          "colorExpression": "",
+          "opacityExpression": "",
+          "visibilityExpression": "",
+          "priorityExpression": ""
+        },
+        "extrusionEnabled": false,
+        "extrusionColor": "#3b82f6",
+        "extrusionOpacity": 0.8,
+        "extrusionHeightProperty": "height",
+        "extrusionHeightScale": 1,
+        "extrusionBase": 0,
+        "extrusionAdvancedStyleEnabled": false,
+        "extrusionColorExpression": "",
+        "extrusionHeightExpression": "",
+        "elevation3dEnabled": false,
+        "elevation3dVerticalScale": 1,
+        "elevation3dOffset": 0,
+        "vectorStyleMode": "single",
+        "vectorStyleProperty": "",
+        "vectorStyleClassCount": 5,
+        "vectorStyleColorRamp": "viridis",
+        "vectorStyleClassificationScheme": "equal-interval",
+        "vectorStyleStops": [
+          {
+            "value": 0,
+            "color": "#dbeafe"
+          },
+          {
+            "value": 1,
+            "color": "#2563eb"
+          }
+        ],
+        "vectorStyleExpression": "",
+        "vectorRules": [],
+        "proportionalSizeEnabled": false,
+        "proportionalSizeProperty": "",
+        "proportionalSizeMinValue": 0,
+        "proportionalSizeMaxValue": 100,
+        "proportionalSizeMinRadius": 4,
+        "proportionalSizeMaxRadius": 24,
+        "fillPattern": "none",
+        "fillPatternColor": "#1e40af",
+        "fillPatternSvg": "",
+        "markerEnabled": false,
+        "markerShape": "circle",
+        "markerColor": "#3b82f6",
+        "markerSize": 18,
+        "markerSvg": "",
+        "simpleStyleEnabled": false,
+        "diagramType": "none",
+        "diagramFields": [],
+        "diagramSizeMode": "fixed",
+        "diagramSize": 30,
+        "diagramSizeProperty": "",
+        "diagramMinZoom": 0,
+        "diagramDeclutter": false,
+        "pointRenderer": "single",
+        "heatmapRadius": 30,
+        "heatmapIntensity": 1,
+        "heatmapColorRamp": "turbo",
+        "heatmapWeightProperty": "",
+        "clusterRadius": 50,
+        "clusterMaxZoom": 14,
+        "invertedFillEnabled": false,
+        "lineDecoration": "none",
+        "lineDecorationColor": "",
+        "lineDecorationSize": 12,
+        "lineDecorationSpacing": 80,
+        "geometryGenerator": "none",
+        "geometryGeneratorBufferDistance": 1000,
+        "geometryGeneratorBufferProperty": "",
+        "geometryGeneratorFillColor": "#f59e0b",
+        "geometryGeneratorStrokeColor": "#b45309",
+        "geometryGeneratorStrokeWidth": 2,
+        "geometryGeneratorOpacity": 0.4,
+        "geometryGeneratorCircleRadius": 5,
+        "geometryGeneratorSizeProperty": "",
+        "geometryGeneratorSizeMinValue": 0,
+        "geometryGeneratorSizeMaxValue": 100,
+        "geometryGeneratorSizeMinRadius": 4,
+        "geometryGeneratorSizeMaxRadius": 24,
+        "rasterBrightnessMin": 0,
+        "rasterBrightnessMax": 1,
+        "rasterSaturation": 0,
+        "rasterContrast": 0,
+        "rasterHueRotate": 0,
+        "blendMode": "normal"
+      },
+      "metadata": {},
+      "geojson": {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.2245,42.4473]},"properties":{"label":"R1·1  Lexington, MA","route":"BIL-E-R1","stop":1,"name":"Lexington, MA","weekly_shipments":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1097,42.3736]},"properties":{"label":"R1·2  Cambridge, MA","route":"BIL-E-R1","stop":2,"name":"Cambridge, MA","weekly_shipments":9}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.0589,42.3601]},"properties":{"label":"R1·3  Boston, MA","route":"BIL-E-R1","stop":3,"name":"Boston, MA","weekly_shipments":15}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4128,41.824]},"properties":{"label":"R1·4  Providence, RI","route":"BIL-E-R1","stop":4,"name":"Providence, RI","weekly_shipments":6}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.6734,41.7658]},"properties":{"label":"R1·5  Hartford, CT","route":"BIL-E-R1","stop":5,"name":"Hartford, CT","weekly_shipments":5}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.8023,42.2626]},"properties":{"label":"R1·6  Worcester, MA","route":"BIL-E-R1","stop":6,"name":"Worcester, MA","weekly_shipments":7}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.4548,42.9956]},"properties":{"label":"R2·1  Manchester, NH","route":"BIL-E-R2","stop":1,"name":"Manchester, NH","weekly_shipments":4}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-70.2568,43.6591]},"properties":{"label":"R2·2  Portland, ME","route":"BIL-E-R2","stop":2,"name":"Portland, ME","weekly_shipments":5}}]},
+      "popup": {
+        "click": true,
+        "hover": false,
+        "showFeatureId": false,
+        "titleField": "name",
+        "fields": [
+          {
+            "field": "route",
+            "label": "Route"
+          },
+          {
+            "field": "stop",
+            "label": "Stop #"
+          },
+          {
+            "field": "weekly_shipments",
+            "label": "Weekly shipments"
+          }
+        ]
+      }
+    }
+  ],
+  "layerGroups": [],
+  "styles": {},
+  "preferences": {
+    "map": {
+      "restrictBounds": false,
+      "bounds": [
+        -180,
+        -85,
+        180,
+        85
+      ],
+      "minZoom": 0,
+      "maxZoom": 24,
+      "maxPitch": 85,
+      "renderWorldCopies": true,
+      "projection": "mercator",
+      "ellipsoidId": "earth",
+      "scaleUnit": "metric",
+      "showPointerElevation": false,
+      "terrainEnabled": false,
+      "coordinateFormat": "dd",
+      "mapboxStyleUrl": "mapbox://styles/mapbox/standard",
+      "arcgisBasemap": "arcgis/streets",
+      "cesiumBasemap": "bing-aerial"
+    },
+    "environmentVariables": [],
+    "geocoding": {
+      "providerId": "nominatim",
+      "apiKeys": {}
+    }
+  },
+  "legend": {
+    "title": "Route optimization · sample data",
+    "groupByLayer": true,
+    "order": [],
+    "overrides": {},
+    "panelVisible": true,
+    "panelPosition": "bottom-right"
+  },
+  "comments": [],
+  "metadata": {
+    "description": "Optimized multi-stop van routes from Billerica vs direct out-and-back delivery.",
+    "sampleData": true,
+    "generatedBy": "scripts/gen-nova-demos.ts"
+  },
+  "storymap": {
+    "title": "New England delivery routes",
+    "subtitle": "Multi-stop route optimization from Billerica",
+    "byline": "Geoverse · Powered by Aether AI",
+    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
+    "theme": "dark",
+    "showMarkers": false,
+    "markerColor": "#38bdf8",
+    "inset": false,
+    "insetPosition": "bottom-left",
+    "hideChapterNav": false,
+    "startSlide": "none",
+    "endSlide": "none",
+    "chapters": [
+      {
+        "id": "before",
+        "title": "Before: one trip per customer",
+        "description": "<p>Delivering each New England customer directly from Billerica – Enterprise Rd means a separate out-and-back trip for every stop (grey lines).</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -71.35,
+            42.45
+          ],
+          "zoom": 7.6,
+          "pitch": 58,
+          "bearing": -18
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "before-in-0",
+            "layerId": "d3-direct",
+            "opacity": 0.9,
+            "duration": 900
+          },
+          {
+            "id": "before-in-1",
+            "layerId": "d3-routes",
+            "opacity": 0,
+            "duration": 900
+          },
+          {
+            "id": "before-in-2",
+            "layerId": "d3-vans",
+            "opacity": 0,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "after",
+        "title": "After: two optimized van routes",
+        "description": "<p>Customers within 300 road km are grouped by angular sweep, capped at 450 km per driver shift, then sequenced with nearest-neighbour + 2-opt.</p><ul><li><b style='color:#22d3ee'>BIL-E-R1</b>: 6 stops · 433 km vs 870 km direct (<b>50% fewer km</b>)</li><li><b style='color:#facc15'>BIL-E-R2</b>: 2 stops · 400 km vs 496 km direct (<b>19% fewer km</b>)</li></ul><p><b>533 km saved per delivery cycle.</b></p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -71.35,
+            42.45
+          ],
+          "zoom": 7.6,
+          "pitch": 58,
+          "bearing": 10
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "after-in-0",
+            "layerId": "d3-direct",
+            "opacity": 0.25,
+            "duration": 900
+          },
+          {
+            "id": "after-in-1",
+            "layerId": "d3-routes",
+            "opacity": 1,
+            "duration": 900
+          },
+          {
+            "id": "after-in-2",
+            "layerId": "d3-vans",
+            "opacity": 1,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "r1",
+        "title": "BIL-E-R1: the main New England loop",
+        "description": "<p>Lexington → Cambridge → Boston → Providence → Hartford → Worcester → back to Billerica, inside one driver shift.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -71.7,
+            42.05
+          ],
+          "zoom": 8.3,
+          "pitch": 60,
+          "bearing": -30
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "r1-in-0",
+            "layerId": "d3-direct",
+            "opacity": 0.25,
+            "duration": 900
+          },
+          {
+            "id": "r1-in-1",
+            "layerId": "d3-routes",
+            "opacity": 1,
+            "duration": 900
+          },
+          {
+            "id": "r1-in-2",
+            "layerId": "d3-vans",
+            "opacity": 1,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      },
+      {
+        "id": "r2",
+        "title": "BIL-E-R2: north to Maine",
+        "description": "<p>Manchester, NH and Portland, ME on one run instead of two.</p>",
+        "alignment": "left",
+        "hidden": false,
+        "location": {
+          "center": [
+            -70.9,
+            43.15
+          ],
+          "zoom": 8.1,
+          "pitch": 60,
+          "bearing": 20
+        },
+        "mapAnimation": "flyTo",
+        "rotateAnimation": false,
+        "onChapterEnter": [
+          {
+            "id": "r2-in-0",
+            "layerId": "d3-direct",
+            "opacity": 0.25,
+            "duration": 900
+          },
+          {
+            "id": "r2-in-1",
+            "layerId": "d3-routes",
+            "opacity": 1,
+            "duration": 900
+          },
+          {
+            "id": "r2-in-2",
+            "layerId": "d3-vans",
+            "opacity": 1,
+            "duration": 900
+          }
+        ],
+        "onChapterExit": []
+      }
+    ]
+  }
+}
