@@ -258,7 +258,7 @@ function ControlTower({
         </div>
         {config.scenarios.length > 1 ? (
           <div
-            className="ms-auto flex items-center gap-1 rounded-xl border border-white/10 bg-slate-900/70 p-1"
+            className="ms-auto flex min-w-0 flex-wrap items-center gap-1 rounded-xl border border-white/10 bg-slate-900/70 p-1"
             role="radiogroup"
             aria-label={t("controlTower.scenario")}
           >
@@ -628,7 +628,7 @@ function ControlTower({
       >
         <header className="flex items-start gap-2 border-b border-white/10 px-4 pb-2.5 pt-3.5">
           <div className="min-w-0">
-            <h2 className="truncate text-sm font-semibold">
+            <h2 className="text-sm font-semibold leading-snug">
               {panelMode === "ask"
                 ? t("controlTower.ask.title")
                 : panelMode === "explain"

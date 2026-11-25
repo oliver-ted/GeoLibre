@@ -94,7 +94,7 @@ export function Tag({
   return (
     <span
       className={cn(
-        "inline-flex items-center whitespace-nowrap rounded px-1.5 py-0.5 text-[10.5px] font-semibold",
+        "inline-flex max-w-full items-center rounded px-1.5 py-0.5 text-start text-[10.5px] font-semibold leading-snug",
         bg[tone],
         className,
       )}
@@ -144,7 +144,7 @@ export function ListRow({
         </span>
       ) : null}
       <span className="min-w-0 flex-1">
-        <span className="block truncate text-xs font-semibold text-slate-100">{row.title}</span>
+        <span className="block text-xs font-semibold leading-snug text-slate-100">{row.title}</span>
         {row.detail ? (
           <span className="block text-[11px] leading-snug text-slate-400">{row.detail}</span>
         ) : null}
@@ -214,7 +214,43 @@ export function Section({
           ))}
         </div>
       );
-    case "table":
+    case "table": {
+      // The panel is narrow, so wide tables render as stacked rows: the first
+      // column is the row's title and the rest are label/value pairs. Long
+      // values (a reason, a flag list) take the full width.
+      if (section.columns.length > 4) {
+        return (
+          <div className="flex flex-col gap-1.5">
+            <SectionTitle>{section.title}</SectionTitle>
+            {section.rows.map((r, i) => (
+              <div
+                key={i}
+                className={cn(
+                  "rounded-lg border px-2.5 py-2",
+                  section.highlightRows?.includes(i)
+                    ? "border-red-500/35 bg-red-500/10"
+                    : "border-white/10 bg-slate-950/40",
+                )}
+              >
+                <div className="text-xs font-semibold text-slate-100">{r[0]}</div>
+                <dl className="mt-1 grid grid-cols-3 gap-x-2 gap-y-1">
+                  {r.slice(1).map((cell, j) => {
+                    const long = cell.length > 18;
+                    return (
+                      <div key={j} className={cn("min-w-0", long && "col-span-3")}>
+                        <dt className="text-[10px] uppercase tracking-[.05em] text-slate-500">
+                          {section.columns[j + 1]}
+                        </dt>
+                        <dd className="m-0 text-[11.5px] leading-snug text-slate-300">{cell}</dd>
+                      </div>
+                    );
+                  })}
+                </dl>
+              </div>
+            ))}
+          </div>
+        );
+      }
       return (
         <div className="flex flex-col gap-1.5">
           <SectionTitle>{section.title}</SectionTitle>
@@ -245,7 +281,7 @@ export function Section({
                       <td
                         key={j}
                         className={cn(
-                          "px-2 py-1.5 align-top text-slate-300",
+                          "px-2 py-1.5 align-top leading-snug text-slate-300",
                           j === 0 && "font-medium text-slate-100",
                         )}
                       >
@@ -259,6 +295,7 @@ export function Section({
           </div>
         </div>
       );
+    }
     case "card":
       return (
         <div className={cn("rounded-lg border px-3 py-2.5", TONE_BOX[section.tone ?? "neutral"])}>
@@ -300,7 +337,7 @@ export function Section({
           <SectionTitle>{section.title}</SectionTitle>
           {section.rows.map((row) => (
             <div key={row.label} className="flex items-center gap-2 text-xs">
-              <span className="w-24 truncate text-slate-200">{row.label}</span>
+              <span className="w-24 leading-tight text-slate-200">{row.label}</span>
               <div className="h-1.5 flex-1 overflow-hidden rounded bg-slate-500/20">
                 <div
                   className="h-full rounded bg-gradient-to-r from-orange-500 to-amber-400"
@@ -394,6 +431,12 @@ const LABELS: Record<string, string> = {
 const prettyKey = (k: string) =>
   LABELS[k] ?? k.replace(/_/g, " ").replace(/^\w/, (c) => c.toUpperCase());
 
+/** The card already says "nearest node", so drop the generator's prefix from its reason. */
+function shortReason(why: string): string {
+  const stripped = why.replace(/^Nearest node \([^)]*\)\s*/i, "");
+  return stripped.charAt(0).toUpperCase() + stripped.slice(1);
+}
+
 function statusTone(status: CtAlternative["status"]): CtTone {
   return status === "chosen"
     ? "accent"
@@ -442,15 +485,13 @@ export function ExplainCard({ feature }: { feature: SelectedFeature }) {
           <div className="text-[11px] text-slate-400">
             {t("controlTower.explain.roadKm", { km: Number(p.nearest_km ?? 0) })}
           </div>
-          {!same ? (
-            <Tag tone="danger" className="mt-1.5">
-              {String(p.why ?? "")}
-            </Tag>
-          ) : (
-            <Tag tone="good" className="mt-1.5">
-              {t("controlTower.explain.alsoOptimal")}
-            </Tag>
-          )}
+          <div className="mt-1.5 flex flex-wrap gap-1">
+            {!same ? (
+              <Tag tone="danger">{shortReason(String(p.why ?? ""))}</Tag>
+            ) : (
+              <Tag tone="good">{t("controlTower.explain.alsoOptimal")}</Tag>
+            )}
+          </div>
         </div>
         <div className="rounded-lg border border-sky-400/50 bg-sky-500/10 px-2.5 py-2">
           <div className="text-[10px] font-semibold uppercase tracking-[.06em] text-sky-300">
@@ -500,7 +541,7 @@ export function ExplainCard({ feature }: { feature: SelectedFeature }) {
           >
             {t("controlTower.explain.alternatives")}
           </SectionTitle>
-          <div className="overflow-hidden rounded-lg border border-white/10">
+          <div className="overflow-x-auto rounded-lg border border-white/10">
             <table className="w-full border-collapse text-[11px]">
               <thead>
                 <tr className="text-[10px] uppercase tracking-[.05em] text-slate-500">
