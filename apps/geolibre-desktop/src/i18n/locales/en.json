@@ -3272,7 +3272,7 @@
         "browser-local-file": "The local file is referenced, but browsers cannot reopen QGIS data paths. Use Geoverse Desktop to load it.",
         "browser-local-raster": "The raster is referenced by a local path. Use Geoverse Desktop to load it."
       },
-      "openProjectFromUrlDesc": "Load a `.geolibre.json` project and add it to recent projects.",
+      "openProjectFromUrlDesc": "Load a Geoverse project file from a URL and add it to recent projects.",
       "projectUrl": "Project URL",
       "opening": "Opening...",
       "open": "Open",
