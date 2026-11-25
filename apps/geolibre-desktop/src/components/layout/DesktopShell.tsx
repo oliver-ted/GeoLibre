@@ -85,6 +85,8 @@ import { BrowserPanel } from "../panels/BrowserPanel";
 import { LayerPanel } from "../panels/LayerPanel";
 import { ViewerLayerPanel } from "../panels/ViewerLayerPanel";
 import { FloatingPanels } from "../panels/FloatingPanels";
+import { ControlTowerOverlay } from "../control-tower/ControlTowerOverlay";
+import { readControlTowerConfig } from "../../lib/control-tower";
 import { SunPanel } from "../panels/SunPanel";
 import { RouteAnimationPanel } from "../panels/RouteAnimationPanel";
 import { FlightSimulatorPanel } from "../panels/FlightSimulatorPanel";
@@ -240,6 +242,10 @@ export function DesktopShell({
   useNativeProjectOpenListener(projectFilesRef);
   const notebookOpen = useAppStore((s) => s.ui.notebookOpen);
   const storymapPresenting = useAppStore((s) => s.ui.storymapPresenting);
+  // A Control Tower project (lib/control-tower.ts) owns the map chrome, so the
+  // Layers and Style rails collapse for it the way they do for a story-map
+  // presentation. The overlay itself mounts inside <main>.
+  const controlTowerActive = useAppStore((s) => readControlTowerConfig(s.metadata) !== null);
   // A plugin panel docks at one of four positions beside the Layers/Style
   // panels and the user steps it between them; the built-in panel on the docked
   // side collapses to its rail while the plugin panel is expanded next to it
@@ -547,7 +553,7 @@ export function DesktopShell({
                   }
                   // The story-map presentation is the only standalone Layers
                   // autoCollapse trigger (the notebook collapses Style, not Layers).
-                  forceBuiltinCollapsed={storymapPresenting}
+                  forceBuiltinCollapsed={storymapPresenting || controlTowerActive}
                   renderBuiltin={({ collapsed, onCollapsedChange }) => (
                     <LayerPanel
                       themeMode={themeMode}
@@ -774,6 +780,13 @@ export function DesktopShell({
           >
             <FloatingPanels />
           </SectionErrorBoundary>
+          <SectionErrorBoundary label="Control Tower" displayName={t("shell.section.controlTower")}>
+            <ControlTowerOverlay
+              mapControllerRef={mapControllerRef}
+              mapReadyGeneration={mapReadyGeneration}
+              projectFiles={projectFiles}
+            />
+          </SectionErrorBoundary>
           {/* Mounted inside the map area (like FloatingPanels) so the canvas
               floats over the map and drag-clamps to it, not to the whole
               window — the user keeps their layers in view while building. */}
@@ -895,7 +908,7 @@ export function DesktopShell({
                   // notebook / story-map presentation collapses Style here too.
                   // `autoCollapsedPanel` is omitted because it is always null in a
                   // shared-rail mode (the panel is the sole active one).
-                  forceBuiltinCollapsed={notebookOpen || storymapPresenting}
+                  forceBuiltinCollapsed={notebookOpen || storymapPresenting || controlTowerActive}
                   renderBuiltin={({ collapsed, onCollapsedChange }) => (
                     <StylePanel
                       mapControllerRef={mapControllerRef}

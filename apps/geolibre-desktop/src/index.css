@@ -4749,3 +4749,36 @@ html.dark .maplibregl-popup-anchor-right:has(.vector-control-popup) .maplibregl-
   color: hsl(var(--primary));
   font-weight: 600;
 }
+
+/* Control Tower (lib/control-tower.ts): keep MapLibre's own controls clear of
+   the overlay's rail, KPI strip and context panel while a Control Tower
+   project is loaded. The overlay's own cards use logical properties and
+   mirror with the document direction, so these offsets do too. */
+main:has(.ct-root) .maplibregl-ctrl-top-left {
+  top: 48px;
+  inset-inline-start: 84px;
+}
+main:has(.ct-root) .maplibregl-ctrl-top-right {
+  top: 148px;
+  inset-inline-end: 404px;
+}
+main:has(.ct-root) .maplibregl-ctrl-bottom-right {
+  inset-inline-end: 404px;
+}
+main:has(.ct-root) .maplibregl-ctrl-bottom-left {
+  inset-inline-start: 84px;
+}
+.ct-root .ct-html p {
+  margin: 0 0 0.5em;
+}
+.ct-root .ct-html p:last-child {
+  margin-bottom: 0;
+}
+.ct-root .ct-html ul {
+  margin: 0.25em 0 0.5em;
+  padding-inline-start: 1.1em;
+  list-style: disc;
+}
+.ct-root .ct-html b {
+  color: #f1f5f9;
+}

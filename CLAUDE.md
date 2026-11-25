@@ -101,6 +101,18 @@ or a `plugin.json` manifest; bundled drop-ins under
 `apps/geolibre-desktop/public/plugins/<id>/` bake into both web and desktop
 builds. See `docs/plugin-api.md`.
 
+**Control Tower** (`apps/geolibre-desktop/src/lib/control-tower.ts`,
+`components/control-tower/`): a project that carries `metadata.controlTower`
+(version 1) is presented as a live "Control Tower" instead of a story-map
+scroller: scenario switcher, KPI strip, lens rail, context panel with
+click-to-explain, tour strip and a scripted Ask panel. Everything shown is data
+from that config. The Nova Biomedical demos under
+`apps/geolibre-desktop/public/demos/nova/*.geoverse.json` are generated with it by
+`scripts/gen-nova-demos.ts` (`node --import tsx scripts/gen-nova-demos.ts`);
+edit the generator, never the JSON. Scenario and tour layer fades go through the
+story-map opacity path (`setStoryLayerOpacity` + `setStorymapLayerOpacity`) so
+deck.gl layers follow and the project stays clean.
+
 **Python sidecar** (`backend/geolibre_server`, FastAPI on `127.0.0.1:8765`):
 backs the Whitebox toolbox, format Conversion tools, and Raster tools (rasterio).
 The desktop app starts it on demand. It is **optional** — Vector tools run

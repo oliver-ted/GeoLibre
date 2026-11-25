@@ -986,185 +986,447 @@
     "groupByLayer": true,
     "order": [],
     "overrides": {},
-    "panelVisible": true,
+    "panelVisible": false,
     "panelPosition": "bottom-right"
   },
   "comments": [],
   "metadata": {
     "description": "Optimized multi-stop van routes from Billerica vs direct out-and-back delivery.",
     "sampleData": true,
-    "generatedBy": "scripts/gen-nova-demos.ts"
-  },
-  "storymap": {
-    "title": "New England delivery routes",
-    "subtitle": "Multi-stop route optimization from Billerica",
-    "byline": "Geoverse · Powered by Aether AI",
-    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
-    "theme": "dark",
-    "showMarkers": false,
-    "markerColor": "#38bdf8",
-    "inset": false,
-    "insetPosition": "bottom-left",
-    "hideChapterNav": false,
-    "startSlide": "none",
-    "endSlide": "none",
-    "chapters": [
-      {
-        "id": "before",
-        "title": "Before: one trip per customer",
-        "description": "<p>Delivering each New England customer directly from Billerica – Enterprise Rd means a separate out-and-back trip for every stop (grey lines).</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -71.35,
-            42.45
-          ],
-          "zoom": 7.6,
-          "pitch": 58,
-          "bearing": -18
+    "generatedBy": "scripts/gen-nova-demos.ts",
+    "controlTower": {
+      "version": 1,
+      "client": "Nova Biomedical",
+      "title": "Routes › Billerica – Enterprise Rd",
+      "lensId": "routes",
+      "lenses": [
+        {
+          "id": "network",
+          "label": "Network",
+          "url": "demos/nova/1-nova-global-network.geoverse.json",
+          "icon": "network"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
+        {
+          "id": "sourcing",
+          "label": "Sourcing",
+          "url": "demos/nova/2-nova-optimal-sourcing.geoverse.json",
+          "icon": "sourcing"
+        },
+        {
+          "id": "routes",
+          "label": "Routes",
+          "url": "demos/nova/3-nova-new-england-routes.geoverse.json",
+          "icon": "routes"
+        },
+        {
+          "id": "inbound",
+          "label": "Inbound",
+          "url": "demos/nova/4-nova-supplier-risk.geoverse.json",
+          "icon": "inbound",
+          "badge": 7
+        },
+        {
+          "id": "scenarios",
+          "label": "Scenarios",
+          "url": "demos/nova/5-nova-billerica-outage.geoverse.json",
+          "icon": "scenarios"
+        },
+        {
+          "id": "installed",
+          "label": "Installed base",
+          "url": "demos/nova/6-nova-installed-base.geoverse.json",
+          "icon": "installed"
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "normal",
+          "label": "Normal operations",
+          "tone": "normal",
+          "layers": {},
+          "kpis": [
+            {
+              "id": "routes",
+              "label": "Routes today",
+              "value": 2,
+              "format": "int",
+              "detail": "vans"
+            },
+            {
+              "id": "stops",
+              "label": "Stops",
+              "value": 8,
+              "format": "int",
+              "detail": "customers"
+            },
+            {
+              "id": "routekm",
+              "label": "Route km",
+              "value": 833,
+              "format": "int",
+              "detail": "km"
+            },
+            {
+              "id": "directkm",
+              "label": "Direct km (before)",
+              "value": 1366,
+              "format": "int",
+              "detail": "km"
+            },
+            {
+              "id": "saved",
+              "label": "Saved per cycle",
+              "value": 533,
+              "format": "int",
+              "detail": "km · 39% fewer"
+            },
+            {
+              "id": "risk",
+              "label": "On-time risk",
+              "value": 0,
+              "format": "int",
+              "detail": "stops"
+            }
+          ],
+          "exceptions": []
+        }
+      ],
+      "defaultScenarioId": "normal",
+      "views": [
+        {
+          "label": "World",
+          "camera": {
+            "center": [
+              15,
+              28
+            ],
+            "zoom": 1.6,
+            "pitch": 25,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "North America",
+          "camera": {
+            "center": [
+              -90,
+              38
+            ],
+            "zoom": 3.3,
+            "pitch": 45,
+            "bearing": -10
+          }
+        },
+        {
+          "label": "New England",
+          "camera": {
+            "center": [
+              -71.35,
+              42.45
+            ],
+            "zoom": 7.6,
+            "pitch": 58,
+            "bearing": -18
+          }
+        },
+        {
+          "label": "Europe",
+          "camera": {
+            "center": [
+              4,
+              49
+            ],
+            "zoom": 4.2,
+            "pitch": 45,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "Asia-Pacific",
+          "camera": {
+            "center": [
+              128,
+              10
+            ],
+            "zoom": 2.6,
+            "pitch": 35,
+            "bearing": 0
+          }
+        }
+      ],
+      "sections": [
+        {
+          "type": "list",
+          "title": "Routes",
+          "rows": [
+            {
+              "badge": "R1",
+              "title": "BIL-E-R1 · main New England loop",
+              "detail": "6 stops · 433 km of a 450 km shift",
+              "value": "−50%",
+              "valueLabel": "vs 870 km direct",
+              "tone": "good",
+              "location": [
+                -71.2245,
+                42.4473
+              ],
+              "zoom": 9
+            },
+            {
+              "badge": "R2",
+              "title": "BIL-E-R2 · north to Maine",
+              "detail": "2 stops · 400 km of a 450 km shift",
+              "value": "−19%",
+              "valueLabel": "vs 496 km direct",
+              "tone": "good",
+              "location": [
+                -71.4548,
+                42.9956
+              ],
+              "zoom": 9
+            }
+          ]
+        },
+        {
+          "type": "timeline",
+          "title": "BIL-E-R1 · today",
+          "rows": [
+            {
+              "time": "07:30",
+              "title": "Depart Billerica – Enterprise Rd",
+              "detail": "Load pallets · Critical Care + Bioprocess"
+            },
+            {
+              "time": "07:48",
+              "title": "1 · Lexington, MA",
+              "detail": "Biopharma · 5 pkgs"
+            },
+            {
+              "time": "08:25",
+              "title": "2 · Cambridge, MA",
+              "detail": "Biopharma · 9 pkgs"
+            },
+            {
+              "time": "08:51",
+              "title": "3 · Boston, MA",
+              "detail": "Hospital · 15 pkgs"
+            },
+            {
+              "time": "10:42",
+              "title": "4 · Providence, RI",
+              "detail": "Hospital · 6 pkgs"
+            },
+            {
+              "time": "13:25",
+              "title": "5 · Hartford, CT",
+              "detail": "Hospital · 5 pkgs"
+            },
+            {
+              "time": "15:49",
+              "title": "6 · Worcester, MA",
+              "detail": "Hospital · 7 pkgs"
+            },
+            {
+              "time": "17:24",
+              "title": "Return to Billerica",
+              "detail": "433 km total"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "In production",
+          "body": "Becomes a VRPTW solved over road-network travel times with vehicle capacity, driver hours, receiving windows and live traffic; dispatch goes to Process Weaver."
+        }
+      ],
+      "panelTitle": "Route manifest",
+      "panelSubtitle": "450 km driver-shift cap · nearest-neighbour + 2-opt",
+      "explainLayers": [
+        "d3-stops",
+        "d3-routes"
+      ],
+      "tour": {
+        "steps": [
           {
-            "id": "before-in-0",
-            "layerId": "d3-direct",
-            "opacity": 0.9,
-            "duration": 900
+            "id": "before",
+            "title": "Before: one trip per customer",
+            "body": "<p>Delivering each New England customer directly from Billerica – Enterprise Rd means a separate out-and-back trip for every stop (grey lines).</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+            "camera": {
+              "center": [
+                -71.35,
+                42.45
+              ],
+              "zoom": 7.6,
+              "pitch": 58,
+              "bearing": -18
+            },
+            "layers": {
+              "d3-direct": 0.9,
+              "d3-routes": 0,
+              "d3-vans": 0
+            }
           },
           {
-            "id": "before-in-1",
-            "layerId": "d3-routes",
-            "opacity": 0,
-            "duration": 900
+            "id": "after",
+            "title": "After: two optimized van routes",
+            "body": "<p>Customers within 300 road km are grouped by angular sweep, capped at 450 km per driver shift, then sequenced with nearest-neighbour + 2-opt.</p><ul><li><b style='color:#22d3ee'>BIL-E-R1</b>: 6 stops · 433 km vs 870 km direct (<b>50% fewer km</b>)</li><li><b style='color:#facc15'>BIL-E-R2</b>: 2 stops · 400 km vs 496 km direct (<b>19% fewer km</b>)</li></ul><p><b>533 km saved per delivery cycle.</b></p>",
+            "camera": {
+              "center": [
+                -71.35,
+                42.45
+              ],
+              "zoom": 7.6,
+              "pitch": 58,
+              "bearing": 10
+            },
+            "layers": {
+              "d3-direct": 0.25,
+              "d3-routes": 1,
+              "d3-vans": 1
+            }
           },
           {
-            "id": "before-in-2",
-            "layerId": "d3-vans",
-            "opacity": 0,
-            "duration": 900
+            "id": "r1",
+            "title": "BIL-E-R1: the main New England loop",
+            "body": "<p>Lexington → Cambridge → Boston → Providence → Hartford → Worcester → back to Billerica, inside one driver shift.</p>",
+            "camera": {
+              "center": [
+                -71.7,
+                42.05
+              ],
+              "zoom": 8.3,
+              "pitch": 60,
+              "bearing": -30
+            },
+            "layers": {
+              "d3-direct": 0.25,
+              "d3-routes": 1,
+              "d3-vans": 1
+            }
+          },
+          {
+            "id": "r2",
+            "title": "BIL-E-R2: north to Maine",
+            "body": "<p>Manchester, NH and Portland, ME on one run instead of two.</p>",
+            "camera": {
+              "center": [
+                -70.9,
+                43.15
+              ],
+              "zoom": 8.1,
+              "pitch": 60,
+              "bearing": 20
+            },
+            "layers": {
+              "d3-direct": 0.25,
+              "d3-routes": 1,
+              "d3-vans": 1
+            }
           }
         ],
-        "onChapterExit": []
+        "durationLabel": "4 stops"
       },
-      {
-        "id": "after",
-        "title": "After: two optimized van routes",
-        "description": "<p>Customers within 300 road km are grouped by angular sweep, capped at 450 km per driver shift, then sequenced with nearest-neighbour + 2-opt.</p><ul><li><b style='color:#22d3ee'>BIL-E-R1</b>: 6 stops · 433 km vs 870 km direct (<b>50% fewer km</b>)</li><li><b style='color:#facc15'>BIL-E-R2</b>: 2 stops · 400 km vs 496 km direct (<b>19% fewer km</b>)</li></ul><p><b>533 km saved per delivery cycle.</b></p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -71.35,
-            42.45
-          ],
-          "zoom": 7.6,
-          "pitch": 58,
-          "bearing": 10
-        },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
+      "ask": {
+        "placeholder": "Ask about today's routes…",
+        "items": [
           {
-            "id": "after-in-0",
-            "layerId": "d3-direct",
-            "opacity": 0.25,
-            "duration": 900
+            "question": "How much does the loop save versus one trip per customer?",
+            "answer": "<p><b>533 km per delivery cycle</b>: BIL-E-R1 runs 433 km against 870 km of out-and-back trips (−50%); BIL-E-R2 runs 400 km against 496 km of out-and-back trips (−19%). Both routes fit inside one 450 km driver shift.</p>",
+            "citations": [
+              "route model §6.2 · straight-line × 1.25 circuity"
+            ]
           },
           {
-            "id": "after-in-1",
-            "layerId": "d3-routes",
-            "opacity": 1,
-            "duration": 900
+            "question": "Which customers miss SLA if Billerica is down?",
+            "answer": "<p><b>25 customers</b> fall outside SLA if Billerica – Enterprise Rd goes offline, <b>22 of them hospitals</b> on a 2-day Critical Care SLA. Demand falls back to Wimborne by international air (3 days including customs).</p><p>Biggest by volume: <b>New York</b> (17/wk), <b>Boston</b> (15/wk), <b>Chicago</b> (14/wk), <b>Los Angeles</b> (13/wk).</p><p>Weekly freight rises from <b>$33,665</b> to <b>$131,526</b> (+291%). Activating Norwood as a contingency DC brings it back to <b>97.9%</b> within SLA at <b>$33,857</b>.</p>",
+            "citations": [
+              "scenario: billerica-offline",
+              "47 ship-tos · S/4HANA KNA1 (sample)",
+              "rates: placeholder, Process Weaver pending"
+            ],
+            "scenarioId": "outage"
           },
           {
-            "id": "after-in-2",
-            "layerId": "d3-vans",
-            "opacity": 1,
-            "duration": 900
+            "question": "Why isn't Boston served from Norwood?",
+            "answer": "<p>Norwood is Boston's nearest node (34 km) but its stocking profile carries <b>Osmolality only</b>. Boston buys Critical Care, which is stocked at Billerica – Enterprise Rd (normal operations) and, under the contingency profile, at Norwood too.</p>",
+            "citations": [
+              "stocking profile NOR · S/4HANA MARC (sample)"
+            ],
+            "camera": {
+              "center": [
+                -71.35,
+                42.45
+              ],
+              "zoom": 7.6,
+              "pitch": 58,
+              "bearing": -18
+            }
+          },
+          {
+            "question": "Cheapest way to serve Seoul within 3 days?",
+            "answer": "<p>There is none today. The Japan FSL serves Japan only, so Seoul ships from Wimborne by international air in <b>4 days</b> against a <b>3-day</b> SLA. A Korea stocking point, or letting Taipei manufacturing hold finished Critical Care stock, would close the gap at roughly a third of the current lane cost.</p>",
+            "citations": [
+              "countries-served rule: JPN → JP only (assumption, §3.1)"
+            ],
+            "camera": {
+              "center": [
+                128,
+                10
+              ],
+              "zoom": 2.6,
+              "pitch": 35,
+              "bearing": 0
+            }
+          },
+          {
+            "question": "Show me every single-source lane via Suez",
+            "answer": "<p>Three single-source lanes share the Suez route: <b>sensor chips</b> (Hsinchu → Waltham, 36 d), <b>lithium cells</b> (Suzhou → Billerica Lexington Rd, 35 d) and <b>PCB assemblies</b> (Penang → Billerica Manning Rd, 39 d). Motors from Shenzhen use it too but have a second source. A 7-day canal closure delays all four at once.</p>",
+            "citations": [
+              "14 inbound lanes · vendor master (sample)"
+            ],
+            "camera": {
+              "center": [
+                55,
+                24
+              ],
+              "zoom": 1.8,
+              "pitch": 26,
+              "bearing": 0
+            }
           }
-        ],
-        "onChapterExit": []
+        ]
       },
-      {
-        "id": "r1",
-        "title": "BIL-E-R1: the main New England loop",
-        "description": "<p>Lexington → Cambridge → Boston → Providence → Hartford → Worcester → back to Billerica, inside one driver shift.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -71.7,
-            42.05
-          ],
-          "zoom": 8.3,
-          "pitch": 60,
-          "bearing": -30
-        },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
+      "legendTitle": "Route optimization · sample data",
+      "legend": {
+        "title": "Routes · sample data",
+        "items": [
           {
-            "id": "r1-in-0",
-            "layerId": "d3-direct",
-            "opacity": 0.25,
-            "duration": 900
+            "label": "BIL-E-R1 · main New England loop",
+            "color": "#22d3ee",
+            "kind": "line"
           },
           {
-            "id": "r1-in-1",
-            "layerId": "d3-routes",
-            "opacity": 1,
-            "duration": 900
+            "label": "BIL-E-R2 · north to Maine",
+            "color": "#facc15",
+            "kind": "line"
           },
           {
-            "id": "r1-in-2",
-            "layerId": "d3-vans",
-            "opacity": 1,
-            "duration": 900
+            "label": "Direct out-and-back trips (before)",
+            "color": "#64748b",
+            "kind": "line"
+          },
+          {
+            "label": "Stop, numbered in sequence",
+            "color": "#f8fafc"
+          },
+          {
+            "label": "Van (animated)",
+            "color": "#f8fafc",
+            "kind": "ring"
           }
-        ],
-        "onChapterExit": []
+        ]
       },
-      {
-        "id": "r2",
-        "title": "BIL-E-R2: north to Maine",
-        "description": "<p>Manchester, NH and Portland, ME on one run instead of two.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -70.9,
-            43.15
-          ],
-          "zoom": 8.1,
-          "pitch": 60,
-          "bearing": 20
-        },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
-          {
-            "id": "r2-in-0",
-            "layerId": "d3-direct",
-            "opacity": 0.25,
-            "duration": 900
-          },
-          {
-            "id": "r2-in-1",
-            "layerId": "d3-routes",
-            "opacity": 1,
-            "duration": 900
-          },
-          {
-            "id": "r2-in-2",
-            "layerId": "d3-vans",
-            "opacity": 1,
-            "duration": 900
-          }
-        ],
-        "onChapterExit": []
-      }
-    ]
+      "dataNotice": "Sample data. Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative."
+    }
   }
 }

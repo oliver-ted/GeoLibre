@@ -20,51 +20,51 @@ export const DEMO_PROJECTS: readonly DemoProject[] = [
   {
     name: "1 · Global Network",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/1-nova-global-network.geolibre.json",
+    url: "demos/nova/1-nova-global-network.geoverse.json",
   },
   {
     name: "2 · Optimal Source vs Nearest",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/2-nova-optimal-sourcing.geolibre.json",
+    url: "demos/nova/2-nova-optimal-sourcing.geoverse.json",
   },
   {
     name: "3 · New England Van Routes",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/3-nova-new-england-routes.geolibre.json",
+    url: "demos/nova/3-nova-new-england-routes.geoverse.json",
   },
   {
     name: "4 · Supplier Lane Risk",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/4-nova-supplier-risk.geolibre.json",
+    url: "demos/nova/4-nova-supplier-risk.geoverse.json",
   },
   {
     name: "5 · What If Billerica Goes Down?",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/5-nova-billerica-outage.geolibre.json",
+    url: "demos/nova/5-nova-billerica-outage.geoverse.json",
   },
   {
     name: "6 · Installed Base & Consumables Demand",
     group: "Nova Biomedical (sample data)",
-    url: "demos/nova/6-nova-installed-base.geolibre.json",
+    url: "demos/nova/6-nova-installed-base.geoverse.json",
   },
   {
     name: "Manhattan Buildings Through Time",
     group: "New York City",
-    url: "https://share.geolibre.app/giswqs/manhattan-buildings-through-time.geolibre.json",
+    url: "https://share.geolibre.app/giswqs/manhattan-buildings-through-time.geoverse.json",
   },
   {
     name: "NYC Subway Ridership 2025",
     group: "New York City",
-    url: "https://share.geolibre.app/giswqs/nyc-subway-ridership-2025.geolibre.json",
+    url: "https://share.geolibre.app/giswqs/nyc-subway-ridership-2025.geoverse.json",
   },
   {
     name: "NYC Traffic Crashes 2025",
     group: "New York City",
-    url: "https://share.geolibre.app/giswqs/nyc-traffic-crashes-2025.geolibre.json",
+    url: "https://share.geolibre.app/giswqs/nyc-traffic-crashes-2025.geoverse.json",
   },
   {
     name: "NYC Citi Bike Live Availability",
     group: "New York City",
-    url: "https://share.geolibre.app/giswqs/nyc-citi-bike-live-availability.geolibre.json",
+    url: "https://share.geolibre.app/giswqs/nyc-citi-bike-live-availability.geoverse.json",
   },
 ];

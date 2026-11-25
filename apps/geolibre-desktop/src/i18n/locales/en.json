@@ -4672,6 +4672,73 @@
       "errorGeneric": "Voice commands could not start. Check the microphone and try again."
     }
   },
+  "controlTower": {
+    "title": "Control Tower",
+    "scenario": "Scenario",
+    "sampleData": "Sample data",
+    "lenses": "Lenses",
+    "views": "Saved views",
+    "close": "Close",
+    "recommended": "Recommended",
+    "previewOnMap": "Preview on map",
+    "kpi": {
+      "vsNormal": "{{arrow}} {{pct}}% vs normal",
+      "noChange": "— no change"
+    },
+    "exceptions": {
+      "title": "Exceptions",
+      "count_one": "{{count}} open",
+      "count_other": "{{count}} open",
+      "showMore_one": "+ {{count}} more",
+      "showMore_other": "+ {{count}} more",
+      "showFewer": "Show fewer"
+    },
+    "tour": {
+      "label": "Tour",
+      "start": "Start the guided tour",
+      "stop": "Leave the tour",
+      "step": "Stop {{index}} of {{total}}",
+      "prev": "Back",
+      "next": "Next",
+      "finish": "Finish"
+    },
+    "explain": {
+      "nearestNode": "Nearest node",
+      "optimalSource": "Optimal source",
+      "roadKm": "{{km}} km by road",
+      "alsoOptimal": "Also the optimal source",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "withinSla": "Within {{days}}-day SLA",
+      "missesSla": "Misses {{days}}-day SLA",
+      "alternatives": "Alternatives considered",
+      "optionsCount_one": "{{count}} option",
+      "optionsCount_other": "{{count}} options",
+      "node": "Node",
+      "mode": "Mode",
+      "daysShort": "Days",
+      "statusColumn": "Status",
+      "askWhy": "Ask why",
+      "status": {
+        "chosen": "chosen",
+        "no_stock": "no stock",
+        "not_allowed": "not allowed",
+        "misses_SLA": "misses SLA",
+        "costlier": "costlier"
+      }
+    },
+    "ask": {
+      "title": "Ask",
+      "subtitle": "Answers come from the same sourcing model as the map. Every number is cited.",
+      "intro": "Ask about the network in plain language. In this sample the answers are precomputed from the demo model; in the pilot they run against the live network.",
+      "placeholder": "Ask about the network…",
+      "send": "Send",
+      "try": "Try",
+      "shownOnMap": "Shown on map",
+      "scenarioPreview": "Scenario: {{scenario}}",
+      "fallback": "That question is outside this sample. In the pilot, Geoverse answers it from the live network model through MCP tools; here, try one of the suggested questions."
+    }
+  },
   "storymap": {
     "title": "Story Map",
     "description": "Build a scroll-driven story from map chapters. Each chapter captures a camera view and text.",
@@ -8174,6 +8241,7 @@
       "pluginPanelRightOfLayers": "Plugin panel (right of Layers)",
       "map": "Map",
       "pluginFloatingPanels": "Plugin floating panels",
+      "controlTower": "Control Tower",
       "modelBuilder": "Model Builder",
       "selectionPanels": "Selection panels",
       "sunSimulationPanel": "Sun simulation panel",
