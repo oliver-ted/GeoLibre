@@ -1402,147 +1402,582 @@
     "groupByLayer": true,
     "order": [],
     "overrides": {},
-    "panelVisible": true,
+    "panelVisible": false,
     "panelPosition": "bottom-right"
   },
   "comments": [],
   "metadata": {
     "description": "Inbound supplier lanes flagged for single-source and long-lead risk, with animated ocean shipments.",
     "sampleData": true,
-    "generatedBy": "scripts/gen-nova-demos.ts"
-  },
-  "storymap": {
-    "title": "Inbound supplier lane risk",
-    "subtitle": "Procurement early warning",
-    "byline": "Geoverse · Powered by Aether AI",
-    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
-    "theme": "dark",
-    "showMarkers": false,
-    "markerColor": "#38bdf8",
-    "inset": false,
-    "insetPosition": "bottom-left",
-    "hideChapterNav": false,
-    "startSlide": "none",
-    "endSlide": "none",
-    "chapters": [
-      {
-        "id": "world",
-        "title": "Every inbound lane, flagged by risk",
-        "description": "<p>14 supplier lanes into Nova plants. <b style='color:#ef4444'>7 are flagged</b> as single-source, long lead time (&gt; 30 days), or both.</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            40,
-            30
-          ],
-          "zoom": 1.5,
-          "pitch": 20,
-          "bearing": 0
+    "generatedBy": "scripts/gen-nova-demos.ts",
+    "controlTower": {
+      "version": 1,
+      "client": "Nova Biomedical",
+      "title": "Inbound › Supplier lanes",
+      "lensId": "inbound",
+      "lenses": [
+        {
+          "id": "network",
+          "label": "Network",
+          "url": "demos/nova/1-nova-global-network.geoverse.json",
+          "icon": "network"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [],
-        "onChapterExit": []
-      },
-      {
-        "id": "asia",
-        "title": "Asian electronics and cells move by ocean",
-        "description": "<p>PCB assemblies, sensor chips, motors and lithium cells come from Malaysia, Taiwan and China, 35–39 days door to door. Four of them are single-source.</p><p>The animation shows shipments on the water right now.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            105,
-            15
-          ],
-          "zoom": 3,
-          "pitch": 35,
-          "bearing": 0
+        {
+          "id": "sourcing",
+          "label": "Sourcing",
+          "url": "demos/nova/2-nova-optimal-sourcing.geoverse.json",
+          "icon": "sourcing"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [],
-        "onChapterExit": []
-      },
-      {
-        "id": "suez",
-        "title": "A single chokepoint",
-        "description": "<p>Every Asian lane shares the same sea route via Suez. One disruption here delays four critical inputs at once: an early-warning case for safety stock or a second source.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            35,
-            25
-          ],
-          "zoom": 3.6,
-          "pitch": 40,
-          "bearing": -10
+        {
+          "id": "routes",
+          "label": "Routes",
+          "url": "demos/nova/3-nova-new-england-routes.geoverse.json",
+          "icon": "routes"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [],
-        "onChapterExit": []
-      },
-      {
-        "id": "us",
-        "title": "Domestic lanes: short, but some still single-source",
-        "description": "<p>Precision optics (Rochester) and photometric dyes (Lewiston) arrive in a day, yet each depends on one supplier.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -76,
-            41.5
-          ],
-          "zoom": 4.8,
-          "pitch": 40,
-          "bearing": 0
+        {
+          "id": "inbound",
+          "label": "Inbound",
+          "url": "demos/nova/4-nova-supplier-risk.geoverse.json",
+          "icon": "inbound",
+          "badge": 7
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [],
-        "onChapterExit": []
-      }
-    ]
-  },
-  "widgets": [
-    {
-      "id": "w-list",
-      "layerId": "d4-suppliers",
-      "type": "list",
-      "title": "Inbound lanes by lead time",
-      "listFields": [
-        "material",
-        "location",
-        "receiving_site",
-        "mode",
-        "lead_time_days",
-        "flags"
+        {
+          "id": "scenarios",
+          "label": "Scenarios",
+          "url": "demos/nova/5-nova-billerica-outage.geoverse.json",
+          "icon": "scenarios"
+        },
+        {
+          "id": "installed",
+          "label": "Installed base",
+          "url": "demos/nova/6-nova-installed-base.geoverse.json",
+          "icon": "installed"
+        }
       ],
-      "sortBy": "lead_time_days",
-      "sortDir": "desc",
-      "limit": 14
-    },
-    {
-      "id": "w-risk",
-      "layerId": "d4-suppliers",
-      "type": "pie",
-      "title": "Lanes by risk",
-      "category": "risk",
-      "aggregation": "count"
-    },
-    {
-      "id": "w-lead",
-      "layerId": "d4-suppliers",
-      "type": "indicator",
-      "title": "Longest lead time",
-      "field": "lead_time_days",
-      "indicatorAggregation": "max",
-      "suffix": " days",
-      "color": "#ef4444"
+      "scenarios": [
+        {
+          "id": "normal",
+          "label": "Normal operations",
+          "tone": "normal",
+          "layers": {},
+          "kpis": [
+            {
+              "id": "lanes",
+              "label": "Inbound lanes",
+              "value": 14,
+              "format": "int",
+              "detail": "active"
+            },
+            {
+              "id": "flagged",
+              "label": "Flagged",
+              "value": 7,
+              "format": "int",
+              "detail": "of 14",
+              "higherIsWorse": true
+            },
+            {
+              "id": "single",
+              "label": "Single source",
+              "value": 6,
+              "format": "int",
+              "detail": "lanes"
+            },
+            {
+              "id": "long",
+              "label": "Long lead (> 30 d)",
+              "value": 4,
+              "format": "int",
+              "detail": "ocean"
+            },
+            {
+              "id": "water",
+              "label": "On the water now",
+              "value": 4,
+              "format": "int",
+              "detail": "shipments"
+            },
+            {
+              "id": "longest",
+              "label": "Longest lead",
+              "value": 39,
+              "format": "int",
+              "detail": "days"
+            }
+          ],
+          "exceptions": [
+            {
+              "id": "in-Penang, Malaysia",
+              "severity": "red",
+              "badge": "IN",
+              "title": "Electronic PCB assemblies",
+              "detail": "Penang, Malaysia → BIL-M · 39 d ocean · single source · long lead",
+              "value": "39 d",
+              "valueLabel": "lead time",
+              "location": [
+                100.3288,
+                5.4141
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Hsinchu, Taiwan",
+              "severity": "red",
+              "badge": "IN",
+              "title": "Sensor chips",
+              "detail": "Hsinchu, Taiwan → WAL · 36 d ocean · single source · long lead",
+              "value": "36 d",
+              "valueLabel": "lead time",
+              "location": [
+                120.9675,
+                24.8138
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Shenzhen, China",
+              "severity": "amber",
+              "badge": "IN",
+              "title": "Motors & actuators",
+              "detail": "Shenzhen, China → BIL-M · 36 d ocean · long lead",
+              "value": "36 d",
+              "valueLabel": "lead time",
+              "location": [
+                114.0579,
+                22.5431
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Suzhou, China",
+              "severity": "red",
+              "badge": "IN",
+              "title": "Lithium cells (handheld meters)",
+              "detail": "Suzhou, China → BIL-L · 35 d ocean · single source · long lead",
+              "value": "35 d",
+              "valueLabel": "lead time",
+              "location": [
+                120.5853,
+                31.2989
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Jena, Germany",
+              "severity": "amber",
+              "badge": "IN",
+              "title": "Imaging sensors",
+              "detail": "Jena, Germany → WIM · 2 d ground · single source",
+              "value": "2 d",
+              "valueLabel": "lead time",
+              "location": [
+                11.5892,
+                50.9271
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Rochester, NY",
+              "severity": "amber",
+              "badge": "IN",
+              "title": "Precision optics",
+              "detail": "Rochester, NY → NOR · 1 d ground · single source",
+              "value": "1 d",
+              "valueLabel": "lead time",
+              "location": [
+                -77.6088,
+                43.1566
+              ],
+              "zoom": 4
+            },
+            {
+              "id": "in-Lewiston, ME",
+              "severity": "amber",
+              "badge": "IN",
+              "title": "Photometric dyes",
+              "detail": "Lewiston, ME → WES · 1 d ground · single source",
+              "value": "1 d",
+              "valueLabel": "lead time",
+              "location": [
+                -70.2148,
+                44.1004
+              ],
+              "zoom": 4
+            }
+          ]
+        }
+      ],
+      "defaultScenarioId": "normal",
+      "views": [
+        {
+          "label": "World",
+          "camera": {
+            "center": [
+              15,
+              28
+            ],
+            "zoom": 1.6,
+            "pitch": 25,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "North America",
+          "camera": {
+            "center": [
+              -90,
+              38
+            ],
+            "zoom": 3.3,
+            "pitch": 45,
+            "bearing": -10
+          }
+        },
+        {
+          "label": "New England",
+          "camera": {
+            "center": [
+              -71.35,
+              42.45
+            ],
+            "zoom": 7.6,
+            "pitch": 58,
+            "bearing": -18
+          }
+        },
+        {
+          "label": "Europe",
+          "camera": {
+            "center": [
+              4,
+              49
+            ],
+            "zoom": 4.2,
+            "pitch": 45,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "Asia-Pacific",
+          "camera": {
+            "center": [
+              128,
+              10
+            ],
+            "zoom": 2.6,
+            "pitch": 35,
+            "bearing": 0
+          }
+        }
+      ],
+      "sections": [
+        {
+          "type": "table",
+          "title": "All lanes",
+          "columns": [
+            "Material",
+            "From → To",
+            "Mode",
+            "Days",
+            "Flags"
+          ],
+          "rows": [
+            [
+              "Electronic PCB assemblies",
+              "Penang → BIL-M",
+              "Ocean",
+              "39",
+              "Single source, Long lead"
+            ],
+            [
+              "Sensor chips",
+              "Hsinchu → WAL",
+              "Ocean",
+              "36",
+              "Single source, Long lead"
+            ],
+            [
+              "Motors & actuators",
+              "Shenzhen → BIL-M",
+              "Ocean",
+              "36",
+              "Long lead"
+            ],
+            [
+              "Lithium cells (handheld meters)",
+              "Suzhou → BIL-L",
+              "Ocean",
+              "35",
+              "Single source, Long lead"
+            ],
+            [
+              "Labware & pipette tips",
+              "Tijuana → WES",
+              "Ground",
+              "7",
+              "—"
+            ],
+            [
+              "Reagent chemicals",
+              "St. Louis → WAL",
+              "Ground",
+              "3",
+              "—"
+            ],
+            [
+              "Thermoelectric modules",
+              "Dayton → NOR",
+              "Ground",
+              "2",
+              "—"
+            ],
+            [
+              "Imaging sensors",
+              "Jena → WIM",
+              "Ground",
+              "2",
+              "Single source"
+            ],
+            [
+              "Injection-molded plastics",
+              "Leominster → BIL-L",
+              "Ground",
+              "1",
+              "—"
+            ],
+            [
+              "Glass vials & calibration fluids",
+              "Vineland → BIL-L",
+              "Ground",
+              "1",
+              "—"
+            ],
+            [
+              "Packaging & corrugate",
+              "Nashua → BIL-E",
+              "Ground",
+              "1",
+              "—"
+            ],
+            [
+              "Precision optics",
+              "Rochester → NOR",
+              "Ground",
+              "1",
+              "Single source"
+            ],
+            [
+              "Photometric dyes",
+              "Lewiston → WES",
+              "Ground",
+              "1",
+              "Single source"
+            ],
+            [
+              "Microfluidic consumables",
+              "Galway → WIM",
+              "Ground",
+              "1",
+              "—"
+            ]
+          ],
+          "highlightRows": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Buyer action",
+          "tone": "warning",
+          "body": "Qualify a second source for <b>sensor chips</b> (Hsinchu → WAL, 36 d) and <b>lithium cells</b> (Suzhou → BIL-L, 35 d). Both single-source, both via Suez."
+        }
+      ],
+      "panelTitle": "Inbound lanes",
+      "panelSubtitle": "Sorted by lead time · flags: single source, long lead, receiving-site outage",
+      "explainLayers": [
+        "d4-suppliers",
+        "d4-site-markers"
+      ],
+      "tour": {
+        "steps": [
+          {
+            "id": "world",
+            "title": "Every inbound lane, flagged by risk",
+            "body": "<p>14 supplier lanes into Nova plants. <b style='color:#ef4444'>7 are flagged</b> as single-source, long lead time (&gt; 30 days), or both.</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+            "camera": {
+              "center": [
+                40,
+                30
+              ],
+              "zoom": 1.5,
+              "pitch": 20,
+              "bearing": 0
+            }
+          },
+          {
+            "id": "asia",
+            "title": "Asian electronics and cells move by ocean",
+            "body": "<p>PCB assemblies, sensor chips, motors and lithium cells come from Malaysia, Taiwan and China, 35–39 days door to door. Four of them are single-source.</p><p>The animation shows shipments on the water right now.</p>",
+            "camera": {
+              "center": [
+                105,
+                15
+              ],
+              "zoom": 3,
+              "pitch": 35,
+              "bearing": 0
+            }
+          },
+          {
+            "id": "suez",
+            "title": "A single chokepoint",
+            "body": "<p>Every Asian lane shares the same sea route via Suez. One disruption here delays four critical inputs at once: an early-warning case for safety stock or a second source.</p>",
+            "camera": {
+              "center": [
+                35,
+                25
+              ],
+              "zoom": 3.6,
+              "pitch": 40,
+              "bearing": -10
+            }
+          },
+          {
+            "id": "us",
+            "title": "Domestic lanes: short, but some still single-source",
+            "body": "<p>Precision optics (Rochester) and photometric dyes (Lewiston) arrive in a day, yet each depends on one supplier.</p>",
+            "camera": {
+              "center": [
+                -76,
+                41.5
+              ],
+              "zoom": 4.8,
+              "pitch": 40,
+              "bearing": 0
+            }
+          }
+        ],
+        "durationLabel": "4 stops"
+      },
+      "ask": {
+        "placeholder": "Ask about inbound risk…",
+        "items": [
+          {
+            "question": "What happens if Suez closes for a week?",
+            "answer": "<p>All four Asian lanes (PCB assemblies, sensor chips, motors, lithium cells) share the Suez route, so a 7-day closure pushes four inputs out by a week at once. Safety stock at Billerica Manning Rd covers about 12 days of PCB demand, so production is at risk in week 3. Three of the four lanes are single-source, so there is no alternate vendor to pull forward.</p>",
+            "citations": [
+              "lane routing: Singapore → Suez → Gibraltar (sample)",
+              "safety stock: illustrative"
+            ],
+            "camera": {
+              "center": [
+                35,
+                25
+              ],
+              "zoom": 3.4,
+              "pitch": 35,
+              "bearing": -10
+            }
+          },
+          {
+            "question": "Which customers miss SLA if Billerica is down?",
+            "answer": "<p><b>25 customers</b> fall outside SLA if Billerica – Enterprise Rd goes offline, <b>22 of them hospitals</b> on a 2-day Critical Care SLA. Demand falls back to Wimborne by international air (3 days including customs).</p><p>Biggest by volume: <b>New York</b> (17/wk), <b>Boston</b> (15/wk), <b>Chicago</b> (14/wk), <b>Los Angeles</b> (13/wk).</p><p>Weekly freight rises from <b>$33,665</b> to <b>$131,526</b> (+291%). Activating Norwood as a contingency DC brings it back to <b>97.9%</b> within SLA at <b>$33,857</b>.</p>",
+            "citations": [
+              "scenario: billerica-offline",
+              "47 ship-tos · S/4HANA KNA1 (sample)",
+              "rates: placeholder, Process Weaver pending"
+            ],
+            "scenarioId": "outage"
+          },
+          {
+            "question": "Why isn't Boston served from Norwood?",
+            "answer": "<p>Norwood is Boston's nearest node (34 km) but its stocking profile carries <b>Osmolality only</b>. Boston buys Critical Care, which is stocked at Billerica – Enterprise Rd (normal operations) and, under the contingency profile, at Norwood too.</p>",
+            "citations": [
+              "stocking profile NOR · S/4HANA MARC (sample)"
+            ],
+            "camera": {
+              "center": [
+                -71.35,
+                42.45
+              ],
+              "zoom": 7.6,
+              "pitch": 58,
+              "bearing": -18
+            }
+          },
+          {
+            "question": "Cheapest way to serve Seoul within 3 days?",
+            "answer": "<p>There is none today. The Japan FSL serves Japan only, so Seoul ships from Wimborne by international air in <b>4 days</b> against a <b>3-day</b> SLA. A Korea stocking point, or letting Taipei manufacturing hold finished Critical Care stock, would close the gap at roughly a third of the current lane cost.</p>",
+            "citations": [
+              "countries-served rule: JPN → JP only (assumption, §3.1)"
+            ],
+            "camera": {
+              "center": [
+                128,
+                10
+              ],
+              "zoom": 2.6,
+              "pitch": 35,
+              "bearing": 0
+            }
+          },
+          {
+            "question": "Show me every single-source lane via Suez",
+            "answer": "<p>Three single-source lanes share the Suez route: <b>sensor chips</b> (Hsinchu → Waltham, 36 d), <b>lithium cells</b> (Suzhou → Billerica Lexington Rd, 35 d) and <b>PCB assemblies</b> (Penang → Billerica Manning Rd, 39 d). Motors from Shenzhen use it too but have a second source. A 7-day canal closure delays all four at once.</p>",
+            "citations": [
+              "14 inbound lanes · vendor master (sample)"
+            ],
+            "camera": {
+              "center": [
+                55,
+                24
+              ],
+              "zoom": 1.8,
+              "pitch": 26,
+              "bearing": 0
+            }
+          }
+        ]
+      },
+      "legendTitle": "Inbound supplier risk · sample data",
+      "legend": {
+        "title": "Inbound · sample data",
+        "items": [
+          {
+            "label": "Flagged lane · single source or long lead",
+            "color": "#ef4444",
+            "kind": "line"
+          },
+          {
+            "label": "Other inbound lane",
+            "color": "#f59e0b",
+            "kind": "line"
+          },
+          {
+            "label": "Ocean shipment in transit (animated)",
+            "color": "#fbbf24"
+          },
+          {
+            "label": "Single source + long lead",
+            "color": "#ef4444"
+          },
+          {
+            "label": "Long lead time",
+            "color": "#f97316"
+          },
+          {
+            "label": "Single source",
+            "color": "#facc15"
+          },
+          {
+            "label": "Low risk",
+            "color": "#a3a3a3"
+          }
+        ]
+      },
+      "dataNotice": "Sample data. Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative."
     }
-  ],
-  "dashboardColumns": 2
+  }
 }

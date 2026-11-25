@@ -3891,245 +3891,434 @@
     "groupByLayer": true,
     "order": [],
     "overrides": {},
-    "panelVisible": true,
+    "panelVisible": false,
     "panelPosition": "bottom-right"
   },
   "comments": [],
   "metadata": {
     "description": "Sample US installed base of Nova analyzers and the consumables demand it drives.",
     "sampleData": true,
-    "generatedBy": "scripts/gen-nova-demos.ts"
-  },
-  "storymap": {
-    "title": "Installed base & consumables demand",
-    "subtitle": "Where Nova's instruments pull consumables",
-    "byline": "Geoverse · Powered by Aether AI",
-    "footer": "Illustrative sample data. Site locations approximate; customers, suppliers, volumes and rates are invented.",
-    "theme": "dark",
-    "showMarkers": false,
-    "markerColor": "#38bdf8",
-    "inset": false,
-    "insetPosition": "bottom-left",
-    "hideChapterNav": false,
-    "startSlide": "none",
-    "endSlide": "none",
-    "chapters": [
-      {
-        "id": "hex",
-        "title": "Where the consumables demand is",
-        "description": "<p>638 sample US hospitals running Nova blood-gas analyzers and point-of-care meters. Each placed instrument pulls a steady flow of sensor cartridges and test strips.</p><p>Column height = monthly consumables demand (about <b>$22,395,611</b> a month in this sample).</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -92,
-            38
-          ],
-          "zoom": 3.4,
-          "pitch": 50,
-          "bearing": -15
+    "generatedBy": "scripts/gen-nova-demos.ts",
+    "controlTower": {
+      "version": 1,
+      "client": "Nova Biomedical",
+      "title": "Installed base › Consumables demand",
+      "lensId": "installed",
+      "lenses": [
+        {
+          "id": "network",
+          "label": "Network",
+          "url": "demos/nova/1-nova-global-network.geoverse.json",
+          "icon": "network"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
-          {
-            "id": "hex-in-0",
-            "layerId": "d6-hexbins",
-            "opacity": 1,
-            "duration": 900
-          },
-          {
-            "id": "hex-in-1",
-            "layerId": "d6-heatmap",
-            "opacity": 0,
-            "duration": 900
-          },
-          {
-            "id": "hex-in-2",
-            "layerId": "d6-hospitals",
-            "opacity": 0,
-            "duration": 900
-          }
-        ],
-        "onChapterExit": []
-      },
-      {
-        "id": "northeast",
-        "title": "The Northeast corridor",
-        "description": "<p>Boston to Washington carries the densest demand, all within next-day ground reach of Billerica, Norwood and Westbrook.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -74.5,
-            41.2
-          ],
-          "zoom": 5.6,
-          "pitch": 55,
-          "bearing": -25
+        {
+          "id": "sourcing",
+          "label": "Sourcing",
+          "url": "demos/nova/2-nova-optimal-sourcing.geoverse.json",
+          "icon": "sourcing"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
-          {
-            "id": "northeast-in-0",
-            "layerId": "d6-hexbins",
-            "opacity": 1,
-            "duration": 900
-          },
-          {
-            "id": "northeast-in-1",
-            "layerId": "d6-heatmap",
-            "opacity": 0,
-            "duration": 900
-          },
-          {
-            "id": "northeast-in-2",
-            "layerId": "d6-hospitals",
-            "opacity": 0,
-            "duration": 900
-          }
-        ],
-        "onChapterExit": []
-      },
-      {
-        "id": "heat",
-        "title": "Demand density as a heat map",
-        "description": "<p>The same data as a weighted heat map, the view a planner would use to decide where to forward-stock consumables.</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -92,
-            38
-          ],
-          "zoom": 3.6,
-          "pitch": 0,
-          "bearing": 0
+        {
+          "id": "routes",
+          "label": "Routes",
+          "url": "demos/nova/3-nova-new-england-routes.geoverse.json",
+          "icon": "routes"
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
-          {
-            "id": "heat-in-0",
-            "layerId": "d6-hexbins",
-            "opacity": 0,
-            "duration": 900
-          },
-          {
-            "id": "heat-in-1",
-            "layerId": "d6-heatmap",
-            "opacity": 1,
-            "duration": 900
-          },
-          {
-            "id": "heat-in-2",
-            "layerId": "d6-hospitals",
-            "opacity": 0,
-            "duration": 900
-          }
-        ],
-        "onChapterExit": []
-      },
-      {
-        "id": "service",
-        "title": "Accounts and field service",
-        "description": "<p>Every hospital is clickable: beds, installed analyzers, monthly cartridges and strips, and whether a field service visit is due (orange).</p>",
-        "alignment": "left",
-        "hidden": false,
-        "location": {
-          "center": [
-            -87.7,
-            41.9
-          ],
-          "zoom": 8,
-          "pitch": 30,
-          "bearing": 0
+        {
+          "id": "inbound",
+          "label": "Inbound",
+          "url": "demos/nova/4-nova-supplier-risk.geoverse.json",
+          "icon": "inbound",
+          "badge": 7
         },
-        "mapAnimation": "flyTo",
-        "rotateAnimation": false,
-        "onChapterEnter": [
-          {
-            "id": "service-in-0",
-            "layerId": "d6-hexbins",
-            "opacity": 0,
-            "duration": 900
-          },
-          {
-            "id": "service-in-1",
-            "layerId": "d6-heatmap",
-            "opacity": 0,
-            "duration": 900
-          },
-          {
-            "id": "service-in-2",
-            "layerId": "d6-hospitals",
-            "opacity": 1,
-            "duration": 900
-          }
-        ],
-        "onChapterExit": []
-      }
-    ]
-  },
-  "widgets": [
-    {
-      "id": "w-hosp",
-      "layerId": "d6-hospitals",
-      "type": "indicator",
-      "title": "Hospitals (sample)",
-      "field": "beds",
-      "indicatorAggregation": "count"
-    },
-    {
-      "id": "w-an",
-      "layerId": "d6-hospitals",
-      "type": "indicator",
-      "title": "Blood-gas analyzers installed",
-      "field": "blood_gas_analyzers",
-      "indicatorAggregation": "sum"
-    },
-    {
-      "id": "w-usd",
-      "layerId": "d6-hospitals",
-      "type": "indicator",
-      "title": "Consumables demand / month",
-      "field": "consumables_usd_month",
-      "indicatorAggregation": "sum",
-      "prefix": "$",
-      "color": "#f97316"
-    },
-    {
-      "id": "w-region",
-      "layerId": "d6-hospitals",
-      "type": "bar",
-      "title": "Monthly consumables by region (USD)",
-      "category": "region",
-      "aggregation": "sum",
-      "valueField": "consumables_usd_month"
-    },
-    {
-      "id": "w-service",
-      "layerId": "d6-hospitals",
-      "type": "pie",
-      "title": "Field service status",
-      "category": "service_due",
-      "aggregation": "count"
-    },
-    {
-      "id": "w-top",
-      "layerId": "d6-hospitals",
-      "type": "list",
-      "title": "Largest consumable accounts",
-      "listFields": [
-        "name",
-        "blood_gas_analyzers",
-        "consumables_usd_month"
+        {
+          "id": "scenarios",
+          "label": "Scenarios",
+          "url": "demos/nova/5-nova-billerica-outage.geoverse.json",
+          "icon": "scenarios"
+        },
+        {
+          "id": "installed",
+          "label": "Installed base",
+          "url": "demos/nova/6-nova-installed-base.geoverse.json",
+          "icon": "installed"
+        }
       ],
-      "sortBy": "consumables_usd_month",
-      "sortDir": "desc",
-      "limit": 10
+      "scenarios": [
+        {
+          "id": "normal",
+          "label": "Normal operations",
+          "tone": "normal",
+          "layers": {},
+          "kpis": [
+            {
+              "id": "hosp",
+              "label": "Hospitals (sample)",
+              "value": 638,
+              "format": "int",
+              "detail": "accounts"
+            },
+            {
+              "id": "an",
+              "label": "Analyzers installed",
+              "value": 2001,
+              "format": "int",
+              "detail": "units"
+            },
+            {
+              "id": "usd",
+              "label": "Consumables / month",
+              "value": 22395611,
+              "format": "usd"
+            },
+            {
+              "id": "ne",
+              "label": "Northeast share",
+              "value": 28.233460565108047,
+              "format": "pct",
+              "detail": "next-day ground"
+            },
+            {
+              "id": "west",
+              "label": "West share",
+              "value": 25.244415077579262,
+              "format": "pct",
+              "detail": "3–5 d ground"
+            },
+            {
+              "id": "due",
+              "label": "Service due ≤ 60 d",
+              "value": 100,
+              "format": "int",
+              "detail": "sites",
+              "higherIsWorse": true
+            }
+          ],
+          "exceptions": []
+        }
+      ],
+      "defaultScenarioId": "normal",
+      "views": [
+        {
+          "label": "US",
+          "camera": {
+            "center": [
+              -92,
+              38
+            ],
+            "zoom": 3.4,
+            "pitch": 50,
+            "bearing": -15
+          }
+        },
+        {
+          "label": "Northeast",
+          "camera": {
+            "center": [
+              -74.5,
+              41.2
+            ],
+            "zoom": 5.6,
+            "pitch": 55,
+            "bearing": -25
+          }
+        },
+        {
+          "label": "West",
+          "camera": {
+            "center": [
+              -118,
+              37
+            ],
+            "zoom": 4.6,
+            "pitch": 50,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "South",
+          "camera": {
+            "center": [
+              -90,
+              31
+            ],
+            "zoom": 4.6,
+            "pitch": 50,
+            "bearing": 0
+          }
+        },
+        {
+          "label": "Midwest",
+          "camera": {
+            "center": [
+              -88,
+              41.5
+            ],
+            "zoom": 5,
+            "pitch": 50,
+            "bearing": 0
+          }
+        }
+      ],
+      "sections": [
+        {
+          "type": "bars",
+          "title": "Top metros",
+          "rows": [
+            {
+              "label": "New York",
+              "value": 1757791,
+              "display": "$1,758k"
+            },
+            {
+              "label": "Los Angeles",
+              "value": 1395977,
+              "display": "$1,396k"
+            },
+            {
+              "label": "Chicago",
+              "value": 1210681,
+              "display": "$1,211k"
+            },
+            {
+              "label": "Boston",
+              "value": 1133394,
+              "display": "$1,133k"
+            },
+            {
+              "label": "Houston",
+              "value": 996795,
+              "display": "$997k"
+            },
+            {
+              "label": "Dallas",
+              "value": 827522,
+              "display": "$828k"
+            },
+            {
+              "label": "Philadelphia",
+              "value": 827267,
+              "display": "$827k"
+            },
+            {
+              "label": "Atlanta",
+              "value": 758703,
+              "display": "$759k"
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": "Planner insight",
+          "body": "The Northeast carries <b>28%</b> of monthly demand, all inside next-day ground reach of Billerica, Norwood and Westbrook. The West is <b>25%</b> and ships 3–5 days by ground: a candidate for a forward stocking location.",
+          "tone": "accent"
+        },
+        {
+          "type": "list",
+          "title": "Field service",
+          "count": "next 60 days",
+          "rows": [
+            {
+              "badge": "100",
+              "title": "Preventive-maintenance visits due",
+              "detail": "Salesforce work orders (sample)",
+              "value": "Plan",
+              "valueLabel": "with van routes",
+              "tone": "warning"
+            }
+          ]
+        }
+      ],
+      "panelTitle": "Where the demand is",
+      "panelSubtitle": "Monthly sensor cartridges + test strips, by metro",
+      "explainLayers": [
+        "d6-hospitals",
+        "d6-site-markers"
+      ],
+      "tour": {
+        "steps": [
+          {
+            "id": "hex",
+            "title": "Where the consumables demand is",
+            "body": "<p>638 sample US hospitals running Nova blood-gas analyzers and point-of-care meters. Each placed instrument pulls a steady flow of sensor cartridges and test strips.</p><p>Column height = monthly consumables demand (about <b>$22,395,611</b> a month in this sample).</p><p style='opacity:.7;font-size:12px'>Sample data: Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative.</p>",
+            "camera": {
+              "center": [
+                -92,
+                38
+              ],
+              "zoom": 3.4,
+              "pitch": 50,
+              "bearing": -15
+            },
+            "layers": {
+              "d6-hexbins": 1,
+              "d6-heatmap": 0,
+              "d6-hospitals": 0
+            }
+          },
+          {
+            "id": "northeast",
+            "title": "The Northeast corridor",
+            "body": "<p>Boston to Washington carries the densest demand, all within next-day ground reach of Billerica, Norwood and Westbrook.</p>",
+            "camera": {
+              "center": [
+                -74.5,
+                41.2
+              ],
+              "zoom": 5.6,
+              "pitch": 55,
+              "bearing": -25
+            },
+            "layers": {
+              "d6-hexbins": 1,
+              "d6-heatmap": 0,
+              "d6-hospitals": 0
+            }
+          },
+          {
+            "id": "heat",
+            "title": "Demand density as a heat map",
+            "body": "<p>The same data as a weighted heat map, the view a planner would use to decide where to forward-stock consumables.</p>",
+            "camera": {
+              "center": [
+                -92,
+                38
+              ],
+              "zoom": 3.6,
+              "pitch": 0,
+              "bearing": 0
+            },
+            "layers": {
+              "d6-hexbins": 0,
+              "d6-heatmap": 1,
+              "d6-hospitals": 0
+            }
+          },
+          {
+            "id": "service",
+            "title": "Accounts and field service",
+            "body": "<p>Every hospital is clickable: beds, installed analyzers, monthly cartridges and strips, and whether a field service visit is due (orange).</p>",
+            "camera": {
+              "center": [
+                -87.7,
+                41.9
+              ],
+              "zoom": 8,
+              "pitch": 30,
+              "bearing": 0
+            },
+            "layers": {
+              "d6-hexbins": 0,
+              "d6-heatmap": 0,
+              "d6-hospitals": 1
+            }
+          }
+        ],
+        "durationLabel": "4 stops"
+      },
+      "ask": {
+        "placeholder": "Ask about the installed base…",
+        "items": [
+          {
+            "question": "Where should a West Coast forward stocking location go?",
+            "answer": "<p>Los Angeles. The West is <b>25%</b> of monthly consumables demand and LA alone is <b>$1,396k</b>, with San Diego, Phoenix and the Bay Area within next-day ground. Today those accounts ship 3–5 days by ground from Billerica.</p>",
+            "citations": [
+              "installed base: sample of 640 hospitals",
+              "demand: cartridges × $310 + strips × $0.42 (illustrative)"
+            ],
+            "camera": {
+              "center": [
+                -118,
+                36
+              ],
+              "zoom": 4.8,
+              "pitch": 50,
+              "bearing": 0
+            }
+          },
+          {
+            "question": "Which customers miss SLA if Billerica is down?",
+            "answer": "<p><b>25 customers</b> fall outside SLA if Billerica – Enterprise Rd goes offline, <b>22 of them hospitals</b> on a 2-day Critical Care SLA. Demand falls back to Wimborne by international air (3 days including customs).</p><p>Biggest by volume: <b>New York</b> (17/wk), <b>Boston</b> (15/wk), <b>Chicago</b> (14/wk), <b>Los Angeles</b> (13/wk).</p><p>Weekly freight rises from <b>$33,665</b> to <b>$131,526</b> (+291%). Activating Norwood as a contingency DC brings it back to <b>97.9%</b> within SLA at <b>$33,857</b>.</p>",
+            "citations": [
+              "scenario: billerica-offline",
+              "47 ship-tos · S/4HANA KNA1 (sample)",
+              "rates: placeholder, Process Weaver pending"
+            ],
+            "scenarioId": "outage"
+          },
+          {
+            "question": "Why isn't Boston served from Norwood?",
+            "answer": "<p>Norwood is Boston's nearest node (34 km) but its stocking profile carries <b>Osmolality only</b>. Boston buys Critical Care, which is stocked at Billerica – Enterprise Rd (normal operations) and, under the contingency profile, at Norwood too.</p>",
+            "citations": [
+              "stocking profile NOR · S/4HANA MARC (sample)"
+            ],
+            "camera": {
+              "center": [
+                -71.35,
+                42.45
+              ],
+              "zoom": 7.6,
+              "pitch": 58,
+              "bearing": -18
+            }
+          },
+          {
+            "question": "Cheapest way to serve Seoul within 3 days?",
+            "answer": "<p>There is none today. The Japan FSL serves Japan only, so Seoul ships from Wimborne by international air in <b>4 days</b> against a <b>3-day</b> SLA. A Korea stocking point, or letting Taipei manufacturing hold finished Critical Care stock, would close the gap at roughly a third of the current lane cost.</p>",
+            "citations": [
+              "countries-served rule: JPN → JP only (assumption, §3.1)"
+            ],
+            "camera": {
+              "center": [
+                128,
+                10
+              ],
+              "zoom": 2.6,
+              "pitch": 35,
+              "bearing": 0
+            }
+          },
+          {
+            "question": "Show me every single-source lane via Suez",
+            "answer": "<p>Three single-source lanes share the Suez route: <b>sensor chips</b> (Hsinchu → Waltham, 36 d), <b>lithium cells</b> (Suzhou → Billerica Lexington Rd, 35 d) and <b>PCB assemblies</b> (Penang → Billerica Manning Rd, 39 d). Motors from Shenzhen use it too but have a second source. A 7-day canal closure delays all four at once.</p>",
+            "citations": [
+              "14 inbound lanes · vendor master (sample)"
+            ],
+            "camera": {
+              "center": [
+                55,
+                24
+              ],
+              "zoom": 1.8,
+              "pitch": 26,
+              "bearing": 0
+            }
+          }
+        ]
+      },
+      "legendTitle": "Installed base · sample data",
+      "legend": {
+        "title": "Consumables demand · sample",
+        "items": [
+          {
+            "label": "3D hexbin · height = monthly consumables (USD)",
+            "color": "#f97316"
+          },
+          {
+            "label": "Field service due within 60 days",
+            "color": "#f97316",
+            "kind": "ring"
+          },
+          {
+            "label": "Current",
+            "color": "#38bdf8"
+          },
+          {
+            "label": "Supply node (BIL-E · NOR · WES)",
+            "color": "#0ea5e9"
+          }
+        ]
+      },
+      "dataNotice": "Sample data. Nova sites from the ERP/CRM footprint (locations approximate); customers, suppliers, volumes and rates are illustrative."
     }
-  ],
-  "dashboardColumns": 3
+  }
 }
